@@ -147,7 +147,7 @@
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact/fiverr.svg" width="100" height="100" alt="fiverr">
+                    <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="100" height="100" alt="fiverr">
                     </a>
                 </div>
                 <div>
