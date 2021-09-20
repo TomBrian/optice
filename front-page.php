@@ -11,7 +11,7 @@
                 <h1 class="my-1">We Help Create <span class="em">unforgettable</span> Experiences for your Audience on the web</h1>
                 <p class="all-caps text-light my-1">
                     Technical seo audit | websites development | wordpress integration & THEME DEVELOPMENT |
-                    Content creation
+                    Fintech technical writing
                 </p>
                 <button class="px-4 py-3 my-1 btn hero-cta">
                     Lets get started
@@ -142,44 +142,24 @@
             <div class="platforms flex align-items-center my-2">
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="100" height="26.4" alt="upwork">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="100" height="26.4" alt="upwork">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="100" height="100" alt="fiverr">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="100" height="100" alt="fiverr">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="193" height="60" alt="freelancer">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="193" height="60" alt="freelancer">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="50" height="50" alt="linked in">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="50" height="50" alt="linked in">
                     </a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="for-creators text-center">
-        <div class="svg">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/themes.svg" width="300" height="300" class="img my-3" alt="Kanai themes">
-        </div>
-        <div class="text my-3">
-            <h2>themes for wordpress <span class="em">creators</span></h2>
-            <p class="text-muted">Every great creator needs the right tools.We build fast and powerful wordpress themes for creators .
-                Each of these themes are highly customizable,
-                fast and built to work beautifully on SEO. We also run a blog on all things wordpress
-            </p>
-            <div class="buttons">
-                <button class="btn">
-                    <a href="#" class="nav-link">Visit theme store</a>
-                </button>
-                <button class="btn">
-                    <a href="#" class="nav-link">Visit blog</a>
-                </button>
             </div>
         </div>
     </div>

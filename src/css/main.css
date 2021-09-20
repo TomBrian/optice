@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .hero .hero-content {
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
