@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/georentk/public_html/opticewebsolutions/wp-content/themes/Kanai
+    - /bin/cp -R * $DEPLOYPATH
