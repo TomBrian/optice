@@ -9,7 +9,7 @@ jQuery(($)=>{
     button.appendChild(link);
     $('nav .collapse button a').addClass('nav-cta-link nav-link')
     $('.nav-cta-link').attr('href','#')
-    $('nav .collapse button').addClass('nav-cta p-1 d-none d-sm-block d-xsm-block d-md-none d-lg-none d-xl-none');
+    $('nav .collapse button').addClass('nav-cta p-1 d-block d-md-none d-lg-none');
     var text = 'Hire Us';
     $('.nav-cta-link').html(text);
    //append fontawesome icons to dropdowns
