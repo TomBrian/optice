@@ -142,22 +142,22 @@
             <div class="platforms flex align-items-center my-2">
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact-us/upwork.svg" width="100" height="26.4" alt="upwork">
+                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact/upwork.svg" width="100" height="26.4" alt="upwork">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact-us/fiverr.svg" width="100" height="100" alt="fiverr">
+                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact/fiverr.svg" width="100" height="100" alt="fiverr">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact-us/freelancer.svg" width="193" height="60" alt="freelancer">
+                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact/freelancer.svg" width="193" height="60" alt="freelancer">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact-us/linked.svg" width="50" height="50" alt="linked in">
+                    <img src="<?php echo get_template_directory_uri() ?>/src/images/contact/linked.svg" width="50" height="50" alt="linked in">
                     </a>
                 </div>
             </div>
