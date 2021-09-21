@@ -102,7 +102,7 @@ a.dropdown-toggle{
 .hero{
     //background: linear-gradient(270deg, $theme-color1  0%, rgba(250, 0, 239, 0.9) 100%);
     background-color: rgba(0, 0, 0, 0.548);
-    // background-position: fixed;
+    background-attachment: fixed;
     height: fit-content;
     background-size:cover;
     background-blend-mode: darken;
@@ -110,6 +110,9 @@ a.dropdown-toggle{
     font-family: 'poppins';
     display: block;
     padding-bottom: 0px !important;
+    .animate__pulse{
+        animation-duration: 1s;
+    }
     nav{
     .nav-link{
         color: white !important;

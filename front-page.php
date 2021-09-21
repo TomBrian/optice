@@ -9,13 +9,13 @@
         <div class="hero-content">
             <div class="hero-text text-center">
                 <h1 class="my-1">
-                We Help Create <span class="em">unforgettable</span> Experiences for your Audience on the web 
+                    We Help Create <span class="em">unforgettable</span> Experiences for your Audience on the web
                 </h1>
-                <p class="all-caps text-light my-1">
+                <p class="all-caps text-light my-4">
                     Technical seo audit | websites development | wordpress integration & THEME DEVELOPMENT |
                     content writing
                 </p>
-                <button class="px-4 py-3 my-1 btn hero-cta">
+                <button class="px-4 py-3 my-1 animate__animated animate__pulse animate__infinite btn hero-cta">
                     Lets get started
                 </button>
             </div>
@@ -90,7 +90,7 @@
     </div>
     <div class="contact-us py-3 my-3 flex container">
         <div class="form">
-            <form action="" class="shadow-sm p-3">
+            <form action="" id="protected" class="shadow-sm p-3">
                 <h4 class="my-3 text-center">Contact us</h4>
                 <div class="flex my-3">
                     <input type="text" name="fname" class="form-control" placeholder="first name" required>
@@ -106,7 +106,8 @@
                     </select>
                 </div>
                 <textarea name="message" id="" class="form-control my-3" required>Your message...</textarea>
-                <button type="submit" class="submit px-4 py-2">Send</button>
+                <button type="submit" data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq
+" data-callback='onSubmit' data-action='submit' class="submit g-recaptcha px-4 py-2">Send</button>
             </form>
         </div>
         <div class="links">
@@ -159,13 +160,17 @@
                 </div>
                 <div>
                     <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="40" height="40" alt="linked in">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="40" height="40" alt="linked in">
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<script>
+   function onSubmit(token) {
+     document.getElementById("protected").submit();
+   }
+ </script>
 <script src="<?php echo get_template_directory_uri() ?>/src/js/front-page.js"></script>
 <?php get_footer() ?>
