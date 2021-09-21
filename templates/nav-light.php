@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top bg-white shadow-sm navbar-expand-md p-2">
     <div>
         <a class="navbar-brand" href="<?php echo bloginfo('url') ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/logo-dark.svg" width="118" height="50" alt="brand">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/logo-dark.svg" width="150" height="50" alt="brand">
         </a>
     </div>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
