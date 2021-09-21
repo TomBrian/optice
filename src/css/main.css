@@ -33,6 +33,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-transition: 1s;
   transition: 1s;
   position: fixed;
+  display: none;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -105,11 +106,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero {
-  background: -webkit-gradient(linear, right top, left top, from(#3F126F), to(rgba(250, 0, 239, 0.9)));
-  background: linear-gradient(270deg, #3F126F 0%, rgba(250, 0, 239, 0.9) 100%);
+  background-color: rgba(0, 0, 0, 0.548);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-size: cover;
+  background-blend-mode: darken;
   width: 100%;
   font-family: 'poppins';
   display: block;
@@ -474,17 +476,23 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 0%;
     font-size: 14px !important;
   }
-  .hero h1 {
+  .hero {
+    margin-bottom: 30px;
+  }
+  .hero .hero-content {
+    min-height: 400px;
+  }
+  .hero .hero-content h1 {
     font-size: 24px;
   }
-  .hero .all-caps {
+  .hero .hero-content .all-caps {
     font-size: 10px;
   }
   .links {
     width: 90% !important;
   }
   .links .features ul {
-    width: 100%;
+    width: 100% !important;
   }
   .for-creators .buttons {
     width: 100%;

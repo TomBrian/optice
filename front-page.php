@@ -3,15 +3,17 @@
     <?php kanai_get_light_navbar(); ?>
 </div>
 <div class="hero-wrap">
-    <div class="hero">
+    <div class="hero" style="background-image: url('<?php echo get_template_directory_uri() ?>/src/images/hero.jpg');">
         <!-- navbar dark version -->
         <?php include(dirname(__FILE__) . "/templates/nav-trans.php"); ?>
         <div class="hero-content">
             <div class="hero-text text-center">
-                <h1 class="my-1">We Help Create <span class="em">unforgettable</span> Experiences for your Audience on the web</h1>
+                <h1 class="my-1">
+                We Help Create <span class="em">unforgettable</span> Experiences for your Audience on the web 
+                </h1>
                 <p class="all-caps text-light my-1">
                     Technical seo audit | websites development | wordpress integration & THEME DEVELOPMENT |
-                    Fintech technical writing
+                    content writing
                 </p>
                 <button class="px-4 py-3 my-1 btn hero-cta">
                     Lets get started
@@ -19,7 +21,7 @@
             </div>
         </div>
         <div class="hero-waves">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/hero-waves.svg" class="img" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt="">
         </div>
     </div>
     <div class="after-hero container-fluid text-center">
@@ -142,22 +144,22 @@
             <div class="platforms flex align-items-center my-2">
                 <div>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="100" height="26.4" alt="upwork">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="90" height="16.4" alt="upwork">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="100" height="100" alt="fiverr">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="90" height="90" alt="fiverr">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="193" height="60" alt="freelancer">
+                        <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="183" height="50" alt="freelancer">
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="50" height="50" alt="linked in">
+                    <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="40" height="40" alt="linked in">
                     </a>
                 </div>
             </div>

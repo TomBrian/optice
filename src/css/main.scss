@@ -35,6 +35,7 @@ body{
     opacity:0;
     transition: 1s;
     position: fixed;
+    display: none;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -99,8 +100,12 @@ a.dropdown-toggle{
 }
 // frontpage
 .hero{
-    background: linear-gradient(270deg, $theme-color1  0%, rgba(250, 0, 239, 0.9) 100%);
+    //background: linear-gradient(270deg, $theme-color1  0%, rgba(250, 0, 239, 0.9) 100%);
+    background-color: rgba(0, 0, 0, 0.548);
+    // background-position: fixed;
     height: fit-content;
+    background-size:cover;
+    background-blend-mode: darken;
     width: 100%;
     font-family: 'poppins';
     display: block;
@@ -359,6 +364,9 @@ color: #FFFFFF;
         }
     }
     .hero{
+        margin-bottom: 30px;
+        .hero-content{
+            min-height: 400px;
     h1{
         font-size: 24px;
     }
@@ -366,10 +374,11 @@ color: #FFFFFF;
         font-size: 10px;
     }
 }
+}
 .links{
 width: 90% !important;
 .features ul{
-    width: 100%;
+    width: 100% !important;
  }
 }
 .for-creators .buttons{

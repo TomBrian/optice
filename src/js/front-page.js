@@ -4,10 +4,16 @@ jQuery(($)=>{
         const nav = $('.front-nav-scroll')
         if (y > 200) {
           nav.show();
-         nav.css({'opacity':'1'});
+          setTimeout(()=>{
+            nav.css({'opacity':'1'});
+          },1000)
+        
         } else {
           nav.hide();
-          nav.css('opacity', '0');
+          setTimeout(()=>{
+            nav.css({'opacity':'0'});
+          },1000)
+         
         }
       });
 })
