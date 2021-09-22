@@ -103,8 +103,9 @@ a.dropdown-toggle{
 // frontpage
 .hero{
     //background: linear-gradient(270deg, $theme-color1  0%, rgba(250, 0, 239, 0.9) 100%);
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.26);
     background-blend-mode: darken;
+    background-size: cover;
     width: 100%;
     font-family: 'poppins';
     display: block;
@@ -169,7 +170,7 @@ a.dropdown-toggle{
 }
 .services-wrapper{
     background-color:$theme-body-color;
-    margin-top: -40px;
+    margin-top: -20px;
     padding-top: 20px;
 .services{
     justify-content:space-between;

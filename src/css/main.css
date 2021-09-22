@@ -107,8 +107,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero {
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: rgba(0, 0, 0, 0.26);
   background-blend-mode: darken;
+  background-size: cover;
   width: 100%;
   font-family: 'poppins';
   display: block;
@@ -199,7 +200,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .services-wrapper {
   background-color: #FEF9FF;
-  margin-top: -40px;
+  margin-top: -20px;
   padding-top: 20px;
 }
 
