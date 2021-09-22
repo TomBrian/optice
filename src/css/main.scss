@@ -178,6 +178,7 @@ a.dropdown-toggle{
     margin: auto;
     .service-card{
         width: 300px;
+        min-width: 300px;
         height: fit-content;
         background-color: $buttons-color1;
         display: flex;
