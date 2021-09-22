@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri()?>/src/images/favicon.svg" type="image/x-icon">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+
 <!-- -->
 <?php wp_head()?>
 <title>
@@ -27,6 +28,6 @@
              kanai_get_light_navbar();
 }
 else{
-    kanai_get_banner();
+   // kanai_get_banner();
 }
 ?>

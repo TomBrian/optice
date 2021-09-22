@@ -28,8 +28,10 @@ body{
   }
 }
 .banner{
-    background-color: $em-color;
+    font-weight: bold;
+    font-family: 'raleway';
     color: white;
+    
 }
 .front-nav-scroll{
     opacity:0;
@@ -102,9 +104,6 @@ a.dropdown-toggle{
 .hero{
     //background: linear-gradient(270deg, $theme-color1  0%, rgba(250, 0, 239, 0.9) 100%);
     background-color: rgba(0, 0, 0, 0.548);
-    background-attachment: fixed;
-    height: fit-content;
-    background-size:cover;
     background-blend-mode: darken;
     width: 100%;
     font-family: 'poppins';
@@ -120,17 +119,17 @@ a.dropdown-toggle{
 }
 .hero-content{
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 .hero-text{
    color: white;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   justify-content: left;
+   align-items:start;
    text-transform: capitalize;
    h1{
        .em{
@@ -146,12 +145,13 @@ a.dropdown-toggle{
       }
    .hero-cta{
         background: #57A5D5;
+        width: fit-content;
         font-family: 'Poppins';
         font-weight: bolder;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-        border-radius: 37px;
+        border-radius: 0px;
         font-size: large;
    }
 }
@@ -167,167 +167,52 @@ a.dropdown-toggle{
         margin-bottom: 0;
     }
 }
-.after-hero{
+.services-wrapper{
     background-color:$theme-body-color;
-    padding: 2px;
-    margin-top: -10px;
-    color: $text-color;
-    display: flex;
-    justify-content: center;
-    .text{
-        width: 60%;
-        min-width: 350px;
-    h2{
-        text-transform: capitalize;
-    }
-    .em{
-        font-family: 'poppins';
-    }
-    p{
-        font-size: 14px;
-        font-family: 'Montserrat';
-    }
-}
-}
-.belt{
+    margin-top: -40px;
+    padding-top: 20px;
+.services{
+    justify-content:space-between;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    .belt-card{
-        width: 310px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .icon{
-            width: fit-content;
-        }
-        .em{
-            font-size: 20px;
-        }
-        p{
-            font-size: 14px;
-            font-family: 'Montserrat';
-        }
-    }
-}
-.contact-us{
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    .form{
-        min-width: 320px;
-        width: 50%;
-    form{
-        width: 310px;
-        background-color: #8D13A5;
-        color: white;
-        border-radius: 27px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        .flex{
-            width: 100%;
-            justify-content: space-between;
-            & > input{
-                margin-right: 10px;
-            }
-        }
-        .form-control{
-            background-color: $theme-body-color;
-        }
-        .submit{
-        color: white;
-        background: #F2A516;
-        border-radius: 37px;
-        font-weight: bolder;
-        }
-    }
-}
-.links{
-    width: 50%;
-    height: 100%;
-    min-width:320px;
-    .features{
-        ul{
-            width: 70%;
-        li{
-            width: fit-content;
-            display: flex;
-            justify-content: space-between;
-            i{
-                font-size: 24px;
-                color: $buttons-color1;
-            }
-            div{
-                width: fit-content;
-                height: fit-content;
-            }
-            .text{
-                font-weight: bold;
-                font-family: 'poppins';
-            }
-        }
-    }
-    }
-    .platforms{
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
-}
-.for-creators{
-    width: 60%;
-    min-width: 350px;
+    width: 95%;
     margin: auto;
-    .svg{
-        width: fit-content;
+    .service-card{
+        width: 300px;
         height: fit-content;
-        margin: auto;
-    }
-    .text{
-        h2{
-            font-family: 'poppins';
-            text-transform: capitalize;
-            color: $text-color;
+        background-color: $buttons-color1;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        border-radius: 37px;
+        justify-content: center;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
         }
-        p{
-            font-family: 'Montserrat';
-            font-size: 14px;
-        }
-        .buttons{
-            width: fit-content;
-            min-width: 400px;
-            margin: auto !important;
+        .icon{
+            background-color: white;
+            width: 100px;
+            height: 100px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            .btn{
-                /* product box cta */
-                margin: 10px;
-                background: #57A5D5;
-                border-radius: 37px;
-                font-family: 'Montserrat';
-                font-style: normal;
-                min-width: 40%;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 22px;
-                text-align: center;
-.nav-link{
-color: #FFFFFF;
-}
-            }
+            justify-content: center;
+            border: solid 10px $buttons-color1;
+            transform: translateY(-50%);
+            border-radius: 50%;
         }
     }
+  }
 }
 // media queries
 // big screens
 @media (min-width:767px) {
+    .hero{
+        .hero-content{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
     .hero .hero-text{
         width: 60%;
     }
@@ -370,6 +255,8 @@ color: #FFFFFF;
         margin-bottom: 30px;
         .hero-content{
             min-height: 400px;
+            padding-left: 20px;
+            padding-right: 20px;
     h1{
         font-size: 24px;
     }
@@ -378,17 +265,9 @@ color: #FFFFFF;
     }
 }
 }
-.links{
-width: 90% !important;
-.features ul{
-    width: 100% !important;
- }
-}
-.for-creators .buttons{
-    width: 100%;
-    display: block;
-    button{
-        width: 100%;
+.services{
+    .service-card{
+        margin: auto;
     }
 }
 }
