@@ -97,7 +97,7 @@
 </div>
 <div class="container-fluid">
     <div class="belt flex">
-        <div class="belt-card text-center p-2 shadow-sm">
+        <div class="belt-card text-center p-2">
             <div class="icon">
             <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/rocket.svg" width="50" height="50" alt="pep bulb">
             </div>
@@ -109,7 +109,7 @@
              Fast websites also reduce bounce rates hence better conversion rates. 
             </p>
         </div>
-        <div class="belt-card text-center p-2 shadow-sm">
+        <div class="belt-card text-center p-2">
             <div class="icon">
             <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/ux.svg" width="50" height="50" alt="pep bulb">
             </div>
@@ -121,7 +121,7 @@
             We are also very keen on the tools we use and how negatively they might affect your sites UX
             </p>
         </div>
-        <div class="belt-card text-center p-2 shadow-sm">
+        <div class="belt-card text-center p-2">
             <div class="icon">
                <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/shield.svg" width="50" height="50" alt="pep bulb">
             </div>
@@ -134,7 +134,7 @@
             We make sure thet we  use secure tools and plugins. 
             </p>
         </div>
-        <div class="belt-card text-center p-2 shadow-sm">
+        <div class="belt-card text-center p-2">
             <div class="icon">
             <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/transparency.svg" width="50" height="50" alt="pep bulb">
             </div>
