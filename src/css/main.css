@@ -1,6 +1,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  color: #4C4A4D;
   /* width */
   /* Track */
   /* Handle */
@@ -200,7 +201,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .services-wrapper {
   background-color: #FEF9FF;
-  margin-top: -20px;
+  margin-top: -30px;
   padding-top: 20px;
 }
 
@@ -260,6 +261,71 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 50%;
+}
+
+.socials {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.socials img {
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.socials img:hover {
+  opacity: 1;
+}
+
+.pep {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pep .bulb {
+  min-width: 332px;
+}
+
+.pep .text {
+  color: #4C4A4D;
+  font-family: 'poppins';
+}
+
+.pep .text p {
+  font-weight: normal;
+}
+
+.belt {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  background-color: white;
+}
+
+.belt .belt-card {
+  width: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.belt .belt-card h3 {
+  color: #3F126F;
 }
 
 @media (min-width: 767px) {
@@ -322,6 +388,15 @@ body::-webkit-scrollbar-thumb:hover {
   .services .service-card {
     margin: auto;
   }
+  .pep .bulb {
+    display: none;
+  }
+  .pep .text {
+    text-align: center !important;
+  }
+  .belt .belt-card {
+    margin: auto;
+  }
 }
 
 .all-caps {
@@ -330,5 +405,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 .em {
   color: #F2A516;
+}
+
+h3 {
+  font-family: 'poppins';
+}
+
+p {
+  font-family: 'roboto';
+  opacity: 0.9;
 }
 /*# sourceMappingURL=main.css.map */
