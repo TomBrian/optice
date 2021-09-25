@@ -25,9 +25,9 @@
 </head>
 <body>
 <?php if ( ! is_front_page()) {
-             kanai_get_light_navbar();
+             optice_get_light_navbar();
 }
 else{
-   // kanai_get_banner();
+   optice_get_banner();
 }
 ?>

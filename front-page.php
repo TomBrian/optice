@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <div class="front-nav-scroll">
-    <?php kanai_get_light_navbar(); ?>
+    <?php optice_get_light_navbar(); ?>
 </div>
 <div class="hero-wrap">
     <div class="parallax-window hero" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/src/images/hero.jpg">
@@ -21,85 +21,75 @@
             </div>
         </div>
         <div class="hero-waves">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt="">
+            <!-- <img src="<?php //echo get_template_directory_uri() ?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt=""> -->
+        </div>
+    </div>
+</div>
+<div class="pep-wrapper container-fluid">
+<div class="pep container flex text-center">
+        <div class="bulb" data-aos="fade-right">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/pep-bulb.svg" width="332" height="340" alt="pep bulb">
+        </div>
+        <div class="text text-left">
+            <h2 class="my-4">you Get <span class="em">Quality</span></h2>
+            <p class="text-muted">
+                We are User Experience(UX) enthusiasts focused on building purpose-driven beautiful websites.
+                We major in wordpress which is by far the most popular and powerful content management system for dynamic websites.
+                We work with wordpress as a PHP framework giving us the flexibility we need to tailor your website according to all your needs.
+            </p>
         </div>
     </div>
 </div>
 <div class="services-wrapper container-fluid">
     <div class="services p-2 flex">
         <div data-aos="zoom-in-up" class="service-card my-4 text-center p-2 shadow-sm">
-           <div class="icon p-2">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/seo.svg" width="50" height="50" alt="seo">
-           </div>
-           <h3>SEO</h3>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-               Aut reiciendis 
-               repellendus explicabo laudantium atque tempora reprehenderit 
-               vitae veniam consequatur consequuntur!</p>
+            <div class="icon p-2">
+                <img src="<?php echo get_template_directory_uri() ?>/src/images/seo.svg" width="50" height="50" alt="seo">
+            </div>
+            <h3>SEO</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut reiciendis
+                repellendus explicabo laudantium atque tempora reprehenderit
+                vitae veniam consequatur consequuntur!</p>
         </div>
-        <div data-aos="zoom-in-up" class="service-card my-4 text-center p-2 shadow-sm">
-           <div class="icon p-2">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/figma.svg" width="50" height="50" alt="seo">
-           </div>
-           <h3>Web Design</h3>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aut reiciendis 
-               repellendus explicabo laudantium atque tempora reprehenderit 
-               vitae veniam consequatur consequuntur!</p>
+        <div data-aos="zoom-in-up" data-aos-delay="100" class="service-card my-4 text-center p-2 shadow-sm">
+            <div class="icon p-2">
+                <img src="<?php echo get_template_directory_uri() ?>/src/images/figma.svg" width="50" height="50" alt="seo">
+            </div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut reiciendis
+                repellendus explicabo laudantium atque tempora reprehenderit
+                vitae veniam consequatur consequuntur!</p>
         </div>
-        <div data-aos="zoom-in-up" class="service-card my-4 text-center p-2 shadow-sm">
-           <div class="icon p-2">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/code.svg" width="50" height="50" alt="seo">
-           </div>
-           <h3>Web Development</h3>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aut reiciendis 
-               repellendus explicabo laudantium atque tempora reprehenderit 
-               vitae veniam consequatur consequuntur!</p>
+        <div data-aos="zoom-in-up" data-aos-delay="200" class="service-card my-4 text-center p-2 shadow-sm">
+            <div class="icon p-2">
+                <img src="<?php echo get_template_directory_uri() ?>/src/images/code.svg" width="50" height="50" alt="seo">
+            </div>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut reiciendis
+                repellendus explicabo laudantium atque tempora reprehenderit
+                vitae veniam consequatur consequuntur!</p>
         </div>
-        <div data-aos="zoom-in-up" class="service-card my-4 text-center p-2 shadow-sm">
-           <div class="icon p-2">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/content.svg" width="50" height="50" alt="seo">
-           </div>
-           <h3>Content creation</h3>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut reiciendis 
-               repellendus explicabo laudantium atque tempora
-                reprehenderit 
-               vitae veniam consequatur consequuntur!</p>
+        <div data-aos="zoom-in-up" data-aos-delay="400" class="service-card my-4 text-center p-2 shadow-sm">
+            <div class="icon p-2">
+                <img src="<?php echo get_template_directory_uri() ?>/src/images/content.svg" width="50" height="50" alt="seo">
+            </div>
+            <h3>Content creation</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut reiciendis
+                repellendus explicabo laudantium atque tempora
+                reprehenderit
+                vitae veniam consequatur consequuntur!</p>
         </div>
     </div>
-<div class="socials container align-items-center justify-content-center flex">
-<a href="#">
-    <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="100" height="100" class="mx-3" alt="fiverr">
-</a>
-<a href="#">
-    <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="181" height="100" class="mx-3" alt="freelancer">
-</a> 
-<a href="#">
-    <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="100" height="100" class="mx-3" alt="upwork">
-</a>
-<a href="#">
-    <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="50" height="50" class="mx-3" alt="linked in">
-</a>
-</div>
-<div class="pep container flex p-4 text-center">
-      <div class="bulb" data-aos="fade-right">
-          <img src="<?php echo get_template_directory_uri() ?>/src/images/pep-bulb.svg" width="332" height="340" alt="pep bulb">
-      </div>
-      <div class="text text-left">
-          <h3 class="my-4">you Get <span class="em">Quality</span></h3>
-          <p class="text-muted">
-          We are  User Experience(UX) enthusiasts focused on building purpose-driven beautiful websites.
-          We major in wordpress which is by far the most popular and powerful content management  system for dynamic websites. 
-          We work with wordpress as a PHP framework giving us the flexibility we need to tailor your website according to all your needs.
-          </p>
-      </div>
-</div>
-<div class="container-fluid">
+ 
+    <!-- <div class="container-fluid">
     <div class="belt flex">
         <div class="belt-card text-center p-2">
             <div class="icon">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/rocket.svg" width="50" height="50" alt="pep bulb">
+            <img src="<?php //echo get_template_directory_uri() 
+                        ?>/src/images/belt/rocket.svg" width="50" height="50" alt="pep bulb">
             </div>
             <h3 class="m-3">
                 Speed
@@ -111,7 +101,8 @@
         </div>
         <div class="belt-card text-center p-2">
             <div class="icon">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/ux.svg" width="50" height="50" alt="pep bulb">
+            <img src="<?php //echo get_template_directory_uri() 
+                        ?>/src/images/belt/ux.svg" width="50" height="50" alt="pep bulb">
             </div>
             <h3 class="m-3">
                 User Experience
@@ -123,7 +114,8 @@
         </div>
         <div class="belt-card text-center p-2">
             <div class="icon">
-               <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/shield.svg" width="50" height="50" alt="pep bulb">
+               <img src="<?php //echo get_template_directory_uri() 
+                            ?>/src/images/belt/shield.svg" width="50" height="50" alt="pep bulb">
             </div>
             <h3 class="m-3">
                 Security
@@ -136,7 +128,8 @@
         </div>
         <div class="belt-card text-center p-2">
             <div class="icon">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/belt/transparency.svg" width="50" height="50" alt="pep bulb">
+            <img src="<?php //echo get_template_directory_uri() 
+                        ?>/src/images/belt/transparency.svg" width="50" height="50" alt="pep bulb">
             </div>
             <h3 class="m-3">
                 Transparency
@@ -147,9 +140,44 @@
             </p>
         </div>
     </div>
+</div> -->
 </div>
+<div class="container-fluid p-3 contact-wrapper">
+    <div class="contact container flex">
+        <?php get_template_part( 'templates/contact','form' )?>
+        <div class="text">
+         <div class="text-lg">
+         Are you ready to talk to an expert? <br><br>
+            <b class="em-text my-1">Give us a call</b><br>
+            <b class="phone">(+254)42456364</b>
+            <ul class="my-3">
+                <li>Fast response and delivery.</li>
+                <li>Transparent development process.</li>
+                <li>Quality and secure development.</li>
+            </ul>
+         </div>
+         <div class="footer">
+           <p class="all-caps">
+               You can also find us on
+           </p>
+           <div class="socials align-items-center justify-content-center flex">
+        <a href="#">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="90" height="90" class="mx-3" alt="fiverr">
+        </a>
+        <a href="#">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="171" height="90" class="mx-3" alt="freelancer">
+        </a>
+        <a href="#">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="90" height="90" class="mx-3" alt="upwork">
+        </a>
+        <a href="#">
+            <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="40" height="40" class="mx-3" alt="linked in">
+        </a>
+    </div>
+         </div>
+        </div>
+    </div>
 </div>
-
 <script>
     function onSubmit(token) {
         document.getElementById("protected").submit();

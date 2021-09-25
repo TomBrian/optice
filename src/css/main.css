@@ -91,6 +91,24 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
 }
 
+.dropdown a.dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown a.dropdown-toggle .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .dropdown a.dropdown-toggle::after {
   border: none;
 }
@@ -128,7 +146,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .hero .hero-content {
   width: 100%;
-  min-height: 550px;
+  min-height: 600px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -200,9 +218,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .services-wrapper {
-  background-color: #FEF9FF;
-  margin-top: -30px;
-  padding-top: 20px;
+  background-color: white;
 }
 
 .services-wrapper .services {
@@ -216,7 +232,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .services-wrapper .services .service-card {
-  width: 300px;
+  width: 250px;
   min-width: 300px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -249,8 +265,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .services-wrapper .services .service-card .icon {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,38 +279,206 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
 }
 
-.socials {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.services-wrapper .services .service-card h3 {
+  font-size: 24px;
 }
 
-.socials img {
-  opacity: 0.6;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.services-wrapper .services .service-card p {
+  font-size: 14px;
 }
 
-.socials img:hover {
-  opacity: 1;
+.pep-wrapper {
+  margin-top: -40px;
+  background-color: white;
 }
 
-.pep {
+.pep-wrapper .pep {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.pep .bulb {
+.pep-wrapper .pep .bulb {
   min-width: 332px;
 }
 
-.pep .text {
+.pep-wrapper .pep .text {
   color: #4C4A4D;
   font-family: 'poppins';
 }
 
-.pep .text p {
+.pep-wrapper .pep .text p {
   font-weight: normal;
+}
+
+.contact-wrapper {
+  background-color: #47244e;
+}
+
+.contact {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .form {
+  width: 40%;
+  min-width: 320px;
+  padding: 30px;
+}
+
+.contact .form h3 {
+  color: #9A2FB0;
+}
+
+.contact .form form {
+  width: 100%;
+}
+
+.contact .form form .dropdown-toggle {
+  width: 100%;
+}
+
+.contact .form form .input-wrapper {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px grey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.contact .form form .input-wrapper .form-control {
+  border-radius: 0%;
+  border: none;
+}
+
+.contact .form form .input-wrapper .form-control:focus {
+  outline: none !important;
+  border: none;
+  -webkit-box-shadow: 3rem 2rem 1rem transparent;
+          box-shadow: 3rem 2rem 1rem transparent;
+}
+
+.contact .form form .input-wrapper .icon {
+  opacity: 0.5;
+  font-size: 18px;
+  padding: 2px;
+  color: #47244e;
+}
+
+.contact .form form .allow-focus {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.contact .form form .allow-focus .dropdown-toggle .text {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  width: 80%;
+  overflow-x: hidden;
+}
+
+.contact .form form .allow-focus .dropdown-toggle::after {
+  display: none !important;
+}
+
+.contact .form form .allow-focus .dropdown-menu {
+  width: 100% !important;
+  padding: 20px;
+  color: #47244e;
+}
+
+.contact .form form .allow-focus .dropdown-menu .input-check label {
+  width: 100%;
+}
+
+.contact .form form .allow-focus .dropdown-menu .input-check label input {
+  background-color: #57A5D5 !important;
+  color: white !important;
+  border: solid 1px #47244e;
+  border-radius: 0px;
+}
+
+.contact .form form .submit {
+  margin-top: 37px;
+  padding: 10px;
+  background-color: #F2A516;
+  font-weight: bold;
+  color: #47244e;
+}
+
+.contact .form form .submit::after {
+  content: '';
+}
+
+.contact .text {
+  width: 50%;
+  min-width: 320px;
+}
+
+.contact .text .text-lg {
+  font-size: 42px;
+  font-weight: normal;
+  color: white;
+  font-family: 'raleway';
+  line-height: 110%;
+}
+
+.contact .text .text-lg ul {
+  font-size: 24px;
+  font-family: montserrat;
+}
+
+.contact .text .text-lg ul li::before {
+  margin-right: 10px;
+  content: '\2713';
+  color: #F2A516;
+  font-weight: bolder;
+}
+
+.contact .text .text-lg .em-text {
+  color: #F2A516;
+}
+
+.contact .text .text-lg .phone {
+  font-family: poppins;
+}
+
+.contact .text .footer {
+  color: white;
+  padding-top: 10px;
+}
+
+.contact .text .footer p {
+  font-size: 14px;
+}
+
+.contact .text .footer .socials {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .text .footer .socials img {
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact .text .footer .socials img:hover {
+  opacity: 1;
 }
 
 .belt {
@@ -325,7 +509,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .belt .belt-card h3 {
-  color: #3F126F;
+  color: #47244e;
 }
 
 @media (min-width: 767px) {
@@ -349,7 +533,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
   }
   .navbar .navbar-collapse {
-    background-color: #3F126F;
+    background-color: #47244e;
     max-width: 100%;
     min-width: 100%;
   }
@@ -387,6 +571,18 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .services .service-card {
     margin: auto;
+  }
+  .contact {
+    width: 100% !important;
+  }
+  .contact .form {
+    min-width: 100% !important;
+    width: 100%;
+    padding: 10px;
+  }
+  .contact .text {
+    width: 100%;
+    min-width: 100% !important;
   }
   .pep .bulb {
     display: none;

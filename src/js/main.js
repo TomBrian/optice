@@ -19,5 +19,40 @@ jQuery(($)=>{
           icon.classList.add('fa','fa-angle-down','mx-1');
           dropDown.appendChild(icon);
    });
+   $(document).on('click', '.allow-focus', function (e) {
+       e.stopPropagation();
+     });
+    //  contact forms
+  
+     const serviceArray = [];
+     const services = $('.services-dropdown input');
+     $.map(services, function (el,i) {
+          el.addEventListener('change',()=>{
+            if (el.checked) {
+              if (!serviceArray.includes(el.value)) {
+              serviceArray.push(el.value);
+              console.log(serviceArray);
+            }
+              }
+              else{
+                if (serviceArray.includes(el.value)) {
+                    serviceArray.forEach((service,i) => {
+                      if (service == el.value) {
+                        serviceArray.splice(i,1);
+                      }
+                    });
+                }
+                console.log(serviceArray)
+              }
+              // fun fact...The jQuery text() changes array items into a sentence.
+                $('.contact-dropdown-text').text(serviceArray);
+           });
+    })
+    const serviceForm = $('.services-form');
+    serviceForm.submit(function (e) { 
+      if (serviceArray.length == 0) {
+        e.preventDefault();
+         $('.allow-focus').css({'border-bottom':'solid 2px red'})      }
+    });
 });
 
