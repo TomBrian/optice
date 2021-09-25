@@ -75,7 +75,6 @@
 </div>
 <script>
      function onSubmit(token) {
-
     var required = document.querySelectorAll('.services-form input[required],.services-form textarea[required]');
     const isset = '';
     required.forEach(element => {

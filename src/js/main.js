@@ -53,8 +53,8 @@ jQuery(($)=>{
                 }
            });
     })
-    const serviceForm = $('.services-form');
-    serviceForm.submit(function (e) { 
+    const serviceFormBtn = $('.services-form button:submit');
+    serviceFormBtn.on('click',function (e) { 
       if (serviceArray.length == 0) {
         e.preventDefault();
          $('.allow-focus').css({'border-bottom':'solid 2px red'})      }
