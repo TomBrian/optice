@@ -45,7 +45,13 @@ jQuery(($)=>{
                 console.log(serviceArray)
               }
               // fun fact...The jQuery text() changes array items into a sentence.
-                $('.contact-dropdown-text').text(serviceArray);
+               
+                if (serviceArray.length > 0) {
+                   $('.contact-dropdown-text').text(serviceArray);
+                }
+                else{
+                  $('.contact-dropdown-text').text('What services are you interested in ?')
+                }
            });
     })
     const serviceForm = $('.services-form');
