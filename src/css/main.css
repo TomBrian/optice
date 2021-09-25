@@ -510,9 +510,6 @@ body::-webkit-scrollbar-thumb:hover {
   .pep .text {
     text-align: center !important;
   }
-  .belt .belt-card {
-    margin: auto;
-  }
 }
 
 .all-caps {

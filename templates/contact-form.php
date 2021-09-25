@@ -73,3 +73,22 @@
     </div>
   </form>
 </div>
+<script>
+     function onSubmit(token) {
+    var required = document.querySelectorAll('.services-form input[required],.services-form textarea[required]');
+    const isset = '';
+    required.forEach(element => {
+       if (element.value == '') {
+         alert('please fill in all fields');
+         isset = false;
+         e.preventDefault();
+       }
+       else{
+         isset == true;
+         document.getElementById("protected").submit();
+       }
+       console.log(isset);
+    });
+ 
+  }
+</script>

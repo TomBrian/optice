@@ -23,7 +23,6 @@ jQuery(($)=>{
        e.stopPropagation();
      });
     //  contact forms
- 
      const serviceArray = [];
      const services = $('.services-dropdown input');
      $.map(services, function (el,i) {
@@ -55,14 +54,10 @@ jQuery(($)=>{
            });
     })
     const serviceForm = $('.services-form');
-    function onSubmit(token) {
+    serviceForm.submit(function (e) { 
       if (serviceArray.length == 0) {
         e.preventDefault();
-         $('.allow-focus').css({'border-bottom':'solid 2px red'}) 
-        }
-        else{
-      document.getElementById("protected").submit();
-    }
-    }
+         $('.allow-focus').css({'border-bottom':'solid 2px red'})      }
+    });
 });
 
