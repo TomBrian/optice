@@ -65,9 +65,9 @@
         <i class="fas fa-question-circle"></i>
       </div>
     </div>
-    <div class="g-recaptcha" data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq" style="margin: auto;"></div>
     <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit">
+      <button class="btn submit g-recaptcha"  data-callback='onSubmit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq"
+        data-action='submit'>
         Submit your request
       </button>
     </div>
