@@ -6,7 +6,7 @@ $theme-body-color:#FEF9FF;
 $em-color:#F2A516;
 body{
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     color: $text-color;
     /* width */
 &::-webkit-scrollbar {
@@ -333,6 +333,9 @@ a.dropdown-toggle{
             color: white;
             font-family: 'raleway';
             line-height: 110%;
+            .phone{
+                font-size: 24px;
+            }
             ul{
                 font-size: 24px;
                 font-family: montserrat;

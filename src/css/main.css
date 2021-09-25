@@ -1,6 +1,6 @@
 body {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: #4C4A4D;
   /* width */
   /* Track */
@@ -435,6 +435,10 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
   font-family: 'raleway';
   line-height: 110%;
+}
+
+.contact .text .text-lg .phone {
+  font-size: 24px;
 }
 
 .contact .text .text-lg ul {
