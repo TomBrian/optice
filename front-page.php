@@ -146,7 +146,7 @@
     <div class="contact flex">
         <?php get_template_part( 'templates/contact','form' )?>
         <div class="text">
-         <div class="text-lg">
+         <div class="text-lg my-2">
          Are you ready to talk to an expert? <br><br>
             <b class="em-text my-1">Give us a call</b><br>
             <b class="phone">(+254)42456364</b>
