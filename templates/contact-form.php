@@ -81,7 +81,6 @@
        if (element.value == '') {
          alert('please fill in all fields');
          isset = false;
-         e.preventDefault();
        }
        else{
          isset = true; 
