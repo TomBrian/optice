@@ -82,6 +82,6 @@
   });
   })
   function onSubmit(token) {
-    document.getElementById("protected").submit();
+    alert('not a robot');
   }
 </script>
