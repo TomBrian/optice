@@ -66,7 +66,7 @@
       </div>
     </div>
     <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit g-recaptcha"  type="submit"  data-callback='onSubmit' 
+      <button class="btn submit g-recaptcha"  type="submit"  data-callback='onClick' 
         data-action='submit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq" data-size="invisible">
         Submit your request
       </button>
