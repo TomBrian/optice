@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="input-wrapper my-2 flex">
-      <input type="tel" name="phone" placeholder="phone number" class="form-control" required />
+      <input type="tel" name="phone" placeholder="phone number" class="form-control" required/>
       <div class="icon">
         <i class="fas fa-phone"></i>
       </div>
@@ -66,8 +66,8 @@
       </div>
     </div>
     <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit g-recaptcha"  data-callback='onSubmit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq"
-        data-action='submit'>
+      <button class="btn submit g-recaptcha"  type="submit"  data-callback='onSubmit' 
+        data-action='submit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq">
         Submit your request
       </button>
     </div>
@@ -75,6 +75,20 @@
 </div>
 <script>
   function onSubmit(token) {
-    document.getElementById("protected").submit();
+    var required = document.querySelectorAll('.services-form input[required],.services-form textarea[required]');
+    const isset = '';
+    required.forEach(element => {
+       if (element.value == '') {
+         alert('please fill in all fields');
+         isset = false;
+         e.preventDefault();
+       }
+       else{
+         isset == true;
+         document.getElementById("protected").submit();
+       }
+       console.log(isset);
+    });
+ 
   }
 </script>
