@@ -25,123 +25,7 @@
         </div>
     </div>
 </div>
-<div class="pep-wrapper container-fluid">
-<div class="pep container flex text-center">
-        <div class="bulb" data-aos="fade-right">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/pep-bulb.svg" width="332" height="340" alt="pep bulb">
-        </div>
-        <div class="text text-left">
-            <h2 class="my-4">you Get <span class="em">Quality</span></h2>
-            <p class="text-muted">
-                We are User Experience(UX) enthusiasts focused on building purpose-driven beautiful websites.
-                We major in wordpress which is by far the most popular and powerful content management system for dynamic websites.
-                We work with wordpress as a PHP framework giving us the flexibility we need to tailor your website according to all your needs.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="services-wrapper container-fluid">
-    <div class="services p-2 flex">
-        <div data-aos="zoom-in-up" class="service-card my-4 text-center p-2 shadow-sm">
-            <div class="icon p-2">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/seo.svg" width="50" height="50" alt="seo">
-            </div>
-            <h3>SEO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aut reiciendis
-                repellendus explicabo laudantium atque tempora reprehenderit
-                vitae veniam consequatur consequuntur!</p>
-        </div>
-        <div data-aos="zoom-in-up" data-aos-delay="100" class="service-card my-4 text-center p-2 shadow-sm">
-            <div class="icon p-2">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/figma.svg" width="50" height="50" alt="seo">
-            </div>
-            <h3>Web Design</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aut reiciendis
-                repellendus explicabo laudantium atque tempora reprehenderit
-                vitae veniam consequatur consequuntur!</p>
-        </div>
-        <div data-aos="zoom-in-up" data-aos-delay="200" class="service-card my-4 text-center p-2 shadow-sm">
-            <div class="icon p-2">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/code.svg" width="50" height="50" alt="seo">
-            </div>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aut reiciendis
-                repellendus explicabo laudantium atque tempora reprehenderit
-                vitae veniam consequatur consequuntur!</p>
-        </div>
-        <div data-aos="zoom-in-up" data-aos-delay="400" class="service-card my-4 text-center p-2 shadow-sm">
-            <div class="icon p-2">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/content.svg" width="50" height="50" alt="seo">
-            </div>
-            <h3>Content creation</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut reiciendis
-                repellendus explicabo laudantium atque tempora
-                reprehenderit
-                vitae veniam consequatur consequuntur!</p>
-        </div>
-    </div>
- 
-    <!-- <div class="container-fluid">
-    <div class="belt flex">
-        <div class="belt-card text-center p-2">
-            <div class="icon">
-            <img src="<?php //echo get_template_directory_uri() 
-                        ?>/src/images/belt/rocket.svg" width="50" height="50" alt="pep bulb">
-            </div>
-            <h3 class="m-3">
-                Speed
-            </h3>
-            <p>
-            Your site’s performance is critical for well, everything. Google uses your site’s speed as one of the factors for SEO.
-             Fast websites also reduce bounce rates hence better conversion rates. 
-            </p>
-        </div>
-        <div class="belt-card text-center p-2">
-            <div class="icon">
-            <img src="<?php //echo get_template_directory_uri() 
-                        ?>/src/images/belt/ux.svg" width="50" height="50" alt="pep bulb">
-            </div>
-            <h3 class="m-3">
-                User Experience
-            </h3>
-            <p>
-            We build purpose driven designs.Our clean design system are guaranteed to turn visitors to clients.
-            We are also very keen on the tools we use and how negatively they might affect your sites UX
-            </p>
-        </div>
-        <div class="belt-card text-center p-2">
-            <div class="icon">
-               <img src="<?php //echo get_template_directory_uri() 
-                            ?>/src/images/belt/shield.svg" width="50" height="50" alt="pep bulb">
-            </div>
-            <h3 class="m-3">
-                Security
-            </h3>
-            <p>
-            Your websites security is a crucial factor for your success in the web.
-             That is why we are keen in secure development. 
-            We make sure thet we  use secure tools and plugins. 
-            </p>
-        </div>
-        <div class="belt-card text-center p-2">
-            <div class="icon">
-            <img src="<?php //echo get_template_directory_uri() 
-                        ?>/src/images/belt/transparency.svg" width="50" height="50" alt="pep bulb">
-            </div>
-            <h3 class="m-3">
-                Transparency
-            </h3>
-            <p>
-            We are transparent throgh out our development process.
-            We use project management platforms and prototypes to show our progress through out our development roadmap 
-            </p>
-        </div>
-    </div>
-</div> -->
-</div>
+
 <div class="container-fluid p-3 contact-wrapper">
     <div class="contact flex">
         <?php get_template_part( 'templates/contact','form' )?>
@@ -178,10 +62,6 @@
         </div>
     </div>
 </div>
-<script>
-    function onSubmit(token) {
-        document.getElementById("protected").submit();
-    }
-</script>
+
 <script src="<?php echo get_template_directory_uri() ?>/src/js/front-page.js"></script>
 <?php get_footer() ?>

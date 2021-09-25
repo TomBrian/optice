@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 150px;
   background: #57A5D5;
   font-weight: bold;
-  border-radius: 37px;
+  border-radius: 0px;
 }
 
 .navbar .nav-cta .nav-link {
@@ -217,100 +217,6 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 0;
 }
 
-.services-wrapper {
-  background-color: white;
-}
-
-.services-wrapper .services {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 95%;
-  margin: auto;
-}
-
-.services-wrapper .services .service-card {
-  width: 250px;
-  min-width: 300px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #57A5D5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 37px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.services-wrapper .services .service-card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.services-wrapper .services .service-card .icon {
-  background-color: white;
-  width: 70px;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: solid 10px #57A5D5;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-radius: 50%;
-}
-
-.services-wrapper .services .service-card h3 {
-  font-size: 24px;
-}
-
-.services-wrapper .services .service-card p {
-  font-size: 14px;
-}
-
-.pep-wrapper {
-  margin-top: -40px;
-  background-color: white;
-}
-
-.pep-wrapper .pep {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pep-wrapper .pep .bulb {
-  min-width: 332px;
-}
-
-.pep-wrapper .pep .text {
-  color: #4C4A4D;
-  font-family: 'poppins';
-}
-
-.pep-wrapper .pep .text p {
-  font-weight: normal;
-}
-
 .contact-wrapper {
   background-color: #47244e;
 }
@@ -427,6 +333,16 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .text {
   width: 50%;
   min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact .text .text-lg {
