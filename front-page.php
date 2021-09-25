@@ -143,7 +143,7 @@
 </div> -->
 </div>
 <div class="container-fluid p-3 contact-wrapper">
-    <div class="contact container flex">
+    <div class="contact flex">
         <?php get_template_part( 'templates/contact','form' )?>
         <div class="text">
          <div class="text-lg">
