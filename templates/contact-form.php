@@ -67,26 +67,20 @@
     </div>
     <div class="submit-wrapper flex justify-content-center">
       <button class="btn submit g-recaptcha"  type="submit"  data-callback='onSubmit' 
-        data-action='submit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq">
+        data-action='submit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq" data-size="invisible">
         Submit your request
       </button>
     </div>
   </form>
 </div>
 <script>
-     function onSubmit(token) {
-    var required = document.querySelectorAll('.services-form input[required],.services-form textarea[required]');
-    const isset = '';
-    required.forEach(element => {
-       if (element.value == '') {
-         alert('please fill in all fields');
-         isset = false;
-       }
-       else{
-         isset = true; 
-       }
-    });
-    console.log(isset);
- document.getElementById("protected").submit();
-  }
-</script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+              alert('sent')
+          });
+        });
+      }
+  </script>
