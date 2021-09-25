@@ -65,22 +65,23 @@
         <i class="fas fa-question-circle"></i>
       </div>
     </div>
-    <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit g-recaptcha"  type="submit"  data-callback='onClick' 
-        data-action='submit'  data-sitekey="6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq" data-size="invisible">
+    <div class="g-recaptcha"  data-callback="onSubmit"  data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-action='submit'></div>
+    <div class="submit-wrapper  flex justify-content-center">
+      <button class="btn submit">
         Submit your request
       </button>
     </div>
   </form>
 </div>
 <script>
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
-              alert('sent')
-          });
-        });
-      }
-  </script>
+  jQuery(($)=>{
+    $('#protected').submit(function (event) {
+    event.preventDefault();
+    grecaptcha.reset();
+    grecaptcha.execute();
+  });
+  })
+  function onSubmit(token) {
+    document.getElementById("protected").submit();
+  }
+</script>
