@@ -77,7 +77,7 @@
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6LeIbIAcAAAAAE65GbNsan-LKLBj9YX-H-dF9hBq', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
               alert('sent')
           });
