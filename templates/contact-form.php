@@ -85,11 +85,10 @@
          e.preventDefault();
        }
        else{
-         isset == true;
-         
+         isset = true; 
        }
-       console.log(isset);
     });
+    console.log(isset);
  document.getElementById("protected").submit();
   }
 </script>
