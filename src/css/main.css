@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   overflow-x: hidden !important;
-  color: #4C4A4D;
+  color: #4c4a4d;
   /* width */
   /* Track */
   /* Handle */
@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .banner {
   font-weight: bold;
-  font-family: 'raleway';
+  font-family: "raleway";
   color: white;
 }
 
@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar .nav-cta {
   width: 150px;
-  background: #57A5D5;
+  background: #57a5d5;
   font-weight: bold;
   border-radius: 0px;
 }
@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar .navbar-collapse {
   text-transform: capitalize;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
 
 .navbar .navbar-collapse ul {
@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar .navbar-collapse ul li .nav-link {
-  color: #4C4A4D;
+  color: #4c4a4d;
 }
 
 /*
@@ -130,7 +130,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-blend-mode: darken;
   background-size: cover;
   width: 100%;
-  font-family: 'poppins';
+  font-family: "poppins";
   display: block;
   padding-bottom: 0px !important;
 }
@@ -180,26 +180,26 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero .hero-content .hero-text h1 .em {
-  color: #F2A516;
+  color: #f2a516;
 }
 
 .hero .hero-content .hero-text .all-caps {
   width: 80%;
   opacity: 0.87;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-size: 14px;
 }
 
 .hero .hero-content .hero-text .hero-cta {
-  background: #57A5D5;
+  background: #57a5d5;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 0px;
   font-size: large;
 }
@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact .form h3 {
-  color: #9A2FB0;
+  color: #9a2fb0;
 }
 
 .contact .form form {
@@ -312,7 +312,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact .form form .allow-focus .dropdown-menu .input-check label input {
-  background-color: #57A5D5 !important;
+  background-color: #57a5d5 !important;
   color: white !important;
   border: solid 1px #47244e;
   border-radius: 0px;
@@ -321,13 +321,13 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .form form .submit {
   margin-top: 37px;
   padding: 10px;
-  background-color: #F2A516;
+  background-color: #f2a516;
   font-weight: bold;
   color: #47244e;
 }
 
 .contact .form form .submit::after {
-  content: '';
+  content: "";
 }
 
 .contact .text {
@@ -349,7 +349,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 42px;
   font-weight: normal;
   color: white;
-  font-family: 'raleway';
+  font-family: "raleway";
   line-height: 110%;
 }
 
@@ -364,13 +364,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .contact .text .text-lg ul li::before {
   margin-right: 10px;
-  content: '\2713';
-  color: #F2A516;
+  content: "\2713";
+  color: #f2a516;
   font-weight: bolder;
 }
 
 .contact .text .text-lg .em-text {
-  color: #F2A516;
+  color: #f2a516;
 }
 
 .contact .text .text-lg .phone {
@@ -401,18 +401,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
 }
 
-.belt {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: auto;
-  background-color: white;
-}
-
-.belt .belt-card {
-  width: 310px;
+.after-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,10 +415,104 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 50px;
+  background-color: #fdf0ff28;
 }
 
-.belt .belt-card h3 {
+.after-hero .text {
+  min-width: 320px;
+}
+
+.after-hero .text .pep {
+  width: 70%;
+}
+
+.after-hero .text .pep h2 {
+  font-family: "poppins";
+  font-size: 24px;
+}
+
+.after-hero .text .pep p {
+  font-family: "montserrat";
+}
+
+.after-hero .text .buttons {
+  width: 50%;
+  margin: auto;
+  min-width: 320px;
+}
+
+.after-hero .cards {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.after-hero .cards .card {
+  width: 320px;
+  border-radius: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.after-hero .cards .card .title {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.after-hero .cards .card .title .card-title {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "poppins";
+}
+
+.after-hero .cards .card .title .card-title i {
+  color: #f2a516;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.after-hero .cards .card .para p {
+  font-family: "montserrat";
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.after-hero .cards .card .em {
   color: #47244e;
+}
+
+.after-hero .cards .card .list {
+  font-size: 14px;
+  font-family: montserrat;
+}
+
+.after-hero .cards .card .list li::before {
+  margin-right: 10px;
+  content: "\2713";
+  color: #f2a516;
+  font-weight: bolder;
+  border-radius: 50%;
+  position: relative;
+}
+
+.after-hero .cards .card .btn {
+  border-radius: 3%;
+  width: 100%;
 }
 
 @media (min-width: 767px) {
@@ -489,8 +572,10 @@ body::-webkit-scrollbar-thumb:hover {
   .hero .hero-content .all-caps {
     font-size: 10px;
   }
-  .services .service-card {
-    margin: auto;
+  .after-hero .buttons {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .contact {
     width: 100% !important;
@@ -504,12 +589,10 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     min-width: 100% !important;
   }
-  .pep .bulb {
-    display: none;
-  }
-  .pep .text {
-    text-align: center !important;
-  }
+}
+
+.bg-info {
+  background-color: #47244e !important;
 }
 
 .all-caps {
@@ -517,15 +600,23 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .em {
-  color: #F2A516;
+  color: #f2a516;
 }
 
 h3 {
-  font-family: 'poppins';
+  font-family: "poppins";
 }
 
 p {
-  font-family: 'roboto';
+  font-family: "montserrat";
   opacity: 0.9;
+}
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 160px;
+  border-radius: 0%;
 }
 /*# sourceMappingURL=main.css.map */

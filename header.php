@@ -28,6 +28,6 @@
              optice_get_light_navbar();
 }
 else{
-   optice_get_banner();
+  // optice_get_banner();
 }
 ?>
