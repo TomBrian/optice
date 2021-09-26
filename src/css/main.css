@@ -420,7 +420,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .text {
-  min-width: 320px;
+  min-width: 300px;
 }
 
 .after-hero .text .pep {
@@ -572,10 +572,17 @@ body::-webkit-scrollbar-thumb:hover {
   .hero .hero-content .all-caps {
     font-size: 10px;
   }
+  .after-hero {
+    width: 100vw;
+  }
   .after-hero .buttons {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .after-hero .pep {
+    width: 90% !important;
+    margin: auto;
   }
   .contact {
     width: 100% !important;

@@ -321,7 +321,7 @@ body {
   padding-top: 50px;
  background-color: $theme-body-color;
   .text {
-    min-width: 320px;
+    min-width: 300px;
     .pep{ 
     width: 70%;
     h2 {
@@ -457,9 +457,14 @@ body {
     }
   }
  .after-hero{
+     width: 100vw;
      .buttons{
          width: 100%;
          flex-wrap: wrap;
+     }
+     .pep{
+       width: 90% !important;
+       margin: auto;
      }
  }
   .contact {

@@ -28,7 +28,7 @@
 </div>
 <div class="container-fluid after-hero">
     <div class="text text-left">
-        <div class="pep container-fluid">
+    <div class="pep container-fluid">
         <h2 class="lg:m-5">A <span class="em">full service</span> digital agency that helps you build a strong digital presence</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse rerum quasi rem voluptates.
             Quibusdam optio beatae cumque neque saepe odit distinctio ex ipsam recusandae.
