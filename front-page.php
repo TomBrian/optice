@@ -34,7 +34,7 @@
             We major in wordpress which is by far the most popular and powerful content management  system for dynamic websites.
              We work with wordpress PHP-APIs giving us the flexibility we need to tailor your website according to all your needs.
         </p>
-        <div class="buttons flex my-4 justify-content-center">
+        <div class="buttons flex my-4 justify-content-left">
             <button class="btn btn-lg mx-2 btn-info main">
                 Get a quote
             </button>
@@ -43,7 +43,7 @@
             </button>
         </div>
  </div>
-        <div class="cards container-fluid flex">
+        <div class="cards services container-fluid flex">
             <div class="card p-3 m-3 bg-white shadow-sm">
                 <div class="title text-center">
                     <span class="card-title text-center"><i class="fab fa-searchengin"></i> SEO</span>

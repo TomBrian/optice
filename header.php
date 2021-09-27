@@ -23,7 +23,7 @@
             } ?> | <?php bloginfo('description') ?>
 </title>
 </head>
-<body>
+<body <?php body_class()?>>
 <?php if ( ! is_front_page()) {
              optice_get_light_navbar();
 }
