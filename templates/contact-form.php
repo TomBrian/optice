@@ -65,7 +65,7 @@
         <i class="fas fa-question-circle"></i>
       </div>
     </div>
-    <div class="g-recaptcha"  data-callback="onSubmit"  data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-action='submit'></div>
+    <div class="g-recaptcha"  data-callback="onSubmit"  data-size="invisible" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-action='submit'></div>
     <div class="submit-wrapper  flex justify-content-center">
       <button class="btn submit">
         Submit your request
@@ -76,12 +76,10 @@
 <script>
   jQuery(($)=>{
     $('#protected').submit(function (event) {
-    event.preventDefault();
-    grecaptcha.reset();
     grecaptcha.execute();
   });
   })
   function onSubmit(token) {
-    alert('not a robot');
+    
   }
 </script>

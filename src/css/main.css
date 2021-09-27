@@ -1,6 +1,6 @@
 body {
-  width: 100vw;
-  overflow-x: hidden !important;
+  width: 100vw !important;
+  overflow-x: hidden;
   color: #4c4a4d;
   /* width */
   /* Track */
@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .banner {
   font-weight: bold;
-  font-family: "raleway";
+  font-family: "montserrat";
   color: white;
 }
 
@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar .navbar-collapse {
   text-transform: capitalize;
-  font-family: "roboto";
+  font-family: 'roboto';
 }
 
 .navbar .navbar-collapse ul {
@@ -113,16 +113,38 @@ body::-webkit-scrollbar-thumb:hover {
   border: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .dropdown ul {
+  position: relative;
   border-radius: 0%;
   background-color: white;
   padding: 10px;
   min-width: 200px !important;
 }
 
+.dropdown ul::before {
+  content: '';
+  border-bottom: solid 10px white;
+  border-right: solid 10px transparent;
+  border-left: solid 10px transparent;
+  border-top: solid 10px transparent;
+  position: absolute;
+  top: 0px;
+  margin-top: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .dropdown ul li {
-  border-bottom: solid 1px #efefef88;
-  width: 100% !important;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  color: #47244e;
 }
 
 .hero {
@@ -186,7 +208,7 @@ body::-webkit-scrollbar-thumb:hover {
 .hero .hero-content .hero-text .all-caps {
   width: 80%;
   opacity: 0.87;
-  font-family: "roboto";
+  font-family: "poppins";
   font-size: 14px;
 }
 
@@ -218,7 +240,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact-wrapper {
-  background-color: #47244e;
+  background-color: #57a5d5;
+  padding: 20px;
 }
 
 .contact {
@@ -349,7 +372,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 42px;
   font-weight: normal;
   color: white;
-  font-family: "raleway";
+  font-family: "poppins";
   line-height: 110%;
 }
 
@@ -359,22 +382,22 @@ body::-webkit-scrollbar-thumb:hover {
 
 .contact .text .text-lg ul {
   font-size: 24px;
-  font-family: montserrat;
+  font-family: 'roboto';
 }
 
 .contact .text .text-lg ul li::before {
   margin-right: 10px;
   content: "\2713";
-  color: #f2a516;
+  color: white;
   font-weight: bolder;
 }
 
 .contact .text .text-lg .em-text {
-  color: #f2a516;
+  color: white;
 }
 
 .contact .text .text-lg .phone {
-  font-family: poppins;
+  font-family: 'poppins';
 }
 
 .contact .text .footer {
@@ -416,7 +439,7 @@ body::-webkit-scrollbar-thumb:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 50px;
-  background-color: #fdf0ff28;
+  background-color: white;
 }
 
 .after-hero .text {
@@ -429,11 +452,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .after-hero .text .pep h2 {
   font-family: "poppins";
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .after-hero .text .pep p {
-  font-family: "montserrat";
+  font-family: "roboto";
 }
 
 .after-hero .text .buttons {
@@ -445,6 +468,9 @@ body::-webkit-scrollbar-thumb:hover {
 .after-hero .cards {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .after-hero .cards .card {
@@ -498,7 +524,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .after-hero .cards .card .list {
   font-size: 14px;
-  font-family: montserrat;
+  font-family: 'montserrat';
 }
 
 .after-hero .cards .card .list li::before {
@@ -513,6 +539,46 @@ body::-webkit-scrollbar-thumb:hover {
 .after-hero .cards .card .btn {
   border-radius: 3%;
   width: 100%;
+}
+
+.process {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.process .image {
+  width: 50%;
+  min-height: 320px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.26);
+  background-blend-mode: darken;
+  min-width: 320px;
+}
+
+.process .text {
+  width: 50%;
+  min-width: 320px;
+  padding: 50px;
+}
+
+.process .text h3 {
+  font-family: 'poppins';
+}
+
+.process .text .btn {
+  margin: auto;
+}
+
+.mission {
+  background-color: #fcf5fd;
+}
+
+.mission h3 {
+  color: #47244e;
 }
 
 @media (min-width: 767px) {
@@ -553,6 +619,9 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
     width: 100%;
   }
+  .navbar .navbar-collapse .dropdown ul::before {
+    border: none;
+  }
   .navbar .navbar-collapse .nav-cta {
     width: 100%;
     border-radius: 0%;
@@ -574,6 +643,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .after-hero {
     width: 100vw;
+    padding-top: 50px;
   }
   .after-hero .buttons {
     width: 100%;
@@ -582,6 +652,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .after-hero .pep {
     width: 90% !important;
+    margin: auto;
+  }
+  .after-hero .cards .card {
     margin: auto;
   }
   .contact {
@@ -598,10 +671,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.bg-info {
-  background-color: #47244e !important;
-}
-
 .all-caps {
   text-transform: uppercase;
 }
@@ -615,7 +684,7 @@ h3 {
 }
 
 p {
-  font-family: "montserrat";
+  font-family: "roboto";
   opacity: 0.9;
 }
 

@@ -1,6 +1,5 @@
 jQuery(($)=>{
     $('nav .nav-link').addClass('text-center');
-    $('.dropdown-item').addClass('text-center');
     // create the navbar cta
     var container = document.querySelector('nav .collapse');
     var button = document.createElement('button');
