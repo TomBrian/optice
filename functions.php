@@ -44,3 +44,12 @@ function optice_get_banner()
 {
     include(dirname(__FILE__) . "/templates/banner.php");
 }
+function optice_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'optice_custom_excerpt_length', 30 );
+function optice_custom_loop_new_excerpt_length($length){
+    return 50;
+}
+// Theme supports
+add_theme_support('post-thumbnails');

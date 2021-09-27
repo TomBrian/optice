@@ -21,6 +21,8 @@ jQuery(($)=>{
    $(document).on('click', '.allow-focus', function (e) {
        e.stopPropagation();
      });
+    //  blog cards
+    $('.categories a').addClass('badge badge-light');
     //  contact forms
      const serviceArray = [];
      const services = $('.services-dropdown input');
