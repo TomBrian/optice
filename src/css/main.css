@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar .navbar-collapse {
   text-transform: capitalize;
-  font-family: 'roboto';
+  font-family: 'nunito sans';
 }
 
 .navbar .navbar-collapse ul {
@@ -383,7 +383,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .contact .text .text-lg ul {
   font-size: 24px;
-  font-family: 'roboto';
+  font-family: 'nunito sans';
 }
 
 .contact .text .text-lg ul li::before {
@@ -457,7 +457,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .text .pep p {
-  font-family: "roboto";
+  font-family: "nunito sans";
 }
 
 .after-hero .text .buttons {
@@ -771,7 +771,7 @@ h3 {
 }
 
 p {
-  font-family: "roboto";
+  font-family: "nunito sans";
   opacity: 0.9;
 }
 

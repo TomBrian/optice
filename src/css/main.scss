@@ -61,7 +61,7 @@ body {
   }
   .navbar-collapse {
     text-transform: capitalize;
-    font-family: 'roboto';
+    font-family: 'nunito sans';
     ul {
       width: 100%;
       justify-content: space-between;
@@ -298,7 +298,7 @@ body {
       }
       ul {
         font-size: 24px;
-        font-family: 'roboto';
+        font-family: 'nunito sans';
         li {
           &::before {
             margin-right: 10px;
@@ -351,7 +351,7 @@ body {
       font-size: 30px;
     }
     p {
-      font-family: "roboto";
+      font-family: "nunito sans";
     }
 }
     .buttons {
@@ -639,7 +639,7 @@ h3 {
   font-family: "poppins";
 }
 p {
-  font-family: "roboto";
+  font-family: "nunito sans";
   opacity: 0.9;
 }
  .btn {
