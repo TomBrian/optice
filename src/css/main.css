@@ -125,6 +125,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dropdown {
   position: relative;
+  color: #57a5d5 !important;
 }
 
 .dropdown ul {
@@ -159,7 +160,6 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 14px;
   font-weight: bold;
   width: 100%;
-  color: #47244e;
 }
 
 .hero {
@@ -596,6 +596,24 @@ body::-webkit-scrollbar-thumb:hover {
   color: #47244e;
 }
 
+.page-header .image-cover {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.page-header h1 {
+  width: 70%;
+  min-width: 300px;
+  font-size: 24px;
+  font-family: poppins;
+}
+
 .blog-header h1 {
   width: 70%;
   min-width: 300px;
@@ -603,8 +621,12 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: poppins;
 }
 
-.blog-header .cats .badge {
-  border: solid 1px #f2a516;
+.blog-header .cats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .all-cards {

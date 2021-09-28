@@ -52,4 +52,8 @@ function optice_custom_loop_new_excerpt_length($length){
     return 70;
 }
 // Theme supports
-add_theme_support('post-thumbnails');
+function optice_post_thumbnails() {
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 150, 150 );
+}
+add_action( 'after_setup_theme', 'optice_post_thumbnails' );
