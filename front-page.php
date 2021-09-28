@@ -28,13 +28,13 @@
 </div>
 <div class="container-fluid after-hero">
     <div class="text text-left">
-    <div class="pep container-fluid">
+    <div class="pep container-fluid text-center">
         <h2 class="lg:m-5">We prioritize <span class="em">Quality</span> </h2>
         <p>We are  User Experience(UX) enthusiasts focused on building purpose-driven beautiful websites.
             We major in wordpress which is by far the most popular and powerful content management  system for dynamic websites.
              We work with wordpress PHP-APIs giving us the flexibility we need to tailor your website according to all your needs.
         </p>
-        <div class="buttons flex my-4 justify-content-left">
+        <div class="buttons flex my-4 justify-content-center">
             <button class="btn btn-lg mx-2 btn-info main">
                 Get a quote
             </button>

@@ -1,7 +1,6 @@
 body {
   width: 100vw !important;
   overflow-x: hidden;
-  color: #4c4a4d;
   /* width */
   /* Track */
   /* Handle */
@@ -88,8 +87,18 @@ body::-webkit-scrollbar-thumb:hover {
  Dropdowns
  *============
 **/
-.dropdown:hover ul {
+.dropdown ul {
   display: block;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.2s !important;
+  transition: 0.2s !important;
+}
+
+.dropdown:hover ul {
+  opacity: 1;
+  margin-top: -2px;
+  pointer-events: all;
 }
 
 .dropdown a.dropdown-toggle {
@@ -119,6 +128,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .dropdown ul {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
   position: relative;
   border-radius: 0%;
   background-color: white;
@@ -448,7 +462,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .text .pep {
-  width: 70%;
+  width: 90%;
 }
 
 .after-hero .text .pep h2 {
@@ -461,9 +475,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .text .buttons {
-  width: 50%;
-  margin: auto;
+  width: 60%;
   min-width: 320px;
+  margin: auto;
 }
 
 .after-hero .cards {
@@ -582,6 +596,32 @@ body::-webkit-scrollbar-thumb:hover {
   color: #47244e;
 }
 
+.blog-header h1 {
+  width: 70%;
+  min-width: 300px;
+  font-size: 24px;
+  font-family: poppins;
+}
+
+.blog-header .cats .badge {
+  border: solid 1px #f2a516;
+}
+
+.all-cards {
+  width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all-cards .blog-card {
+  min-width: 320px;
+}
+
+.all-cards .blog-card:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .all-cards .blog-card:first-child {
   display: none;
 }
@@ -591,6 +631,15 @@ body::-webkit-scrollbar-thumb:hover {
       flex-wrap: wrap;
   max-width: 350px;
   margin: 20px;
+}
+
+.blog-card img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blog-card .date {
+  font-size: 16px;
 }
 
 .blog-card .categories {
@@ -613,10 +662,29 @@ body::-webkit-scrollbar-thumb:hover {
 .blog-card .card-title {
   font-family: 'poppins';
   font-size: 24px;
+  color: black;
 }
 
-.blog-card .author {
-  color: #f2a516 !important;
+.blog-card .perma {
+  font-size: 14px;
+  width: 100%;
+}
+
+.blog-card .perma .nav-link {
+  padding: 0%;
+}
+
+.blog-card .perma .nav-link i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blog-card .perma .nav-link:hover i {
+  margin-left: 10px;
+}
+
+.latest-container {
+  width: 90%;
 }
 
 .latest-card {
@@ -625,6 +693,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: -ms-flexbox;
   display: flex;
   max-width: none;
+  padding: 10px;
 }
 
 .latest-card .image {
@@ -737,9 +806,16 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 10px;
   }
   .latest-container {
-    width: 100%;
+    width: 100% !important;
   }
   .latest-container .latest-card {
+    width: 100% !important;
+    padding: 0%;
+  }
+  .latest-container .latest-card .image {
+    width: 100%;
+  }
+  .latest-container .latest-card .text {
     width: 100%;
   }
   .blog-card {
@@ -760,6 +836,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .all-caps {
   text-transform: uppercase;
+  font-family: "nunito sans";
 }
 
 .em {

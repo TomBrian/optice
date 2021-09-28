@@ -1,5 +1,6 @@
 jQuery(($)=>{
     $('nav .nav-link').addClass('text-center');
+    $('nav .dropdown-menu').addClass('shadow-md');
     // create the navbar cta
     var container = document.querySelector('nav .collapse');
     var button = document.createElement('button');

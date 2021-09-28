@@ -49,7 +49,7 @@ function optice_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'optice_custom_excerpt_length', 30 );
 function optice_custom_loop_new_excerpt_length($length){
-    return 50;
+    return 70;
 }
 // Theme supports
 add_theme_support('post-thumbnails');

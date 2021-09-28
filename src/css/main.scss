@@ -7,7 +7,7 @@ $em-color: #f2a516;
 body {
   width: 100vw !important;
   overflow-x: hidden;
-  color: $text-color;
+  // color: $text-color;
   /* width */
   &::-webkit-scrollbar {
     width: 5px;
@@ -80,10 +80,18 @@ body {
  *============
 **/
 .dropdown {
-  &:hover {
-    ul {
+  ul {
       display: block;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.2s !important;
     }
+  &:hover {
+   ul{
+    opacity: 1;
+    margin-top: -2px;
+    pointer-events: all;
+  }
   }
   a.dropdown-toggle {
     display: flex;
@@ -99,7 +107,11 @@ body {
 }
 .dropdown{ 
   position: relative;
+
   ul {
+    transform: translateX(-25%);
+    border: none;
+    transition: 1s;
     position: relative;
   border-radius: 0%;
   background-color: white;
@@ -345,7 +357,7 @@ body {
   .text {
     min-width: 300px;
     .pep{ 
-    width: 70%;
+    width: 90%;
     h2 {
       font-family: "poppins";
       font-size: 30px;
@@ -355,9 +367,9 @@ body {
     }
 }
     .buttons {
-        width: 50%;
-        margin: auto;
+        width: 60%;
         min-width: 320px;
+        margin: auto;
       }
   }
   .cards {
@@ -454,8 +466,29 @@ body {
 // BLOG PAGE
 // 
 // 
+.blog-header{
+  h1{
+    width: 70%;
+    min-width:300px;
+    font-size: 24px;
+    font-family: poppins;
+  }
+  .cats{
+    .badge{
+      border: solid 1px $em-color;
+    }
+  }
+}
 .all-cards{
+  width: 90%;
+  flex-wrap: wrap;
   .blog-card{
+    min-width: 320px;
+    &:hover{
+      img{
+        transform: scale(1.05);
+      }
+    }
     &:first-child{
     display: none;
     }
@@ -465,6 +498,13 @@ body {
   flex-wrap: wrap;
   max-width: 350px;
   margin: 20px;
+  
+  img{
+    transition: 0.5s;
+  }
+  .date{
+    font-size: 16px;
+  }
   .categories{
     width: 100%;
     .post-categories{
@@ -478,15 +518,33 @@ body {
   .card-title{
     font-family: 'poppins';
     font-size: 24px;
+    color: black;
   }
-  .author{
-    color: $em-color !important;
+  .perma{
+    font-size: 14px;
+    width: 100%;
+    .nav-link{
+      padding: 0%;
+    i{
+      transition: 0.5s;
+    }
+    &:hover{
+      i{
+        margin-left:10px;
+      }
+    }
   }
+}
+}
+.latest-container{
+  width: 90%;
 }
 .latest-card{
   width: 100%;
   display: flex;
   max-width: none;
+  // background-color:$theme-body-color;
+  padding: 10px;
   .image{
     min-width: 320px;
     width: 50%;
@@ -605,9 +663,16 @@ body {
   }
 // blog page
 .latest-container{
-  width: 100%;
+  width: 100% !important;
 .latest-card{
-  width: 100%;
+  width: 100% !important;
+  padding: 0%;
+  .image{
+    width: 100%;
+  }
+  .text{
+    width: 100%;
+  }
 }
 }
 .blog-card{
@@ -631,6 +696,7 @@ body {
 //
 .all-caps {
   text-transform: uppercase;
+  font-family: "nunito sans";
 }
 .em {
   color: $em-color;
