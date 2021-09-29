@@ -2,7 +2,7 @@
 
 <div class="container-fluid py-5">
     <div class="container blog-header">
-        <strong class="all-caps text-muted">Blog</strong>
+        <strong class="all-caps text-muted"><?php single_cat_title();?></strong>
         <h1 class="mx-2 my-4 text-left">
             Explore the latest stories about what is happening in the world of web and technology.From news,tutorials to updates and everything you need to know about.
         </h1>

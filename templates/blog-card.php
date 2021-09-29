@@ -2,10 +2,10 @@
     <a href="<?php echo the_permalink() ?>">
         <?php the_post_thumbnail(['400', '200']) ?>
     </a>
-    <div class="categories all-caps text-muted my-2 flex">
-<?php the_category( '','multiple' )
+    <!-- <div class="categories all-caps text-muted my-2 flex">
+<?php //the_category( '+','multiple' )
 ?>
-</div>
+</div> -->
     <div class="date all-caps my-1 text-muted">
         <?php the_date() ?>
     </div>

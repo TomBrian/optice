@@ -35,10 +35,10 @@
              We work with wordpress PHP-APIs giving us the flexibility we need to tailor your website according to all your needs.
         </p>
         <div class="buttons flex my-4 justify-content-center">
-            <button class="btn btn-lg mx-2 btn-info main">
+            <button class="btn btn-lg mx-2 btn-primary main">
                 Get a quote
             </button>
-            <button class="btn btn-lg mx-2 btn-outline-info notmain">
+            <button class="btn btn-lg mx-2 btn-outline-primary notmain">
                 About us
             </button>
         </div>
@@ -62,7 +62,7 @@
                       <li>Link building</li>
                   </ul>
                   <div class="button my-2">
-                      <button class="btn btn-info main"><b>View Service</b></button>
+                      <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
             <div class="card p-3 m-3 bg-white shadow-sm">
@@ -83,7 +83,7 @@
                       <li>form design</li>
                   </ul>
                   <div class="button my-2">
-                      <button class="btn btn-info main"><b>View Service</b></button>
+                      <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
             <div class="card p-3 m-3 bg-white shadow-sm">
@@ -104,7 +104,7 @@
                       <li>Laravel web app development</li>
                   </ul>
                   <div class="button my-2">
-                      <button class="btn btn-info main"><b>View Service</b></button>
+                      <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
             <div class="card p-3 m-3 bg-white shadow-sm">
@@ -124,7 +124,7 @@
                       <li>General content writing</li>
                   </ul>
                   <div class="button my-2">
-                      <button class="btn btn-info main"><b>View Service</b></button>
+                      <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
         </div>
@@ -145,7 +145,7 @@
     We are transparent throgh out our development process.
     We use project management platforms and prototypes to show our progress through out our development roadmap
     </p>
-    <button class="btn btn-info">Learn more</button>
+    <button class="btn btn-primary">Learn more</button>
     </div>
 </div>
 <div class="container-fluid contact-wrapper">

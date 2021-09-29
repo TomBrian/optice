@@ -80,19 +80,6 @@ body {
  *============
 **/
 .dropdown {
-  ul {
-      display: block;
-      opacity: 0;
-      pointer-events: none;
-      transition: 0.2s !important;
-    }
-  &:hover {
-   ul{
-    opacity: 1;
-    margin-top: -2px;
-    pointer-events: all;
-  }
-  }
   a.dropdown-toggle {
     display: flex;
     justify-content: center;
@@ -109,7 +96,6 @@ body {
   position: relative;
   color: $buttons-color1 !important;
   ul {
-    transform: translateX(-25%);
     border: none;
     transition: 1s;
     position: relative;
@@ -465,20 +451,6 @@ body {
 // BLOG PAGE
 // 
 // 
-.page-header{
-  .image-cover{
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     margin: auto;
-}
-  h1{
-    width: 70%;
-    min-width:300px;
-    font-size: 24px;
-    font-family: poppins;
-  }
-}
 .blog-header{
   h1{
     width: 70%;
@@ -570,9 +542,96 @@ body {
     padding: 20px;
   }
 }
+// single post page
+.single-header{
+  width: 100%;
+  .categories{
+width: 100%;
+justify-content: left;
+ul{
+display: flex;
+  flex-wrap: wrap;
+  .badge{
+  color: white !important;
+}
+}
+}
+.post-meta{
+  opacity: 0.7 !important;
+  font-family: 'montserrat';
+  font-weight: bolder !important;
+}
+h1{
+  font-size: 40px;
+  font-family: 'poppins';
+}
+}
+.single-page-content-wrapper{
+  justify-content: space-between;
+  position: relative;
+  height: fit-content;
+  .sticky-top{
+    padding-top:70px !important;
+    height: 90vh;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .share{
+    // justify-content: center;
+    i{
+      font-size: 30px;
+    }
+  }
+  .blog-post{
+    min-width: 320px;
+    display: block;
+    h3{
+     line-height: 300%;
+    }
+    p{
+      font-size: 18px !important;
+      opacity: 0.7;
+    }
+  }
+  .sidebar{
+    width: 100%;
+    .card{
+     width: 100%;
+  }
+}
+  .sm-none{
+      background-color: white;
+      min-width: 400px;
+      max-width: 410px;
+  }
+}
+.author-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  b{
+    font-size: 24px;
+  }
+  img{
+    border-radius: 50%;
+    border: solid 3px $buttons-color1;
+  }
+}
 // media queries
 // big screens
+// ipad
+@media (min-width: 768px) {
+  .lg-none{
+    display: none;
+  }
+}
 @media (min-width: 767px) {
+  // framework
+  // main
   .hero {
     .hero-content {
       padding-left: 100px;
@@ -585,10 +644,40 @@ body {
   .navbar-collapse {
     width: fit-content;
     max-width: 60%;
+    .dropdown{
+    ul {
+      display: block;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.2s !important;
+    }
+  &:hover {
+   ul{
+    opacity: 1;
+    margin-top: -2px;
+    pointer-events: all;
+  }
+}
+  }
   }
 }
 // small screens
+// ipad
+@media (max-width: 768px) {
+  .sm-none{
+    display: none !important;
+  }
+  // single blog posts
+.share{
+  display: none !important;
+}
+}
 @media (max-width: 767px) {
+  // framework
+  // main
+  .container{
+    width: 100% !important;
+  }
   .hero .hero-text {
     width: 90%;
   }
@@ -600,7 +689,6 @@ body {
       ul {
         padding: 0px !important;
         width: 100%;
-        min-width: 100%;
         li {
           width: 100%;
           border: solid 1px #efefef4d;
@@ -611,6 +699,7 @@ body {
         }
       }
       .dropdown ul{
+        display: none;
         &::before{
           border: none;
         }
@@ -675,15 +764,16 @@ body {
   }
 // blog page
 .latest-container{
-  width: 100% !important;
 .latest-card{
   width: 100% !important;
   padding: 0%;
   .image{
     width: 100%;
+    padding: 0%;
   }
   .text{
     width: 100%;
+    padding: 0%;
   }
 }
 }
@@ -706,6 +796,9 @@ body {
 //
 // framework
 //
+.dropdown-menu.show{
+  display: block !important;
+}
 .all-caps {
   text-transform: uppercase;
   font-family: "nunito sans";
@@ -714,11 +807,16 @@ body {
   color: $em-color;
 }
 h3 {
-  font-family: "poppins";
+  font-family: "montserrat";
+  font-size: 24px;
+  font-weight: bolder;
 }
 p {
-  font-family: "nunito sans";
+  font-family: 'PT Serif', serif;;
   opacity: 0.9;
+}
+.container-fluid{
+  width: 100%;
 }
  .btn {
       width: fit-content;
