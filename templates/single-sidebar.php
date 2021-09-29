@@ -1,3 +1,4 @@
-<div id="blog-sidebar" class="sidebar p-5">
-    <?php dynamic_sidebar( 'blog-sidebar' ); ?>
+<?php dynamic_sidebar('blog-sidebar'); ?>
+<div class="sticky-top bg-white">
+<?php dynamic_sidebar('sticky-sidebar'); ?>
 </div>

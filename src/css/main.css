@@ -743,10 +743,11 @@ body::-webkit-scrollbar-thumb:hover {
   height: fit-content;
 }
 
-.single-page-content-wrapper .sticky-top {
+.single-page-content-wrapper .share {
   padding-top: 70px !important;
-  height: 90vh;
-  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,11 +780,52 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .sidebar {
+  position: relative;
+}
+
+.single-page-content-wrapper .sidebar .sticky-top {
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.single-page-content-wrapper .sidebar div {
   width: 100%;
+}
+
+.single-page-content-wrapper .sidebar input, .single-page-content-wrapper .sidebar textarea {
+  color: black !important;
 }
 
 .single-page-content-wrapper .sidebar .card {
   width: 100%;
+}
+
+.single-page-content-wrapper .so-widget-sow-cta .sow-cta-base {
+  background-color: #57a5d5 !important;
+  color: white;
+  font-family: 'poppins' !important;
+}
+
+.single-page-content-wrapper .so-widget-sow-cta .sow-cta-base .ow-button-base a {
+  background: #f2a516 !important;
+  border: none;
+  color: white !important;
+}
+
+.single-page-content-wrapper .so-widget-sow-cta .sow-cta-base .ow-button-base a .sow-icon-image {
+  display: none;
+}
+
+.single-page-content-wrapper .wp-block-latest-posts li {
+  font-family: 'nunito sans';
+  line-height: 120%;
+}
+
+.single-page-content-wrapper .wp-block-latest-posts li a {
+  font-size: 24px;
+  color: black !important;
+  font-weight: bold;
+  font-family: 'poppins';
 }
 
 .single-page-content-wrapper .sm-none {

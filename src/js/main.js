@@ -25,7 +25,8 @@ jQuery(($)=>{
     //  blog cards
     $('.categories a').addClass('text-muted text-sm cat-sep mx-2');
     $('.single-header .categories a').addClass('text-light text-sm badge-primary badge p-2');
-    $('.sidebar .widget').addClass('card text-left p-2 my-1');
+    $('.sidebar .widget').addClass('text-left p-2 my-1');
+    $('.sidebar .widget form').addClass('bg-info text-light p-3 rounded-sm');
     //  contact forms
      const serviceArray = [];
      const services = $('.services-dropdown input');

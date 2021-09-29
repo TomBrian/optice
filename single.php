@@ -57,12 +57,12 @@
                 </p>
             </div>
         </div>
-            <div class="lg-none">
-                <?php get_template_part('templates/single', 'sidebar') ?>
-            </div>
-        </div>
-        <div class="sm-none sticky-top">
+        <div class="lg-none">
             <?php get_template_part('templates/single', 'sidebar') ?>
         </div>
     </div>
-    <?php get_footer() ?>
+    <div id="blog-sidebar" class="sidebar py-5 px-3 sm-none">
+        <?php get_template_part('templates/single', 'sidebar') ?>
+    </div>
+</div>
+<?php get_footer() ?>

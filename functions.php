@@ -41,6 +41,14 @@ register_nav_menus(array(
 add_theme_support( 'customize-selective-refresh-widgets' );
 function optice_widgets_init() {
     register_sidebar( array(
+        'name'          => __( 'Sticky bar', 'optice' ),
+        'id'            => 'sticky-sidebar',
+        'before_widget' => '<div id="%1$s" class="widget sticky-top %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
         'name'          => __( 'Blog Sidebar', 'optice' ),
         'id'            => 'blog-sidebar',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',

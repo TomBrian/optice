@@ -570,16 +570,13 @@ h1{
   justify-content: space-between;
   position: relative;
   height: fit-content;
-  .sticky-top{
+  .share{
     padding-top:70px !important;
-    height: 90vh;
-    overflow: hidden;
+    height: fit-content;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .share{
     // justify-content: center;
     i{
       font-size: 30px;
@@ -597,9 +594,47 @@ h1{
     }
   }
   .sidebar{
-    width: 100%;
+    position: relative;
+    .sticky-top{
+      z-index: 1;
+      padding-top:70px;
+    }
+    div{
+      width: 100%;
+    }
+    input,textarea{
+      color: black !important;
+    }
     .card{
      width: 100%;
+    }
+}
+// site origin widgets
+.so-widget-sow-cta{
+  .sow-cta-base{
+  background-color: $buttons-color1 !important;
+  color: white;
+  font-family: 'poppins' !important;
+  .ow-button-base a{
+    .sow-icon-image{
+    display: none;
+   }
+    background: $em-color !important;
+    border: none;
+    color: white !important;
+  }
+}
+}
+.wp-block-latest-posts{
+  li{
+    font-family: 'nunito sans';
+    a{
+    font-size: 24px;
+    color: black !important;
+    font-weight: bold;
+    font-family: 'poppins';
+  }
+    line-height: 120%;
   }
 }
   .sm-none{
