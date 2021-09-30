@@ -7,7 +7,7 @@ jQuery(($)=>{
     const link = document.createElement('a');
     const close =  document.createElement('div');
     const menuIcons = document.querySelectorAll('.menu-opener');
-    const closeIcon = `<div class="close"><img src="${window.location.origin}/wordpress/wp-content/themes/Kanai/src/images/close.svg" alt="close"/></div>`
+    const closeIcon = `<div class="close"><img src="${window.location.origin}/wp-content/themes/Kanai/src/images/close.svg" alt="close"/></div>`
     close.innerHTML = closeIcon;
     containers.forEach(container => {
       container.appendChild(button)
