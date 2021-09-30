@@ -9,7 +9,7 @@
         <div class="hero-content">
             <div class="hero-text text-left">
                 <h1 class="my-1">
-                A <span class="em">full service</span> digital agency that helps businesses build a strong presence.
+                A full service digital agency that helps businesses build a strong presence.
                    
                 </h1>
                 <p class="all-caps text-light my-4 w-full">
@@ -29,7 +29,7 @@
 <div class="container-fluid after-hero">
     <div class="text text-left">
     <div class="pep container-fluid text-center">
-        <h2 class="lg:m-5">We prioritize <span class="em">Quality</span> </h2>
+        <h2 class="lg:m-5">We prioritize Quality </h2>
         <p>We are  User Experience(UX) enthusiasts focused on building purpose-driven beautiful websites.
             We major in wordpress which is by far the most popular and powerful content management  system for dynamic websites.
              We work with wordpress PHP-APIs giving us the flexibility we need to tailor your website according to all your needs.
@@ -140,7 +140,7 @@
     <div class="image" style="background-image:url('<?php echo get_template_directory_uri() ?>/src/images/process.jpg');">
     </div>
     <div class="text">
-    <h3>We work with you. Not just for <span class="em">you</span></h3>
+    <h3>We work with you. Not just for you</h3>
     <p class="text-left my-4">
     We are transparent throgh out our development process.
     We use project management platforms and prototypes to show our progress through out our development roadmap

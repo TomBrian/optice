@@ -1,4 +1,4 @@
-<div class="form bg-white shadow-sm">
+<div class="form bg-white mx-4 shadow-sm">
   <form action="" id="protected" class="services-form" method="POST">
     <h3 class="my-3 text-center">Contact Us</h3>
     <div class="input-wrapper my-2 flex">
@@ -25,9 +25,9 @@
         <i class="fas fa-phone"></i>
       </div>
     </div>
-    <div class="dropdown allow-focus input-wrapper">
-      <div class="dropdown-toggle my-2 flex justify-content-between" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="text contact-dropdown-text">What services are you interested in ?</div>
+    <div class="dropdown allow-focus my-2">
+      <div class="dropdown-toggle flex input-wrapper justify-content-between" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="text contact-dropdown-text form-control">services</div>
         <div class="icon">
           <i class="fas fa-hands-helping"></i>
         </div>

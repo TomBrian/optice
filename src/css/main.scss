@@ -197,26 +197,28 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   .form {
-    width: 40%;
-    min-width: 320px;
+    width: 350px;
+    overflow-x: hidden;
+    border-radius: 37px;
     padding: 30px;
     h3 {
       color: #9a2fb0;
     }
     form {
       width: 100%;
-      .dropdown-toggle {
-        width: 100%;
-      }
       .input-wrapper {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         border-bottom: solid 1px grey;
         padding-top: 5px;
         padding-bottom: 5px;
+        overflow-x: hidden;
         padding-right: 20px;
         .form-control {
           border-radius: 0%;
+          width: 80%;
           border: none;
           &:focus {
             outline: none !important;
@@ -224,26 +226,20 @@ body {
             box-shadow: 3rem 2rem 1rem transparent;
           }
         }
+      
         .icon {
           opacity: 0.5;
           font-size: 18px;
           padding: 2px;
           color: $theme-color1;
+          display: none;
         }
       }
       .allow-focus {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 20px;
         .dropdown-toggle {
-          .text {
-            position: relative;
-            width: fit-content;
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            hyphens: auto;
-            width: 80%;
-            overflow-x: hidden;
+          padding-right: 20px !important;
+          .contact-dropdown-text{
+            width: fit-content !important;
           }
           &::after {
             display: none !important;
@@ -285,7 +281,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     .text-lg {
-      font-size: 42px;
+      font-size: 36px;
       font-weight: normal;
       color: white;
       font-family: "poppins";
@@ -646,14 +642,26 @@ h1{
 .author-card{
   display: flex;
   justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 400px;
+  
+  i{
+    font-size: 24px;
+  }
   b{
     font-size: 24px;
   }
-  img{
+  .text{
+    width: 300px;
+    .bio{
+      font-size: 14px !important;
+    }
+  }
+  .avatar{
     border-radius: 50%;
-    border: solid 3px $buttons-color1;
+    width: 150px;
+    height: 150px;
   }
 }
 // media queries
@@ -701,6 +709,9 @@ h1{
 @media (max-width: 768px) {
   .sm-none{
     display: none !important;
+  }
+  .form{
+    margin: auto !important;
   }
   // single blog posts
 .share{

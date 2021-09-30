@@ -7,7 +7,7 @@
         <div class="all-caps post-meta text-muted">
             <small>
                 <b>
-                    by:<?php
+                    by: <?php
                         $id = optice_get_post_meta();
                         echo get_the_author_meta('nicename', $id);
                         ?> | UPDATED: <?php echo get_the_date() ?>
@@ -44,16 +44,45 @@
         <img src="<?php echo the_post_thumbnail_url() ?>" class="img-responsive" alt="<?php echo the_title() ?>">
         <?php the_content() ?>
         <h3>About The author</h3>
-        <div class="author-card">
-            <?php
-            echo get_avatar(get_the_author_meta('user_email', $id));
-            ?>
-            <div class="text p-2">
-                <a href="<?php echo get_the_author_meta('user_url', $id); ?>">
-                    <b> <?php echo get_the_author_meta('display_name', $id); ?></b>
+        <div class="author-card shadow-sm p-4">
+            <div class="avatar mx-4">
+        <?php echo get_avatar(get_the_author_meta('user_email', $id),150);?>
+            </div>
+            <div class="text text-left p-2">
+                <a href="<?php echo get_the_author_meta('user_url', $id); ?>" >
+                    <b class="my-4"> <?php echo get_the_author_meta('display_name', $id); ?></b>
                 </a>
-                <p class="text-muted">
+                <p class="bio my-3">
                     <?php echo get_the_author_meta('user_description', $id); ?>
+                </p>
+                <p>
+                <?php
+$facebook = get_the_author_meta( 'facebook', $post->post_author );
+$twitter = get_the_author_meta( 'twitter', $post->post_author );
+$linked = get_the_author_meta( 'linkedin', $post->post_author );
+if ($facebook != '') {
+    ?>
+    <a href="<?php echo $facebook;?>"><i class="fab fa-facebook"></i>
+            </a></a>
+    <?php
+}
+?>
+<?php
+if ($twitter != '') {
+    ?>
+    <a href="<?php echo $twitter;?>"><i class="fab fa-twitter"></i>
+            </a></a>
+    <?php
+}
+?>
+<?php
+if ($linked != '') {
+    ?>
+    <a href="<?php echo $linked;?>"><i class="fab fa-linkedin"></i>
+            </a></a>
+    <?php
+}
+?>
                 </p>
             </div>
         </div>
