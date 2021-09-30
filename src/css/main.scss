@@ -1,9 +1,7 @@
 $text-color: #4c4a4d;
 $theme-color1: #47244e;
-$theme-color2: #fa00ef;
 $buttons-color1: #57a5d5;
-$theme-body-color: #fcf5fd;
-$em-color: #f2a516;
+$em-color: #3DDC97;
 body {
   width: 100vw !important;
   overflow-x: hidden;
@@ -143,7 +141,7 @@ body {
   }
   .hero-content {
     width: 100%;
-    min-height: 600px;
+    min-height: 500px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -190,7 +188,6 @@ body {
   }
 }
 .contact-wrapper {
-  background-color: $buttons-color1;
   padding: 20px;
 }
 .contact {
@@ -199,21 +196,21 @@ body {
   .form {
     width: 350px;
     overflow-x: hidden;
-    border-radius: 37px;
+    // border-radius: 37px;
+    background-color: $buttons-color1;
     padding: 30px;
     h3 {
-      color: #9a2fb0;
+      color: white;
     }
     form {
       width: 100%;
       .input-wrapper {
         width: 100%;
         display: flex;
+        background-color: white;
         justify-content: space-between;
         align-items: center;
         border-bottom: solid 1px grey;
-        padding-top: 5px;
-        padding-bottom: 5px;
         overflow-x: hidden;
         padding-right: 20px;
         .form-control {
@@ -267,7 +264,7 @@ body {
         padding: 10px;
         background-color: $em-color;
         font-weight: bold;
-        color: $theme-color1;
+        color: white;
         &::after {
           content: "";
         }
@@ -283,7 +280,7 @@ body {
     .text-lg {
       font-size: 36px;
       font-weight: normal;
-      color: white;
+      color: black;
       font-family: "poppins";
       line-height: 110%;
       .phone {
@@ -296,20 +293,20 @@ body {
           &::before {
             margin-right: 10px;
             content: "\2713";
-            color: white;
+            color: black;
             font-weight: bolder;
           }
         }
       }
       .em-text {
-        color: white;
+        color: black;
       }
       .phone {
         font-family: 'poppins';
       }
     }
     .footer {
-      color: white;
+      color: black;
       padding-top: 10px;
       p {
         font-size: 14px;
@@ -317,7 +314,7 @@ body {
       .socials {
         flex-wrap: wrap;
         img {
-          opacity: 0.8;
+          opacity: 0.9;
           transition: 0.5s;
           &:hover {
             opacity: 1;
@@ -332,7 +329,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-top: -30px;
+  margin-top: -20px;
   padding-top: 50px;
   background-color: white;
   .text {
@@ -357,7 +354,7 @@ body {
       flex-wrap: wrap;
       justify-content: center;
     .card {
-      width: 320px;
+      width: 300px;
       border-radius: 0%;
       display: flex;
       flex-direction: column;
@@ -437,7 +434,6 @@ body {
   }
 }
 .mission{
-  background-color: $theme-body-color;
   h3{
     color: $theme-color1;
   }
@@ -793,11 +789,19 @@ h1{
     .form {
       min-width: 100% !important;
       width: 100%;
+      margin: auto;
       padding: 10px;
     }
     .text {
+      margin: auto;
       width: 100%;
       min-width: 100% !important;
+      .socials{
+        width: 100%;
+        img{
+          max-width: 100px;
+        }
+      }
     }
   }
   .services{

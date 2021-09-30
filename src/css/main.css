@@ -167,7 +167,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .hero .hero-content {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero .hero-content .hero-text h1 .em {
-  color: #f2a516;
+  color: #3DDC97;
 }
 
 .hero .hero-content .hero-text .all-caps {
@@ -239,7 +239,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact-wrapper {
-  background-color: #57a5d5;
   padding: 20px;
 }
 
@@ -254,12 +253,12 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .form {
   width: 350px;
   overflow-x: hidden;
-  border-radius: 37px;
+  background-color: #57a5d5;
   padding: 30px;
 }
 
 .contact .form h3 {
-  color: #9a2fb0;
+  color: white;
 }
 
 .contact .form form {
@@ -271,6 +270,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -278,8 +278,6 @@ body::-webkit-scrollbar-thumb:hover {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: solid 1px grey;
-  padding-top: 5px;
-  padding-bottom: 5px;
   overflow-x: hidden;
   padding-right: 20px;
 }
@@ -339,9 +337,9 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .form form .submit {
   margin-top: 37px;
   padding: 10px;
-  background-color: #f2a516;
+  background-color: #3DDC97;
   font-weight: bold;
-  color: #47244e;
+  color: white;
 }
 
 .contact .form form .submit::after {
@@ -366,7 +364,7 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .text .text-lg {
   font-size: 36px;
   font-weight: normal;
-  color: white;
+  color: black;
   font-family: "poppins";
   line-height: 110%;
 }
@@ -383,12 +381,12 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .text .text-lg ul li::before {
   margin-right: 10px;
   content: "\2713";
-  color: white;
+  color: black;
   font-weight: bolder;
 }
 
 .contact .text .text-lg .em-text {
-  color: white;
+  color: black;
 }
 
 .contact .text .text-lg .phone {
@@ -396,7 +394,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact .text .footer {
-  color: white;
+  color: black;
   padding-top: 10px;
 }
 
@@ -410,7 +408,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact .text .footer .socials img {
-  opacity: 0.8;
+  opacity: 0.9;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -433,6 +431,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -20px;
   padding-top: 50px;
   background-color: white;
 }
@@ -469,7 +468,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .cards .card {
-  width: 320px;
+  width: 300px;
   border-radius: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,7 +501,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .cards .card .title .card-title i {
-  color: #f2a516;
+  color: #3DDC97;
   font-size: 24px;
   margin-right: 10px;
 }
@@ -525,7 +524,7 @@ body::-webkit-scrollbar-thumb:hover {
 .after-hero .cards .card .list li::before {
   margin-right: 10px;
   content: "\2713";
-  color: #f2a516;
+  color: #3DDC97;
   font-weight: bolder;
   border-radius: 50%;
   position: relative;
@@ -566,10 +565,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .process .text .btn {
   margin: auto;
-}
-
-.mission {
-  background-color: #fcf5fd;
 }
 
 .mission h3 {
@@ -803,7 +798,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .so-widget-sow-cta .sow-cta-base .ow-button-base a {
-  background: #f2a516 !important;
+  background: #3DDC97 !important;
   border: none;
   color: white !important;
 }
@@ -986,11 +981,19 @@ body::-webkit-scrollbar-thumb:hover {
   .contact .form {
     min-width: 100% !important;
     width: 100%;
+    margin: auto;
     padding: 10px;
   }
   .contact .text {
+    margin: auto;
     width: 100%;
     min-width: 100% !important;
+  }
+  .contact .text .socials {
+    width: 100%;
+  }
+  .contact .text .socials img {
+    max-width: 100px;
   }
   .services .card {
     margin-left: 0px !important;
@@ -1036,7 +1039,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .em {
-  color: #f2a516;
+  color: #3DDC97;
 }
 
 h3 {

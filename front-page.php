@@ -17,13 +17,13 @@
                     content writing
                 </p>
                 <button class="px-4 py-3 my-1 animate__animated animate__pulse animate__infinite btn hero-cta">
-                    Lets get started
+                  lets get started
                 </button>
             </div>
         </div>
-        <!-- <div class="hero-waves">
-            <img src="<?php //echo get_template_directory_uri()?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt="">
-        </div> -->
+        <div class="hero-waves">
+            <img src="<?php echo get_template_directory_uri()?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt="">
+        </div>
     </div>
 </div>
 <div class="container-fluid after-hero">
@@ -44,7 +44,7 @@
         </div>
  </div>
         <div class="cards services container-fluid flex">
-            <div class="card p-3 m-3 bg-white shadow-sm">
+            <div class="card p-3 m-2 bg-white shadow-sm">
                 <div class="title text-center">
                     <span class="card-title text-center"><i class="fab fa-searchengin"></i> SEO</span>
                 </div>
@@ -65,7 +65,7 @@
                       <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
-            <div class="card p-3 m-3 bg-white shadow-sm">
+            <div class="card p-3 m-2 bg-white shadow-sm">
                 <div class="title text-center">
                 <span class="card-title text-center"><i class="fas fa-drafting-compass"></i> Web design</span>
                 </div>
@@ -86,7 +86,7 @@
                       <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
-            <div class="card p-3 m-3 bg-white shadow-sm">
+            <div class="card p-3 m-2 bg-white shadow-sm">
                 <div class="title text-center">
                     <span class="card-title text-center"><i class="fas fa-code"></i> Web development</span>
                 </div>
@@ -107,7 +107,7 @@
                       <button class="btn btn-primary main"><b>View Service</b></button>
                   </div>
             </div>
-            <div class="card p-3 m-3 bg-white shadow-sm">
+            <div class="card p-3 m-2 bg-white shadow-sm">
                 <div class="title text-center">
                     <span class="card-title text-center"><i class="fas fa-paragraph"></i> Content creation</span>
                 </div>
@@ -142,16 +142,16 @@
     <div class="text">
     <h3>We work with you. Not just for you</h3>
     <p class="text-left my-4">
-    We are transparent throgh out our development process.
+    We are transparent through out our development process.
     We use project management platforms and prototypes to show our progress through out our development roadmap
     </p>
     <button class="btn btn-primary">Learn more</button>
     </div>
 </div>
-<div class="container-fluid contact-wrapper">
+<div class="container contact-wrapper">
     <div class="contact flex">
         <?php get_template_part('templates/contact', 'form') ?>
-        <div class="text">
+        <div class="text mx-4">
             <div class="text-lg my-5">
                 Are you ready to talk to an expert? <br><br>
                 <b class="em-text my-1">Give us a call</b><br>
@@ -166,7 +166,7 @@
                 <p class="all-caps">
                     You can also find us on
                 </p>
-                <div class="socials align-items-center justify-content-center flex">
+                <div class="socials align-items-center justify-content-left flex">
                     <a href="#">
                         <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="90" height="90" class="mx-3" alt="fiverr">
                     </a>
