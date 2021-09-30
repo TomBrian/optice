@@ -167,7 +167,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .hero .hero-content {
   width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
