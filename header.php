@@ -31,3 +31,5 @@ else{
   // optice_get_banner();
 }
 ?>
+<div class="menu-overlay">
+</div>

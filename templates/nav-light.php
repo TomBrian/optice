@@ -4,8 +4,8 @@
             <img src="<?php echo get_template_directory_uri() ?>/src/images/logo-dark.svg" width="150" height="50" alt="brand">
         </a>
     </div>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/menu-dark.svg" width="40" height="40" alt="">
+    <button class="menu-opener">
+        <img src="<?php echo get_template_directory_uri() ?>/src/images/menu-dark.svg" width="30" height="30" alt="">
     </button>
     <?php wp_nav_menu(array(
         'theme_location'  => 'primary',

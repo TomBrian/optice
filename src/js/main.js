@@ -2,13 +2,30 @@ jQuery(($)=>{
     $('nav .nav-link').addClass('text-center');
     $('nav .dropdown-menu').addClass('shadow-md');
     // create the navbar cta
-    var container = document.querySelector('nav .collapse');
-    var button = document.createElement('button');
-    var link = document.createElement('a');
-    container.appendChild(button)
+    const containers = document.querySelectorAll('nav .collapse');
+    const button = document.createElement('button');
+    const link = document.createElement('a');
+    const close =  document.createElement('div');
+    const menuIcons = document.querySelectorAll('.menu-opener');
+    const closeIcon = `<div class="close"><img src="${window.location.origin}/wordpress/wp-content/themes/Kanai/src/images/close.svg" alt="close"/></div>`
+    close.innerHTML = closeIcon;
+    containers.forEach(container => {
+      container.appendChild(button)
+      // sidebar close button
+      container.appendChild(close);
+      container.addEventListener('click',()=>{
+        $('nav .collapse,.menu-overlay').removeClass('open');
+      })
+    });
+    menuIcons.forEach(icon=>{
+      icon.addEventListener('click',()=>{
+        $('nav .collapse,.menu-overlay').addClass('open');
+      });
+    })
     button.appendChild(link);
     $('nav .collapse button a').addClass('nav-cta-link nav-link')
     $('.nav-cta-link').attr('href','#')
+    $('nav .collapse').addClass('shadow-lg');
     $('nav .collapse button').addClass('nav-cta p-1 d-xsm-block d-block d-md-none d-lg-none');
     var text = 'Hire Us';
     $('.nav-cta-link').html(text);

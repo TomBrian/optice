@@ -26,6 +26,16 @@ body {
     background: #555;
   }
 }
+.menu-overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 3;
+  top: 0;
+  display: none;
+}
 .banner {
   font-weight: bold;
   font-family: "montserrat";
@@ -57,9 +67,15 @@ body {
       color: white;
     }
   }
+  .menu-opener{
+    display: none;
+  }
   .navbar-collapse {
     text-transform: capitalize;
     font-family: 'nunito sans';
+    .close{
+      display: none;
+    }
     ul {
       width: 100%;
       justify-content: space-between;
@@ -72,6 +88,9 @@ body {
   }
 }
 
+.navbar-collapse.show{
+  width: 300px !important;
+}
 /*
 *=============
  Dropdowns
@@ -671,6 +690,9 @@ h1{
 @media (min-width: 767px) {
   // framework
   // main
+  .navbar .shadow-lg{
+    box-shadow: 20rem 30rem 40rem transparent !important;
+  }
   .hero {
     .hero-content {
       padding-left: 100px;
@@ -714,8 +736,12 @@ h1{
   display: none !important;
 }
 }
+// small screens
 @media (max-width: 767px) {
   // framework
+  .menu-overlay.open{
+    display: block !important;
+  }
   // main
   .container{
     width: 100% !important;
@@ -724,18 +750,53 @@ h1{
     width: 90%;
   }
   .navbar {
+    .menu-opener{
+      display: block !important;
+    }
     .navbar-collapse {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between !important;
       background-color: $theme-color1;
-      max-width: 100%;
-      min-width: 100%;
+      width: 98%;
+      height: 100vh;
+      position: fixed;
+      padding:30px 10px 10px 10px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: poppins;
+      transition: 0.5s;
+      top: 0;
+      left: -100%;
+      &.open{
+        left: 0px !important;
+      }
+      z-index: 3;
+      .close{
+        position: absolute;
+        display: block !important;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-size: 24px;
+        font-weight: lighter !important;
+        opacity: 1 !important;
+      }
+      .dropdown{
+        ul{
+          width: 70%;
+          margin: auto;
+        }
+      }
       ul {
         padding: 0px !important;
         width: 100%;
         li {
           width: 100%;
-          border: solid 1px #efefef4d;
+          margin-top: 10px;
+          margin-bottom: 10px;
           .nav-link {
-            color: white;
+            color: white !important;
             width: 100%;
           }
         }
@@ -746,10 +807,14 @@ h1{
           border: none;
         }
       }
-      .nav-cta {
-        width: 100%;
+      .nav-cta{
         border-radius: 0%;
         font-size: 14px !important;
+        background-color: transparent;
+        border: solid 1px $buttons-color1 ;
+        &:hover{
+          background-color: $buttons-color1;
+        }
       }
     }
   }

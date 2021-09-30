@@ -62,7 +62,7 @@ $twitter = get_the_author_meta( 'twitter', $post->post_author );
 $linked = get_the_author_meta( 'linkedin', $post->post_author );
 if ($facebook != '') {
     ?>
-    <a href="<?php echo $facebook;?>"><i class="fab fa-facebook"></i>
+    <a href="<?php echo $facebook;?>" target="_blank"><i class="fab fa-facebook"></i>
             </a></a>
     <?php
 }
@@ -70,7 +70,7 @@ if ($facebook != '') {
 <?php
 if ($twitter != '') {
     ?>
-    <a href="<?php echo $twitter;?>"><i class="fab fa-twitter"></i>
+    <a href="<?php echo $twitter;?>" target="_blank"><i class="fab fa-twitter"></i>
             </a></a>
     <?php
 }
@@ -78,7 +78,7 @@ if ($twitter != '') {
 <?php
 if ($linked != '') {
     ?>
-    <a href="<?php echo $linked;?>"><i class="fab fa-linkedin"></i>
+    <a href="<?php echo $linked;?>" target="_blank"><i class="fab fa-linkedin"></i>
             </a></a>
     <?php
 }
