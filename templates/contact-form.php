@@ -74,6 +74,6 @@
 </div>
 <script>
        function onSubmit(token) {
-         alert(grecaptcha.response);
+         alert(grecaptcha.getResponse);
        }
  </script>

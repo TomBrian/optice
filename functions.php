@@ -84,3 +84,52 @@ function optice_post_thumbnails() {
     set_post_thumbnail_size( 150, 150 );
 }
 add_action( 'after_setup_theme', 'optice_post_thumbnails' );
+function create_post_type() {
+    $labels = array(
+      'name'               => 'Themes',
+      'singular_name'      => 'Theme',
+      'menu_name'          => 'Our Themes',
+      'name_admin_bar'     => 'Theme',
+      'add_new'            => 'Add New',
+      'add_new_item'       => 'Add New Theme',
+      'new_item'           => 'New Theme',
+      'edit_item'          => 'Edit Theme',
+      'view_item'          => 'View Theme',
+      'all_items'          => 'All Themes',
+      'search_items'       => 'Search Themes',
+      'parent_item_colon'  => 'Parent Theme',
+      'not_found'          => 'No Themes Found',
+      'not_found_in_trash' => 'No Themes Found in Trash'
+    );
+  
+    $args = array(
+      'labels'              => $labels,
+      'public'              => true,   // SET TO FALSE IF THE POST TYPE IS PRIVATE
+      'exclude_from_search' => false,
+      'publicly_queryable'  => true,
+      'show_ui'             => true,
+      'show_in_nav_menus'   => true,
+      'show_in_menu'        => true,
+      'show_in_admin_bar'   => true,
+      'menu_position'       => 5,
+      'menu_icon'           => 'dashicons-welcome-widgets-menus',
+      'capability_type'     => 'post',
+      'hierarchical'        => false,
+      'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+      'has_archive'         => true,
+      'rewrite'             => array( 'slug' => 'themes' ),
+      'query_var'           => true
+    );
+  
+    register_post_type( 'sm_project', $args );
+  }
+add_action( 'init', 'create_post_type');  
+// $new_post = array(
+//     'post_title' => 'post 1',
+//     'post_content' => 'post 2',
+//     'post_type' => 'sm_project',
+//     'post_author' => 1,
+//     'post_category' => array('no cat'),
+// );
+// $new_post_id = wp_insert_post($new_post);
+// add_post_meta($new_post_id, "product_type", "sm_project");
