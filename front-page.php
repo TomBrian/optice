@@ -9,7 +9,7 @@
         <div class="hero-content">
             <div class="hero-text text-left">
                 <h1 class="my-1">
-                A full service digital agency that helps businesses build a strong presence.
+                A <span class="em">full service</span> digital agency that helps businesses build a strong presence.
                    
                 </h1>
                 <p class="all-caps text-light my-4 w-full">

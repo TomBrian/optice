@@ -224,7 +224,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero .hero-content .hero-text h1 .em {
-  color: #3DDC97;
+  color: #6CE5E8;
 }
 
 .hero .hero-content .hero-text .all-caps {
@@ -235,7 +235,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero .hero-content .hero-text .hero-cta {
-  background: #57a5d5;
+  background: #6CE5E8;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -243,7 +243,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #4c4a4d;
   border-radius: 0px;
   font-size: large;
 }
@@ -360,7 +360,7 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .form form .submit {
   margin-top: 37px;
   padding: 10px;
-  background-color: #3DDC97;
+  background-color: #6CE5E8;
   font-weight: bold;
   color: white;
 }
@@ -524,7 +524,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .after-hero .cards .card .title .card-title i {
-  color: #3DDC97;
+  color: #6CE5E8;
   font-size: 24px;
   margin-right: 10px;
 }
@@ -547,7 +547,7 @@ body::-webkit-scrollbar-thumb:hover {
 .after-hero .cards .card .list li::before {
   margin-right: 10px;
   content: "\2713";
-  color: #3DDC97;
+  color: #6CE5E8;
   font-weight: bolder;
   border-radius: 50%;
   position: relative;
@@ -821,7 +821,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .so-widget-sow-cta .sow-cta-base .ow-button-base a {
-  background: #3DDC97 !important;
+  background: #6CE5E8 !important;
   border: none;
   color: white !important;
 }
@@ -1104,6 +1104,10 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.badge-primary {
+  background-color: #6CE5E8 !important;
+}
+
 .dropdown-menu.show {
   display: block !important;
 }
@@ -1114,7 +1118,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .em {
-  color: #3DDC97;
+  color: #6CE5E8;
 }
 
 h3 {

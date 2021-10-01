@@ -1,7 +1,7 @@
 $text-color: #4c4a4d;
 $theme-color1: #47244e;
 $buttons-color1: #57a5d5;
-$em-color: #3DDC97;
+$em-color: #6CE5E8;
 body {
   width: 100vw !important;
   overflow-x: hidden;
@@ -184,13 +184,13 @@ body {
         font-size: 14px;
       }
       .hero-cta {
-        background: #57a5d5;
+        background: $em-color;
         width: fit-content;
         font-family: "Poppins";
         font-weight: bolder;
         text-align: center;
         text-transform: uppercase;
-        color: #ffffff;
+        color: $text-color;
         border-radius: 0px;
         font-size: large;
       }
@@ -911,6 +911,9 @@ h1{
 //
 // framework
 //
+.badge-primary{
+  background-color: $em-color !important;
+}
 .dropdown-menu.show{
   display: block !important;
 }
