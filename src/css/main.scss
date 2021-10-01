@@ -96,6 +96,13 @@ body {
  Dropdowns
  *============
 **/
+.show-submenu{
+  ul{
+  display: block !important ;
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+}
 .dropdown {
   a.dropdown-toggle {
     display: flex;
@@ -109,8 +116,24 @@ body {
     }
   }
 }
+.dropdown ul.show{
+  display: block !important;
+  opacity: 1 !important;
+  margin-top:2px !important;
+  pointer-events: all !important;
+}
+.show-submenu{
+  ul{
+    display: block !important;
+    opacity: 1;
+  }
+}
+.dropdown-submenu{
+  i{
+    transform: rotateZ(-90deg);
+  }
+}
 .dropdown{ 
-  position: relative;
   color: $buttons-color1 !important;
   ul {
     border: none;
@@ -695,6 +718,20 @@ h1{
   // main
   .navbar .shadow-lg{
     box-shadow: 20rem 30rem 40rem transparent !important;
+    .dropdown-submenu{
+      .dropdown-menu-right{
+        top: 0;
+        right: -115%;
+        &::before{
+          display: none !important;
+        }
+      }
+    }
+    .dropdown:not(.dropdown-submenu){
+      & > ul{
+        transform: translateX(-25%);
+      }
+    }
   }
   .hero {
     .hero-content {
@@ -709,6 +746,7 @@ h1{
     width: fit-content;
     max-width: 60%;
     .dropdown{
+      position: relative;
     ul {
       display: block;
       opacity: 0;
@@ -716,7 +754,7 @@ h1{
       transition: 0.2s !important;
     }
   &:hover {
-   ul{
+   & > ul{
     opacity: 1;
     margin-top: -2px;
     pointer-events: all;

@@ -110,6 +110,12 @@ body::-webkit-scrollbar-thumb:hover {
  Dropdowns
  *============
 **/
+.show-submenu ul {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
 .dropdown a.dropdown-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,8 +138,24 @@ body::-webkit-scrollbar-thumb:hover {
   border: none;
 }
 
+.dropdown ul.show {
+  display: block !important;
+  opacity: 1 !important;
+  margin-top: 2px !important;
+  pointer-events: all !important;
+}
+
+.show-submenu ul {
+  display: block !important;
+  opacity: 1;
+}
+
+.dropdown-submenu i {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
 .dropdown {
-  position: relative;
   color: #57a5d5 !important;
 }
 
@@ -903,6 +925,17 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-box-shadow: 20rem 30rem 40rem transparent !important;
             box-shadow: 20rem 30rem 40rem transparent !important;
   }
+  .navbar .shadow-lg .dropdown-submenu .dropdown-menu-right {
+    top: 0;
+    right: -115%;
+  }
+  .navbar .shadow-lg .dropdown-submenu .dropdown-menu-right::before {
+    display: none !important;
+  }
+  .navbar .shadow-lg .dropdown:not(.dropdown-submenu) > ul {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
   .hero .hero-content {
     padding-left: 100px;
     padding-right: 100px;
@@ -916,6 +949,9 @@ body::-webkit-scrollbar-thumb:hover {
     width: fit-content;
     max-width: 60%;
   }
+  .navbar-collapse .dropdown {
+    position: relative;
+  }
   .navbar-collapse .dropdown ul {
     display: block;
     opacity: 0;
@@ -923,7 +959,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-transition: 0.2s !important;
     transition: 0.2s !important;
   }
-  .navbar-collapse .dropdown:hover ul {
+  .navbar-collapse .dropdown:hover > ul {
     opacity: 1;
     margin-top: -2px;
     pointer-events: all;

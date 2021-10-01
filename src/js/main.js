@@ -1,19 +1,34 @@
 jQuery(($)=>{
     $('nav .nav-link').addClass('text-center');
     $('nav .dropdown-menu').addClass('shadow-md');
+    $('nav .dropdown-menu .dropdown').addClass('dropdown-submenu');
+    $('nav .dropdown-menu .dropdown ul').addClass('dropdown-menu-right');
     // create the navbar cta
     const containers = document.querySelectorAll('nav .collapse');
     const button = document.createElement('button');
     const link = document.createElement('a');
     const close =  document.createElement('div');
     const menuIcons = document.querySelectorAll('.menu-opener');
+    const submenuToggles = document.querySelectorAll('.dropdown-submenu a:first-child');
+    const dropdownChildren = document.querySelectorAll('.dropdown ul a');
+    dropdownChildren.forEach(child => {
+      child.addEventListener('click',(e)=>{
+        e.stopPropagation()
+      })
+    });
+    submenuToggles.forEach(toggler => {
+      toggler.addEventListener('click',(e)=>{
+        $('.show-submenu').removeClass('show-submenu')
+        e.target.parentNode.classList.toggle("show-submenu");
+      })
+    });
     const closeIcon = `<div class="close"><img src="${window.location.origin}/wp-content/themes/Kanai/src/images/close.svg" alt="close"/></div>`
     close.innerHTML = closeIcon;
     containers.forEach(container => {
       container.appendChild(button)
       // sidebar close button
       container.appendChild(close);
-      container.addEventListener('click',()=>{
+      close.addEventListener('click',()=>{
         $('nav .collapse,.menu-overlay').removeClass('open');
       })
     });

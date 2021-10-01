@@ -1,5 +1,5 @@
 <div class="form mx-4 my-4 shadow-sm">
-  <form action="" id="protected" class="services-form" method="POST">
+  <form id="protected" class="services-form" method="POST">
     <h3 class="my-3 text-center">Contact Us</h3>
     <div class="input-wrapper my-3 flex">
       <input type="text" name="name" placeholder="your full name..." class="form-control" required />
@@ -66,20 +66,14 @@
       </div>
     </div>
      <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit">
+      <button class="btn submit g-recaptcha" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit' type="submit">
         Submit your request
       </button>
     </div>
-    <div class="g-recaptcha"  data-callback="onSubmit"  data-size="invisible" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-action='submit'></div>
   </form>
 </div>
 <script>
-  jQuery(($)=>{
-    $('#protected').submit(function (event) {
-    grecaptcha.execute();
-  });
-  })
-  function onSubmit(token) {
-    
-  }
-</script>
+       function onSubmit(token) {
+         alert(grecaptcha.response);
+       }
+ </script>
