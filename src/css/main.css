@@ -785,6 +785,10 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
 }
 
+.single-page-content-wrapper .blog-post img {
+  min-width: 100%;
+}
+
 .single-page-content-wrapper .blog-post h3 {
   line-height: 300%;
 }

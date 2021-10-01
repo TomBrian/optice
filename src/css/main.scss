@@ -596,6 +596,9 @@ h1{
   .blog-post{
     min-width: 320px;
     display: block;
+    img{
+      min-width: 100%;
+    }
     h3{
      line-height: 300%;
     }
