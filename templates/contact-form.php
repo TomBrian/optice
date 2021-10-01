@@ -74,6 +74,12 @@
 </div>
 <script>
        function onSubmit(token) {
-         alert(grecaptcha.getResponse);
+         if (window.grecaptcha.getResponse() == ""){
+           alert('you are a robot');
+         }
+         else{
+           alert("you are a human")
+         }
+         ;
        }
  </script>
