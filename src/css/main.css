@@ -966,7 +966,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
-    background-color: #47244e;
+    background-color: #57a5d5;
     width: 98%;
     height: 100vh;
     position: fixed;
@@ -1020,7 +1020,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 0%;
     font-size: 14px !important;
     background-color: transparent;
-    border: solid 1px #57a5d5;
+    border: solid 1px white;
   }
   .navbar .navbar-collapse .nav-cta:hover {
     background-color: #57a5d5;

@@ -760,7 +760,7 @@ h1{
       display: flex !important;
       flex-direction: column;
       justify-content: space-between !important;
-      background-color: $theme-color1;
+      background-color: $buttons-color1;
       width: 98%;
       height: 100vh;
       position: fixed;
@@ -814,7 +814,7 @@ h1{
         border-radius: 0%;
         font-size: 14px !important;
         background-color: transparent;
-        border: solid 1px $buttons-color1 ;
+        border: solid 1px white ;
         &:hover{
           background-color: $buttons-color1;
         }
