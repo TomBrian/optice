@@ -2,6 +2,7 @@ $text-color: #4c4a4d;
 $theme-color1: #47244e;
 $buttons-color1: #57a5d5;
 $em-color: #6CE5E8;
+$jumbotron-color:#6ce6e834;
 body {
   width: 100vw !important;
   overflow-x: hidden;
@@ -454,6 +455,7 @@ body {
 .process{
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   .image{
     width: 50%;
@@ -470,6 +472,9 @@ body {
     h3{
       font-family: 'poppins';
     }
+    p{
+      width: 100%;
+    }
     .btn{
      margin: auto;
     }
@@ -479,6 +484,9 @@ body {
   h3{
     color: $theme-color1;
   }
+}
+.home-catalogue{
+  flex-wrap: wrap;
 }
 // 
 // 
@@ -952,6 +960,21 @@ h1{
 //
 // framework
 //
+.jumbotron{
+  // color: white;
+  font-family: 'poppins';
+  background-color: white;
+  &.jumbotron-em{
+  background-color: $jumbotron-color;
+    }
+      h4{
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  .socials{
+    font-size: 36px;
+  }
+}
 .badge-primary{
   background-color: $em-color !important;
 }
@@ -964,6 +987,11 @@ h1{
 }
 .em {
   color: $em-color;
+}
+a{
+  &:hover{
+    text-decoration: none !important;
+  }
 }
 h3 {
   font-family: "montserrat";
@@ -981,4 +1009,18 @@ p {
       width: fit-content;
       min-width: 160px;
       border-radius: 0%;
+    }
+ @keyframes loading{
+   from{
+     opacity: 0.5;
+   }
+   to{
+     opacity: 0.8;
+   }
+ }
+    .alert{
+      display: none;
+    }
+    .loader{
+      display: none;
     }

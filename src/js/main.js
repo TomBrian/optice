@@ -42,7 +42,7 @@ jQuery(($)=>{
     $('.nav-cta-link').attr('href','#')
     $('nav .collapse').addClass('shadow-lg');
     $('nav .collapse button').addClass('nav-cta p-1 d-xsm-block d-block d-md-none d-lg-none');
-    var text = 'Hire Us';
+    var text = 'Call Us';
     $('.nav-cta-link').html(text);
    //append fontawesome icons to dropdowns
    var dropDowns = document.querySelectorAll('.dropdown > a'); 

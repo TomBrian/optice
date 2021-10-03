@@ -16,9 +16,11 @@
                     Technical seo audit | websites development | wordpress integration & THEME DEVELOPMENT |
                     content writing
                 </p>
+                <a href="<?php bloginfo( 'url' )?>/contact-us">
                 <button class="px-4 py-3 my-1 animate__animated animate__pulse animate__infinite btn hero-cta">
                   lets get started
                 </button>
+                </a>
             </div>
         </div>
         <div class="hero-waves">
@@ -147,42 +149,31 @@
     </p>
     <button class="btn btn-primary">Learn more</button>
     </div>
+</div> 
+<div class="jumbotron  jumbotron-em text-center">
+    <h4>We are one click away</h4>
+    <h3 class="animate__animated animate__infinite">call us on 0798388488</h3>
 </div>
-<div class="container contact-wrapper">
-    <div class="contact flex">
-        <?php get_template_part('templates/contact', 'form') ?>
-        <div class="text mx-4">
-            <div class="text-lg my-5">
-                Are you ready to talk to an expert? <br><br>
-                <b class="em-text my-1">Give us a call</b><br>
-                <b class="phone">(+254)42456364</b>
-                <ul class="my-3">
-                    <li>Fast response and delivery.</li>
-                    <li>Transparent development process.</li>
-                    <li>Quality and secure development.</li>
-                </ul>
-            </div>
-            <div class="footer">
-                <p class="all-caps">
-                    You can also find us on
-                </p>
-                <div class="socials align-items-center justify-content-left flex">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="90" height="90" class="mx-3" alt="fiverr">
-                    </a>
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="171" height="90" class="mx-3" alt="freelancer">
-                    </a>
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="90" height="90" class="mx-3" alt="upwork">
-                    </a>
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="40" height="40" class="mx-3" alt="linked in">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+     <h3 class="text-center my-4">
+         From our <a href="<?php echo bloginfo( 'url' )?>/blog"><span class="em">blog</span></a>
+     </h3>
+<?php $args = array(
+    'post_type' => 'post',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'posts_per_page' => 3
+  );
+  ?>
+<div class="container home-catalogue justify-content-center flex">
+    <?php
+    $query2 = new WP_Query($args);
+    ?>
+    <?php if ($query2->have_posts()) :
+      while ($query2->have_posts()) : $query2->the_post() ?>
+        <?php get_template_part('templates/blog', 'card') ?>
+    <?php
+      endwhile;
+    endif; ?>
+  </div>
 <script src="<?php echo get_template_directory_uri() ?>/src/js/front-page.js"></script>
 <?php get_footer() ?>
