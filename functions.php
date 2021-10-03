@@ -259,8 +259,8 @@ add_action('wp_ajax_nopriv_entry', 'optisites_fetch_form_data');
 function optisites_fetch_form_data()
 {
 $new_entry = array(
-    'post_title' => 'An Entry from'.$_POST['name'],
-    'post_content' => $_POST['message'],
+    'post_title' => 'An Entry from'.$_REQUEST['name'],
+    'post_content' => $_REQUEST['message'],
     'post_type' => 'form_entry',
     'post_author' => 1,
     'post_category' => array('entry'),
