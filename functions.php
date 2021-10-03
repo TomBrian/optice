@@ -254,11 +254,10 @@ add_action('save_post', 'save_custom_meta');
 
 // contact form 
 
-add_action('wp_ajax_enquiry', 'optisites_fetch_form_data');
-add_action('wp_ajax_nopriv_enquiry', 'optisites_fetch_form_data');
+add_action('wp_ajax_entry', 'optisites_fetch_form_data');
+add_action('wp_ajax_nopriv_entry', 'optisites_fetch_form_data');
 function optisites_fetch_form_data()
 {
-
 $new_entry = array(
     'post_title' => 'An Entry from'.$_POST['name'],
     'post_content' => $_POST['message'],
