@@ -107,8 +107,6 @@ function onSubmit(token) {
                 type: "POST",
                 data: formData ,
                 action:'entry',
-                contentType: false,
-                processData:false,
                 success: function(response) {
                     $('#protected .alert-success').show();
                     $('#protected .alert-success').text('your email has been sent.We will reply through '+response.data+' as soon as we can');
