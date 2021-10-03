@@ -76,13 +76,14 @@
   </form>
 </div>
 <script>
-  jQuery(($) => {
-       function onSubmit(token) {
+function onSubmit(token) {
          if (window.grecaptcha.getResponse().length == 0){
            location.reload();
          }
          else{
         
+  jQuery(($) => {
+       
           $('#protected').css('animation','loading 2s linear infinite');
             var name =  $('.name').val();
             var email =  $('.email').val();
@@ -106,7 +107,7 @@
                     $('#protected').css('animation','none');
                 }
             });
-          
-         }} 
-       });
+         })
+         }
+       } ;
  </script>
