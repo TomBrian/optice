@@ -103,10 +103,10 @@ function onSubmit(token) {
              company:company,
              message:message
            }; //
-           formData.append('action','entry');
             $.ajax("<?php echo admin_url('admin-ajax.php')?>",{
                 type: "POST",
                 data: formData ,
+                action:'entry',
                 contentType: false,
                 processData:false,
                 success: function(response) {
