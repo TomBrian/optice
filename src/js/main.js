@@ -63,11 +63,12 @@ jQuery(($)=>{
      const serviceArray = [];
      const services = $('.services-dropdown input');
      $.map(services, function (el,i) {
+       console.log(allchecks)
           el.addEventListener('change',()=>{
             if (el.checked) {
               if (!serviceArray.includes(el.value)) {
               serviceArray.push(el.value);
-              console.log(serviceArray);
+              // console.log(serviceArray);
             }
               }
               else{
@@ -78,7 +79,7 @@ jQuery(($)=>{
                       }
                     });
                 }
-                console.log(serviceArray)
+                // console.log(serviceArray)
               }
               // fun fact...The jQuery text() changes array items into a sentence.
                

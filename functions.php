@@ -258,32 +258,27 @@ add_action('wp_ajax_enquiry', 'optisites_fetch_form_data');
 add_action('wp_ajax_nopriv_enquiry', 'optisites_fetch_form_data');
 function optisites_fetch_form_data()
 {
-    // array to parse form data into
-    $formData = [];
-    // $_POST returns an object where the form data (string) is stored in the enquiry property
-    wp_parse_str($_POST['entry'], $formData);
-    return $formData;
 
-// $new_entry = array(
-//     'post_title' => 'An Entry from'.$formData['name'],
-//     'post_content' => $formData['message'],
-//     'post_type' => 'form_entry',
-//     'post_author' => 1,
-//     'post_category' => array('no cat'),
-// );
-// $new_entry_id = wp_insert_post($new_entry);
-//  $add_query = add_post_meta($new_entry_id, "product_type", "form_entry");
-//  try {
-//     // wp_mail error
-//     if ($add_query) {
-//         wp_send_json_success('successful');
-//     } else {
-//         wp_send_json_error('failed');
-//     }
-// }
-// // global error
-// catch (Exception $e) {
-//     wp_send_json_error($e);
-// }
+$new_entry = array(
+    'post_title' => 'An Entry from'.$_POST['name'],
+    'post_content' => $_POST['message'],
+    'post_type' => 'form_entry',
+    'post_author' => 1,
+    'post_category' => array('entry'),
+);
+$new_entry_id = wp_insert_post($new_entry);
+ $add_query = add_post_meta($new_entry_id, "product_type", "form_entry");
+ try {
+    // wp_mail error
+    if ($add_query) {
+        wp_send_json_success('successful');
+    } else {
+        wp_send_json_error('failed');
+    }
+}
+// global error
+catch (Exception $e) {
+    wp_send_json_error($e);
+}
 }
 

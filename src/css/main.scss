@@ -1018,7 +1018,10 @@ p {
      opacity: 0.8;
    }
  }
-    .alert{
+    .alert-success{
+      display: none;
+    }
+    .alert-danger{
       display: none;
     }
     .loader{

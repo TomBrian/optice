@@ -1237,7 +1237,11 @@ p {
   }
 }
 
-.alert {
+.alert-success {
+  display: none;
+}
+
+.alert-danger {
   display: none;
 }
 

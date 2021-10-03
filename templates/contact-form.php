@@ -2,13 +2,13 @@
   <form id="protected" class="services-form" method="POST">
     <h3 class="my-3 text-center">Contact Us</h3>
     <div class="input-wrapper my-3 flex">
-      <input type="text" name="name" placeholder="your full name..." class="form-control name" required />
+      <input type="text" name="name" placeholder="your full name..." class="form-control name" id="name" required />
       <div class="icon">
         <i class="fas fa-user"></i>
       </div>
     </div>
     <div class="input-wrapper my-3 flex">
-      <input type="text" name="company" placeholder="company name..." class="form-control" required />
+      <input type="text" name="company" placeholder="company name..." class="form-control" id="company" required />
       <div class="icon">
         <i class="fas fa-home"></i>
       </div>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="input-wrapper my-3 flex">
-      <input type="tel" name="phone" placeholder="phone number" class="form-control" required/>
+      <input type="tel" name="phone" placeholder="phone number" id="phone" class="form-control" required/>
       <div class="icon">
         <i class="fas fa-phone"></i>
       </div>
@@ -85,12 +85,24 @@ function onSubmit(token) {
   jQuery(($) => {
        
           $('#protected').css('animation','loading 2s linear infinite');
-            var name =  $('.name').val();
-            var email =  $('.email').val();
-           var data =  $('#protected').serialize(); //serializing the form and turning it into a string
-           var formData = new FormData; //
-           formData.append('action','entry'); //action = enquiry
-           formData.append('entry',data); //enquiry = string
+            var name =  $('input[id="name"]').val();
+            var email=  $('input[name="email"]').val();
+            var phone=   $('input[id="phone"]').val();
+            var company=   $('input[id="company"]').val();
+            var message=   $('input[id="message"]').val();
+            var serviceArray = [];
+            $("input:checkbox[name=type]:checked").each(function(){
+    serviceArray.push($(this).val());
+});
+          //  var data =  $('#protected').serialize(); //serializing the form and turning it into a string
+           var formData = {
+             name:name,
+             email:email,
+             services:serviceArray,
+             phone:phone,
+             company:company,
+             message:message
+           }; //
             $.ajax("<?php echo admin_url('admin-ajax.php')?>",{
                 type: "POST",
                 data: formData ,
