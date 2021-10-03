@@ -106,6 +106,8 @@ function onSubmit(token) {
             $.ajax("<?php echo admin_url('admin-ajax.php')?>",{
                 type: "POST",
                 data: formData ,
+                contentType: false,
+                processData:false,
                 action:'entry',
                 success: function(response) {
                     $('#protected .alert-success').show();
