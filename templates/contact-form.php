@@ -110,13 +110,13 @@ function onSubmit(token) {
                 contentType: false,
                 processData:false,
                 success: function(response) {
-                    $('#enquiry .alert-success').show();
-                    $('#enquiry .alert-success').text('your email has been sent.We will reply through '+response.data+' as soon as we can');
+                    $('#protected .alert-success').show();
+                    $('#protected .alert-success').text('your email has been sent.We will reply through '+response.data+' as soon as we can');
                     $('#protected').css('animation','none');
                 },
                 error: function(response) {
-                    $('#enquiry .alert-danger').show();
-                    $('#enquiry .alert-danger').text("could not send the enquiry.please try again later");
+                    $('#protected .alert-danger').show();
+                    $('#protected .alert-danger').text("could not send the enquiry.please try again later");
                     $('#protected').css('animation','none');
                 }
             });
