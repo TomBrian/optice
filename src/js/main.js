@@ -63,7 +63,6 @@ jQuery(($)=>{
      const serviceArray = [];
      const services = $('.services-dropdown input');
      $.map(services, function (el,i) {
-       console.log(allchecks)
           el.addEventListener('change',()=>{
             if (el.checked) {
               if (!serviceArray.includes(el.value)) {
