@@ -71,7 +71,7 @@
     </div>
     <div class="alert alert-danger"></div>
      <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit" type="submit">
+      <button class="btn submit g-recaptcha" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit' type="submit">
         Submit your request
       </button>
     </div>
