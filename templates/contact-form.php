@@ -78,15 +78,11 @@
   </form>
 </div>
 <script>
-// function onSubmit(token) {
-//          if (window.grecaptcha.getResponse().length == 0){
-//            location.reload();
-//          }
-//          else{
-        
-//   
-       
-  function onSub(e){
+function onSub(token) {
+         if (window.grecaptcha.getResponse().length == 0){
+           location.reload();
+         }
+         else{
       e.preventDefault();
     jQuery(($) => {
           $('#protected').css('animation','loading 2s linear infinite');
@@ -138,7 +134,6 @@
             }); 
           })
           }
-      //   
-      //    }
+       }
       //  } ;
  </script>
