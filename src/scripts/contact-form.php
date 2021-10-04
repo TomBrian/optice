@@ -27,7 +27,7 @@ function optisites_fetch_form_data()
     update_post_meta($new_entry_id, "userphone", $formData['phone']);
     update_post_meta($new_entry_id, "userservices", $formData['services']);
     $to = get_option('admin_email');
-    $subject = 'an enquiry from ' . $formData['name'] . 'phone: ' . $formData['phone'] . ' email: ' . $formData['email'];
+    $subject = 'an entry from ' . $formData['name'] .' '. 'phone: (' . $formData['phone'] . ') email: (' . $formData['email'].') company:('.$formData['company'].')';
     $message = $formData['message'];
     $headers[] = 'content-Type:text/html';
     $headers[] = 'From:' . $formData['email'];
