@@ -83,7 +83,6 @@ function onSub(token) {
            location.reload();
          }
          else{
-      e.preventDefault();
     jQuery(($) => {
           $('#protected').css('animation','loading 2s linear infinite');
             var name =  $('input[id="name"]').val();
