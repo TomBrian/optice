@@ -1,5 +1,5 @@
 <div class="form mx-4 my-4 shadow-sm">
-  <form id="protected" class="services-form" onsubmit="onSub(event)" method="POST">
+  <form id="protected" class="services-form" method="POST">
     <h3 class="my-3 text-center">Contact Us</h3>
     <div class="input-wrapper my-3 flex">
       <input type="text" name="name" placeholder="your full name..." class="form-control name" id="name" required />
@@ -71,7 +71,7 @@
     </div>
     <div class="alert alert-danger"></div>
      <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit g-recaptcha" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit' type="submit">
+      <button class="btn submit g-recaptcha" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSub' type="submit">
         Submit your request
       </button>
     </div>
