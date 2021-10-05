@@ -807,7 +807,7 @@ h1{
 // small screens
 // ipad
 @media (max-width: 768px) {
-  .sticky-top.sidebar-card{
+  .blog-sidebar .sticky-top{
     position: relative !important;
     z-index: unset !important;
   }
