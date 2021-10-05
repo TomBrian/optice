@@ -641,6 +641,7 @@ h1{
   .sidebar{
     position: relative;
     .sticky-top{
+      z-index: 1;
       padding-top:70px;
     }
     div{

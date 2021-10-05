@@ -837,6 +837,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .sidebar .sticky-top {
+  z-index: 1;
   padding-top: 70px;
 }
 
