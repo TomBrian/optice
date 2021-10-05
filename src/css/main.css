@@ -937,6 +937,7 @@ body::-webkit-scrollbar-thumb:hover {
           flex-direction: column;
   background-color: #57a5d5;
   color: white;
+  z-index: 1 !important;
 }
 
 .sidebar-card ul {
