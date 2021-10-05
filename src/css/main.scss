@@ -641,7 +641,6 @@ h1{
   .sidebar{
     position: relative;
     .sticky-top{
-      z-index: 1;
       padding-top:70px;
     }
     div{
@@ -719,7 +718,6 @@ h1{
   flex-direction: column;
   background-color: $buttons-color1;
   color: white;
-  z-index: 1 !important;
   ul{
     opacity: 0.9;
     font-family: 'montserrat';
