@@ -43,7 +43,7 @@
     <div class="container p-3 blog-post">
         <img src="<?php echo the_post_thumbnail_url() ?>" class="img-responsive" alt="<?php echo the_title() ?>">
         <?php the_content() ?>
-        <h3>About The author</h3>
+        <h3>About the author</h3>
         <div class="author-card shadow-sm p-4">
             <div class="avatar mx-4">
         <?php echo get_avatar(get_the_author_meta('user_email', $id),150);?>

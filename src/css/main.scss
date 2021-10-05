@@ -59,6 +59,7 @@ body {
   justify-content: space-between !important;
   width: 100%;
   max-width: 100vw;
+  z-index: 2 !important;
   .nav-cta {
     width: 150px;
     background: $buttons-color1;
