@@ -1020,7 +1020,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 768px) {
-  .sidebar-card {
+  .sticky-top.sidebar-card {
     position: relative !important;
     z-index: unset !important;
   }
