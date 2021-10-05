@@ -809,6 +809,7 @@ h1{
 @media (max-width: 768px) {
   .sidebar-card{
     position: relative !important;
+    z-index: unset !important;
   }
   .sm-none{
     display: none !important;
