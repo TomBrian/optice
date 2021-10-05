@@ -1022,7 +1022,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 768px) {
   .sidebar .sticky-top {
     position: relative !important;
-    z-index: unset !important;
+    z-index: 0 !important;
   }
   .sm-none {
     display: none !important;
