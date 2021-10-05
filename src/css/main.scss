@@ -807,6 +807,9 @@ h1{
 // small screens
 // ipad
 @media (max-width: 768px) {
+  .container{
+    width: 100% !important;
+  }
   .sidebar .sticky-top{
     position: relative !important;
     z-index: 0 !important;

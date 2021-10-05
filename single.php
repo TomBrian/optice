@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div class="container py-4 px-5 single-header">
+<div class="container-fluid p-4 single-header">
     <div class="left">
         <div class="categories flex">
             <?php the_category() ?>
