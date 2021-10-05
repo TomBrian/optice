@@ -157,6 +157,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dropdown {
   color: #57a5d5 !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .dropdown ul {
@@ -168,6 +171,9 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: white;
   padding: 10px;
   min-width: 200px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .dropdown ul::before {

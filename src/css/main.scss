@@ -136,6 +136,7 @@ body {
 }
 .dropdown{ 
   color: $buttons-color1 !important;
+  width: fit-content;
   ul {
     border: none;
     transition: 1s;
@@ -144,6 +145,7 @@ body {
   background-color: white;
   padding: 10px;
   min-width: 200px !important;
+  width: fit-content !important;
   &::before{
     content: '';
     border-bottom: solid 10px white;
