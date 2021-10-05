@@ -3,8 +3,7 @@
 /**
  * @package kanai
  * **/
-require get_template_directory() . '/src/scripts/custom-post-types.php';
-require get_template_directory() . '/src/scripts/contact-form.php';
+
 function kanai_enqueue_resources()
 {
     // css
@@ -25,7 +24,10 @@ function kanai_enqueue_resources()
 }
 
 add_action('init', 'kanai_enqueue_resources');
-
+// load scripts
+require dirname(__FILE__)  . '/src/scripts/custom-post-types.php';
+require dirname(__FILE__)  . '/src/scripts/contact-form.php';
+require dirname(__FILE__)  . '/src/scripts/customizer.php';
 /**
  * Register Custom Navigation Walker
  */
