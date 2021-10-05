@@ -64,7 +64,6 @@ body::-webkit-scrollbar-thumb:hover {
           justify-content: space-between !important;
   width: 100%;
   max-width: 100vw;
-  z-index: 2 !important;
 }
 
 .navbar .nav-cta {
@@ -1022,6 +1021,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 768px) {
+  .sidebar-card {
+    position: relative !important;
+  }
   .sm-none {
     display: none !important;
   }
