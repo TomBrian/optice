@@ -86,7 +86,7 @@ if ($linked != '') {
                 </p>
             </div>
         </div>
-        <div class="lg-none">
+        <div class="lg-none sidebar">
             <?php get_template_part('templates/single', 'sidebar') ?>
         </div>
     </div>
