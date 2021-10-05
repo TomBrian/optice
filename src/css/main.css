@@ -1020,7 +1020,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 768px) {
-  .blog-sidebar .sticky-top {
+  .sidebar .sticky-top {
     position: relative !important;
     z-index: unset !important;
   }
