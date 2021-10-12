@@ -64,6 +64,13 @@
         <i class="fas fa-question-circle"></i>
       </div>
     </div>
+    <div class="container">
+    <small class="text-muted" style="opacity:0.5;">
+      This form is protected by reCAPTCHA and the Google 
+    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+   </small>
+</div>
     <div class="alert alert-success">
     </div>
     <div class="alert alert-danger"></div>

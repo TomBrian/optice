@@ -1350,4 +1350,8 @@ p {
 .loader {
   display: none;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
 /*# sourceMappingURL=main.css.map */
