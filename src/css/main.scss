@@ -3,6 +3,7 @@ $theme-color1: #47244e;
 $buttons-color1: #57a5d5;
 $em-color: #6CE5E8;
 $jumbotron-color:#6ce6e834;
+$footer-color:#2F2E41;
 body {
   width: 100vw !important;
   overflow-x: hidden;
@@ -762,6 +763,55 @@ h1{
     font-family: 'poppins' !important;
   }
 }
+.site-footer{
+  background-color: $footer-color;
+  min-height: 350px;
+  height: fit-content;
+  display: flex;
+  padding-top: 50px;
+  .footer-links{
+    color: white;
+    height: fit-content;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a{
+      color: white;
+    }
+    .socials{
+      width: fit-content;
+     width:40%;
+     min-width:320px;
+      p{
+        font-family: 'Nunito sans';
+      }
+      li{
+        font-family: 'poppins';
+      }
+    }
+    .fast-links{
+      width: 50%;
+      min-width: 320px;
+      strong{
+        font-family: poppins;
+      }
+      ul{
+        font-family: 'Nunito Sans';
+      }
+      .sm-col{
+        width: 25%;
+      }
+      .lg-col{
+        width: 45%;
+      }
+    }
+  }
+}
+.copyright{
+margin-top: 0px;
+margin-bottom: 0px;
+background-color: $footer-color;
+color: white;
+}
 // media queries
 // big screens
 // ipad
@@ -1048,6 +1098,7 @@ h1{
   // color: white;
   font-family: 'poppins';
   background-color: white;
+  margin-bottom: 0px;
   &.jumbotron-em{
   background-color: $jumbotron-color;
     }

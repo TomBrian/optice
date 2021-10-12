@@ -983,6 +983,77 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: 'poppins' !important;
 }
 
+.site-footer {
+  background-color: #2F2E41;
+  min-height: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.site-footer .footer-links {
+  color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.site-footer .footer-links a {
+  color: white;
+}
+
+.site-footer .footer-links .socials {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 40%;
+  min-width: 320px;
+}
+
+.site-footer .footer-links .socials p {
+  font-family: 'Nunito sans';
+}
+
+.site-footer .footer-links .socials li {
+  font-family: 'poppins';
+}
+
+.site-footer .footer-links .fast-links {
+  width: 50%;
+  min-width: 320px;
+}
+
+.site-footer .footer-links .fast-links strong {
+  font-family: poppins;
+}
+
+.site-footer .footer-links .fast-links ul {
+  font-family: 'Nunito Sans';
+}
+
+.site-footer .footer-links .fast-links .sm-col {
+  width: 25%;
+}
+
+.site-footer .footer-links .fast-links .lg-col {
+  width: 45%;
+}
+
+.copyright {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #2F2E41;
+  color: white;
+}
+
 @media (min-width: 768px) {
   .lg-none {
     display: none;
@@ -1262,6 +1333,7 @@ body::-webkit-scrollbar-thumb:hover {
 .jumbotron {
   font-family: 'poppins';
   background-color: white;
+  margin-bottom: 0px;
 }
 
 .jumbotron.jumbotron-em {
