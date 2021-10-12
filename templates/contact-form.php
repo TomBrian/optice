@@ -67,14 +67,21 @@
     <div class="alert alert-success">
     </div>
     <div class="alert alert-danger"></div>
+    <div class="g-recaptcha"  data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit'>
+      </div>
     <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit g-recaptcha" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit' type="submit">
+      <button class="btn submit" type="submit">
         Submit your request
       </button>
     </div>
   </form>
 </div>
 <script>
+  $('#protected').submit(function (event) {
+    event.preventDefault();
+    grecaptcha.reset();
+    grecaptcha.execute();
+  });
   function onSubmit(token) {
     if (window.grecaptcha.getResponse().length == 0) {
       location.reload();
