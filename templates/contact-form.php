@@ -67,82 +67,84 @@
     <div class="alert alert-success">
     </div>
     <div class="alert alert-danger"></div>
-    <div class="g-recaptcha"  data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit'>
-      </div>
     <div class="submit-wrapper flex justify-content-center">
-      <button class="btn submit" type="submit">
+      <button class="btn submit g-recaptcha" data-sitekey="6LdvDI4cAAAAAE3WmPg0Xb__lFVtn9y4qks-QvN2" data-callback='onSubmit' data-size="invisible" type="submit">
         Submit your request
       </button>
     </div>
   </form>
 </div>
 <script>
-  $('#protected').submit(function (event) {
-    event.preventDefault();
-    grecaptcha.execute();
-  });
   function onSubmit(token) {
     if (window.grecaptcha.getResponse().length == 0) {
       location.reload();
     } else {
       grecaptcha.reset();
       jQuery(($) => {
-        var name = $('input[id="name"]').val();
-        var email = $('input[name="email"]').val();
-        var phone = $('input[id="phone"]').val();
-        var company = $('input[id="company"]').val();
-        var message = $('input[id="message"]').val();
-        var serviceArray = [];
-        var servicestring = '';
-        $("#protected .services:checked").each(function() {
-          serviceArray.push($(this).val());
-        });
-        serviceArray.forEach(service => {
-          servicestring += service + ',';
-        });
-        $('input[name="services"]').val(servicestring);
-        console.log(servicestring);
-        if (servicestring == '') {
-          $('.allow-focus').css({
-            'border': 'solid 0.4px red'
-          })
-        } else {
-          console.log('else');
-          $('#protected').css('animation', 'loading 2s linear infinite');
-          //  var data =  $('#protected').serialize(); //serializing the form and turning it into a string
-          // var data =  
-          // JSON.stringify({
-          //    name:name,
-          //    email:email,
-          //   services:servicestring,
-          //   phone:phone,
-          //    company:company,
-          //   message:message
-          //  });  
-          var data = $('#protected').serialize();
-          var formData = new FormData; //
-          formData.append('action', 'entry');
-          formData.append('entry', data);
-          $.ajax("<?php echo admin_url('admin-ajax.php') ?>", {
-            type: "POST",
-            data: formData,
-            contentType: false,
-            processData: false,
-            processData: false,
-            success: function(response) {
-              $('#protected .alert-success').show();
-              $('#protected .alert-success').text('your email has been sent.We will reply through ' + response.data + ' as soon as we can');
-              $('#protected').css('animation', 'none');
-            },
-            error: function(response) {
-              $('#protected .alert-danger').show();
-              $('#protected .alert-danger').text("could not send the enquiry.please try again later");
-              $('#protected').css('animation', 'none');
-            }
+        const isValid = $('#protected')[0].checkValidity();
+        if (isValid == true) {
+          console.log('valid');
+          var name = $('input[id="name"]').val();
+          var email = $('input[name="email"]').val();
+          var phone = $('input[id="phone"]').val();
+          var company = $('input[id="company"]').val();
+          var message = $('input[id="message"]').val();
+          var serviceArray = [];
+          var servicestring = '';
+          $("#protected .services:checked").each(function() {
+            serviceArray.push($(this).val());
           });
+          serviceArray.forEach(service => {
+            servicestring += service + ',';
+          });
+          $('input[name="services"]').val(servicestring);
+          console.log(servicestring);
+          if (servicestring == '') {
+            $('.allow-focus').css({
+              'border': 'solid 0.4px red'
+            })
+          } else {
+            console.log('else');
+            $('#protected').css('animation', 'loading 2s linear infinite');
+            //  var data =  $('#protected').serialize(); //serializing the form and turning it into a string
+            // var data =  
+            // JSON.stringify({
+            //    name:name,
+            //    email:email,
+            //   services:servicestring,
+            //   phone:phone,
+            //    company:company,
+            //   message:message
+            //  });  
+            var data = $('#protected').serialize();
+            var formData = new FormData; //
+            formData.append('action', 'entry');
+            formData.append('entry', data);
+            $.ajax("<?php echo admin_url('admin-ajax.php') ?>", {
+              type: "POST",
+              data: formData,
+              contentType: false,
+              processData: false,
+              processData: false,
+              success: function(response) {
+                $('#protected .alert-success').show();
+                $('#protected .alert-success').text('your email has been sent.We will reply through ' + response.data + ' as soon as we can');
+                $('#protected').css('animation', 'none');
+              },
+              error: function(response) {
+                $('#protected .alert-danger').show();
+                $('#protected .alert-danger').text("could not send the enquiry.please try again later");
+                $('#protected').css('animation', 'none');
+              }
+            });
+          }
+        }
+        else{
+          alert('please fill in all fields');
         }
       })
     }
   }
+
   //  } ;
 </script>
