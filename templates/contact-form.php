@@ -79,7 +79,6 @@
 <script>
   $('#protected').submit(function (event) {
     event.preventDefault();
-    grecaptcha.reset();
     grecaptcha.execute();
   });
   function onSubmit(token) {
