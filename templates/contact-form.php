@@ -2,32 +2,32 @@
   <form id="protected" class="services-form" method="POST">
     <h3 class="my-3 text-center">Tell us about your project</h3>
     <div class="input-wrapper my-3 flex">
-      <input type="text" name="name" placeholder="your full name..." class="form-control name" id="name" required />
+      <input type="text" name="name" placeholder="your full name *" class="form-control name" id="name" required />
       <div class="icon">
         <i class="fas fa-user"></i>
       </div>
     </div>
     <div class="input-wrapper my-3 flex">
-      <input type="text" name="company" placeholder="company name..." class="form-control" id="company" required />
+      <input type="text" name="company" placeholder="company name *" class="form-control" id="company" required />
       <div class="icon">
         <i class="fas fa-home"></i>
       </div>
     </div>
     <div class="input-wrapper my-3 flex">
-      <input type="email" name="email" placeholder="email" class="form-control" required />
+      <input type="email" name="email" placeholder="your email *" class="form-control" required />
       <div class="icon">
         <i class="fas fa-envelope"></i>
       </div>
     </div>
     <div class="input-wrapper my-3 flex">
-      <input type="tel" name="phone" placeholder="phone number" id="phone" class="form-control" required/>
+      <input type="tel" name="phone" placeholder="your phone number *" id="phone" class="form-control" required/>
       <div class="icon">
         <i class="fas fa-phone"></i>
       </div>
     </div>
     <div class="dropdown allow-focus my-3">
       <div class="dropdown-toggle input-wrapper" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="contact-dropdown-text form-control">What services are you interested in ?</div>
+        <div class="contact-dropdown-text form-control">What services are you interested in ? *</div>
       </div>
       <div class="dropdown-menu services-dropdown" aria-labelledby="triggerId">
         <div class="form-check">
@@ -59,7 +59,7 @@
     </div>
     <input type="hidden" name="services" value=''>
     <div class="input-wrapper my-3 flex">
-      <textarea name="message" id="message" class="form-control" placeholder="Tell us more" required></textarea>
+      <textarea name="message" id="message" class="form-control" placeholder="project description *" required></textarea>
       <div class="icon">
         <i class="fas fa-question-circle"></i>
       </div>
@@ -75,7 +75,7 @@
   </form>
 </div>
 <script>
-function onSubmit(token) {
+function onSubmit(token,e) {
          if (window.grecaptcha.getResponse().length == 0){
            location.reload();
          }
