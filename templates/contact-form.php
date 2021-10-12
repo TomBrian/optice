@@ -79,6 +79,7 @@
     if (window.grecaptcha.getResponse().length == 0) {
       location.reload();
     } else {
+      grecaptcha.reset();
       jQuery(($) => {
         var name = $('input[id="name"]').val();
         var email = $('input[name="email"]').val();
