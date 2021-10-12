@@ -75,7 +75,7 @@
   </form>
 </div>
 <script>
-function onSubmit(token,e) {
+function onSubmit(token) {
          if (window.grecaptcha.getResponse().length == 0){
            location.reload();
          }
@@ -96,7 +96,6 @@ function onSubmit(token,e) {
               servicestring += service+',';
             });
             if (serviceArray.length == 0) {
-        e.preventDefault();
          $('.allow-focus').css({'border':'solid 0.4px red'})}
          else{
             console.log(servicestring);
