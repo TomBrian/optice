@@ -81,7 +81,6 @@ function onSubmit(token) {
          }
          else{
     jQuery(($) => {
-       
             var name =  $('input[id="name"]').val();
             var email=  $('input[name="email"]').val();
             var phone=   $('input[id="phone"]').val();
@@ -95,8 +94,10 @@ function onSubmit(token) {
             serviceArray.forEach(service => {
               servicestring += service+',';
             });
+            console.log(serviceArray);
             if (serviceArray.length == 0) {
-         $('.allow-focus').css({'border':'solid 0.4px red'})}
+         $('.allow-focus').css({'border':'solid 0.4px red'})
+        }
          else{
           $('#protected').css('animation','loading 2s linear infinite');
             $('input[name="services"]').val(servicestring);
