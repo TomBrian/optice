@@ -100,6 +100,7 @@
             'border': 'solid 0.4px red'
           })
         } else {
+          console.log('else');
           $('#protected').css('animation', 'loading 2s linear infinite');
           //  var data =  $('#protected').serialize(); //serializing the form and turning it into a string
           // var data =  
