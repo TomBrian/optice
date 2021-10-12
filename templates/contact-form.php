@@ -97,7 +97,7 @@ function onSubmit(token,e) {
             });
             if (serviceArray.length == 0) {
         e.preventDefault();
-         $('.allow-focus').css({'border-bottom':'solid 2px red'})}
+         $('.allow-focus').css({'border':'solid 0.4px red'})}
          else{
             console.log(servicestring);
             $('input[name="services"]').val(servicestring);
