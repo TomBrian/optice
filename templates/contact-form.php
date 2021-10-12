@@ -1,6 +1,6 @@
 <div class="form mx-4 my-4 shadow-sm">
   <form id="protected" class="services-form" method="POST">
-    <h3 class="my-3 text-center">Contact Us</h3>
+    <h3 class="my-3 text-center">Tell us about your project</h3>
     <div class="input-wrapper my-3 flex">
       <input type="text" name="name" placeholder="your full name..." class="form-control name" id="name" required />
       <div class="icon">
@@ -26,11 +26,8 @@
       </div>
     </div>
     <div class="dropdown allow-focus my-3">
-      <div class="dropdown-toggle flex input-wrapper justify-content-between" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="text contact-dropdown-text form-control">What services are you interested in ?</div>
-        <div class="icon">
-          <i class="fas fa-hands-helping"></i>
-        </div>
+      <div class="dropdown-toggle input-wrapper" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="contact-dropdown-text form-control">What services are you interested in ?</div>
       </div>
       <div class="dropdown-menu services-dropdown" aria-labelledby="triggerId">
         <div class="form-check">
@@ -62,7 +59,7 @@
     </div>
     <input type="hidden" name="services" value=''>
     <div class="input-wrapper my-3 flex">
-      <textarea name="message" id="message" class="form-control" placeholder="how can we help?" required></textarea>
+      <textarea name="message" id="message" class="form-control" placeholder="Tell us more" required></textarea>
       <div class="icon">
         <i class="fas fa-question-circle"></i>
       </div>
@@ -98,6 +95,10 @@ function onSubmit(token) {
             serviceArray.forEach(service => {
               servicestring += service+',';
             });
+            if (serviceArray.length == 0) {
+        e.preventDefault();
+         $('.allow-focus').css({'border-bottom':'solid 2px red'})}
+         else{
             console.log(servicestring);
             $('input[name="services"]').val(servicestring);
           //  var data =  $('#protected').serialize(); //serializing the form and turning it into a string
@@ -131,8 +132,7 @@ function onSubmit(token) {
                     $('#protected').css('animation','none');
                 }
             }); 
-          })
-          }
-       }
+    }})
+         }}
       //  } ;
  </script>

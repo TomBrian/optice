@@ -294,22 +294,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .contact .form {
-  width: 350px;
-  overflow-x: hidden;
-  background-color: #57a5d5;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 320px;
+  max-width: 450px;
   padding: 30px;
 }
 
 .contact .form h3 {
-  color: white;
+  color: #57a5d5;
 }
 
 .contact .form form {
@@ -317,7 +319,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact .form form .input-wrapper {
-  width: 100%;
+  width: 100% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,13 +330,12 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid 1px grey;
-  overflow-x: hidden;
+  border: solid 0.3px rgba(128, 128, 128, 0.26);
 }
 
 .contact .form form .input-wrapper .form-control {
   border-radius: 0%;
-  width: 80%;
+  width: 100%;
   border: none;
 }
 
@@ -353,14 +354,17 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
+.contact .form form .allow-focus {
+  width: 100% !important;
+}
+
 .contact .form form .allow-focus .dropdown-toggle {
-  padding-right: 20px !important;
+  width: 100%;
 }
 
 .contact .form form .allow-focus .dropdown-toggle .contact-dropdown-text {
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .contact .form form .allow-focus .dropdown-toggle::after {
@@ -387,9 +391,10 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .form form .submit {
   margin-top: 37px;
   padding: 10px;
-  background-color: #6CE5E8;
+  background-color: #57a5d5;
   font-weight: bold;
   color: white;
+  width: 80%;
 }
 
 .contact .form form .submit::after {
@@ -431,7 +436,7 @@ body::-webkit-scrollbar-thumb:hover {
 .contact .text .text-lg ul li::before {
   margin-right: 10px;
   content: "\2713";
-  color: black;
+  color: #6CE5E8;
   font-weight: bolder;
 }
 
@@ -824,6 +829,11 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
 }
 
+.single-page-content-wrapper .blog-post a {
+  color: #57a5d5;
+  font-weight: bold;
+}
+
 .single-page-content-wrapper .blog-post img {
   min-width: 100%;
 }
@@ -1025,6 +1035,40 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.about-hero {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-hero div {
+  margin: 10px;
+}
+
+.about-hero h1 {
+  font-family: 'poppins';
+  font-size: 24px;
+}
+
+.about-hero .text {
+  width: 50%;
+  min-width: 320px;
+}
+
+.about-hero .text button {
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-hero .image {
+  width: 50%;
+  min-width: 320px;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100% !important;
@@ -1045,6 +1089,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 767px) {
+  .about-hero {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .menu-overlay.open {
     display: block !important;
   }
@@ -1079,7 +1127,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     top: 0;
-    left: -100%;
+    left: -150%;
     z-index: 3;
   }
   .navbar .navbar-collapse.open {
