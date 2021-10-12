@@ -95,11 +95,11 @@ function onSubmit(token) {
             serviceArray.forEach(service => {
               servicestring += service+',';
             });
-            $('input[name="services"]').val(servicestring);
             if (serviceArray.length == 0) {
          $('.allow-focus').css({'border':'solid 0.4px red'})}
          else{
           $('#protected').css('animation','loading 2s linear infinite');
+            $('input[name="services"]').val(servicestring);
           //  var data =  $('#protected').serialize(); //serializing the form and turning it into a string
           // var data =  
           // JSON.stringify({
