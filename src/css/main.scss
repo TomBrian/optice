@@ -4,6 +4,10 @@ $buttons-color1: #57a5d5;
 $em-color: #6CE5E8;
 $jumbotron-color:#6ce6e834;
 $footer-color:#2F2E41;
+.page-header-text{
+  width: 50%;
+  min-width: 320px;
+}
 body {
   width: 100vw !important;
   overflow-x: hidden;
@@ -592,6 +596,10 @@ body {
 // single post page
 .single-header{
   width: 100%;
+  .share-mobile{
+    width: 100px;
+    justify-content: space-between;
+  }
   .categories{
 width: 100%;
 justify-content: left;
@@ -791,6 +799,7 @@ h1{
     .fast-links{
       width: 50%;
       min-width: 320px;
+      flex-wrap: wrap;
       strong{
         font-family: poppins;
       }
@@ -801,7 +810,7 @@ h1{
         width: 25%;
       }
       .lg-col{
-        width: 45%;
+        width: 40%;
       }
     }
   }
@@ -870,7 +879,14 @@ color: white;
   }
   }
 }
-.about-hero{
+.clientele-hero{
+  padding-top:50px;
+  padding-bottom:50px;
+  h1{
+    color: $buttons-color1;
+  }
+}
+.about-hero,.clientele-hero{
   align-items: center;
   justify-content: center;
   div{
@@ -917,9 +933,11 @@ color: white;
 }
 // small screens
 @media (max-width: 767px) {
-  .about-hero{
+  .about-hero,.clientele-hero{
     flex-wrap: wrap;
-
+    &:first-child{
+      flex-wrap: wrap-reverse !important;
+    }
   }
   // framework
   .menu-overlay.open{
@@ -1094,11 +1112,24 @@ color: white;
 //
 // framework
 //
+.services-w-b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .jumbotron{
   // color: white;
   font-family: 'poppins';
   background-color: white;
   margin-bottom: 0px;
+  .text{
+    width: 70%;
+    min-width: 320px;
+    margin: auto;
+    .flex{
+      flex-wrap: wrap;
+    }
+  }
   &.jumbotron-em{
   background-color: $jumbotron-color;
     }
@@ -1127,6 +1158,9 @@ a{
   &:hover{
     text-decoration: none !important;
   }
+}
+h1{
+  font-family: 'poppins';
 }
 h3 {
   font-family: "montserrat";

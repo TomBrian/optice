@@ -55,6 +55,13 @@
             Content writing
           </label>
         </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input services" id="other" value="Other">
+            Other
+          </label>
+        </div>
       </div>
     </div>
     <input type="hidden" name="services" value=''>

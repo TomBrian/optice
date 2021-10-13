@@ -46,14 +46,14 @@
                     Who we serve
                 </strong>
                 <ul>
-                    <li class="my-3">E-commerce</li>
-                    <li class="my-3">Law firms</li>
-                    <li class="my-3">Healthcare</li>
-                    <li class="my-3">Fashion and beauty</li>
-                    <li class="my-3">Manufacturing</li>
-                    <li class="my-3">Real Estate</li>
-                    <li class="my-3">Education</li>
-                    <li class="my-3">Personal brands</li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#e-commerce">E-commerce</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#law-firms">Law firms</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#healthcare">Healthcare</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#fashion-and-beauty">Fashion and beauty</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#manufacturing">Manufacturing</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#real-estate">Real Estate</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#education">Education</a></li>
+                    <li class="my-3"><a href="<?php bloginfo( 'url' )?>/who-we-serve#personal-brands">Personal brands</a></li>
                 </ul>
             </div>
         </div>
@@ -67,5 +67,4 @@
 </div>
 <?php wp_footer() ?>
 </body>
-
-</html>
+</html> 

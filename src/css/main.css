@@ -1,3 +1,8 @@
+.page-header-text {
+  width: 50%;
+  min-width: 320px;
+}
+
 body {
   width: 100vw !important;
   overflow-x: hidden;
@@ -762,6 +767,13 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
 }
 
+.single-header .share-mobile {
+  width: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .single-header .categories {
   width: 100%;
   -webkit-box-pack: left;
@@ -1029,6 +1041,8 @@ body::-webkit-scrollbar-thumb:hover {
 .site-footer .footer-links .fast-links {
   width: 50%;
   min-width: 320px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .site-footer .footer-links .fast-links strong {
@@ -1044,7 +1058,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .site-footer .footer-links .fast-links .lg-col {
-  width: 45%;
+  width: 40%;
 }
 
 .copyright {
@@ -1106,7 +1120,16 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.about-hero {
+.clientele-hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.clientele-hero h1 {
+  color: #57a5d5;
+}
+
+.about-hero, .clientele-hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1115,27 +1138,27 @@ body::-webkit-scrollbar-thumb:hover {
           justify-content: center;
 }
 
-.about-hero div {
+.about-hero div, .clientele-hero div {
   margin: 10px;
 }
 
-.about-hero h1 {
+.about-hero h1, .clientele-hero h1 {
   font-family: 'poppins';
   font-size: 24px;
 }
 
-.about-hero .text {
+.about-hero .text, .clientele-hero .text {
   width: 50%;
   min-width: 320px;
 }
 
-.about-hero .text button {
+.about-hero .text button, .clientele-hero .text button {
   width: 50%;
   font-size: 18px;
   font-weight: bold;
 }
 
-.about-hero .image {
+.about-hero .image, .clientele-hero .image {
   width: 50%;
   min-width: 320px;
 }
@@ -1160,9 +1183,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 767px) {
-  .about-hero {
+  .about-hero, .clientele-hero {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .about-hero:first-child, .clientele-hero:first-child {
+    -ms-flex-wrap: wrap-reverse !important;
+        flex-wrap: wrap-reverse !important;
   }
   .menu-overlay.open {
     display: block !important;
@@ -1330,10 +1357,33 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.services-w-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .jumbotron {
   font-family: 'poppins';
   background-color: white;
   margin-bottom: 0px;
+}
+
+.jumbotron .text {
+  width: 70%;
+  min-width: 320px;
+  margin: auto;
+}
+
+.jumbotron .text .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .jumbotron.jumbotron-em {
@@ -1368,6 +1418,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 a:hover {
   text-decoration: none !important;
+}
+
+h1 {
+  font-family: 'poppins';
 }
 
 h3 {
