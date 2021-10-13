@@ -33,31 +33,31 @@
     <h3>Tools we use</h3>
 <div class="tools py-5 justify-content-center flex">
   <a href="http://www.google.com/search?q=Wordpress+CMS" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/wordpress.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/wordpress.svg" width="70"  height="70" alt="wordpress">
   </a>
   <a href="http://www.google.com/search?q=Laravel" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/laravel.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/laravel.svg" width="70"  height="70" alt="laravel">
   </a>
   <a href="http://www.google.com/search?q=vue+js" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/vue.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/vue.svg" width="70"  height="70" alt="vue js">
   </a>
   <a href="http://www.google.com/search?q=Tailwind+CSS" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/tailwind.svg" width="116.36"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/tailwind.svg" width="116.36"  height="70" alt="tailwind css">
   </a>
   <a href="http://www.google.com/search?q=Javascript" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/js.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/js.svg" width="70"  height="70" alt="js">
   </a>
   <a href="http://www.google.com/search?q=Hypertext+Preprocessor" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/php.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/php.svg" width="70"  height="70" alt="php">
   </a>
   <a href="http://www.google.com/search?q=Bootstrap" class="m-3" target="_blank">
    <img src="<?php echo get_template_directory_uri()?>/src/images/tools/bootstrap.svg" width="70"  height="70" alt="bootstrap">
   </a>
   <a href="http://www.google.com/search?q=CSS" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/CSS.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/css.svg" width="70"  height="70" alt="css">
   </a>
   <a href="http://www.google.com/search?q=HTML" class="m-3" target="_blank">
-   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/HTML.svg" width="70"  height="70" alt="bootstrap">
+   <img src="<?php echo get_template_directory_uri()?>/src/images/tools/html.svg" width="70"  height="70" alt="html">
   </a>
 </div>
   </div>
