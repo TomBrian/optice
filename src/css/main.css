@@ -1,5 +1,5 @@
 .page-header-text {
-  width: 50%;
+  width: 60%;
   min-width: 320px;
 }
 
@@ -1121,8 +1121,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .clientele-hero {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .clientele-hero h1 {

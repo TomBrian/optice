@@ -38,7 +38,7 @@
                 <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/web-design">Web design</a> </li>
                 <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/web-development">Web development</a> </li>
                 <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/search-engine-optimization">SEO</a> </li>
-                <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/content-writing">content writing</a> </li>
+                <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/content-writing">content marketing</a> </li>
                 </ul>
             </div>
             <div class="sm-col">
