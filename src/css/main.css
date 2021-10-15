@@ -658,6 +658,10 @@ body::-webkit-scrollbar-thumb:hover {
       flex-wrap: wrap;
 }
 
+.blog-header .cats .badge {
+  margin: 1px;
+}
+
 .all-cards {
   width: 90%;
   -ms-flex-wrap: wrap;

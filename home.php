@@ -4,16 +4,17 @@
   <div class="container blog-header">
     <strong class="all-caps text-muted">Blog</strong>
     <h1 class="my-4 text-left">
-      Explore the latest stories about what is happening in the world of web and technology.From news,tutorials to updates and everything you need to know about.
+      Explore the latest stories about what is happening in the world of web and technology.
+      From news,tutorials to updates and everything you need to know about.
     </h1>
     <hr>
     <div class="container-fluid cats">
-    <a href="<?php bloginfo('url')?>/blog"><div class="badge p-3 all-caps badge-primary m-1">All</div></a>
+    <a href="<?php bloginfo('url')?>/blog"><div class="badge p-3 all-caps badge-primary">All</div></a>
       <?php
       $categories = get_categories();
       $selected_cat = $wp_query->query['category_name'];
       foreach ($categories as $category) {
-          echo '<a href="' . get_category_link($category->term_id) . '"><div class="badge p-3 all-caps badge-light m-1">' . $category->name . '</div></a>';
+          echo '<a href="' . get_category_link($category->term_id) . '"><div class="badge p-3 all-caps badge-light">' . $category->name . '</div></a>';
       } ?>
     </div>
 
