@@ -7,7 +7,7 @@
       Explore the latest stories about what is happening in the world of web and technology.From news,tutorials to updates and everything you need to know about.
     </h1>
     <hr>
-    <div class="container cats">
+    <div class="container-fluid cats">
     <a href="<?php bloginfo('url')?>/blog"><div class="badge p-3 all-caps badge-primary m-2">All</div></a>
       <?php
       $categories = get_categories();
