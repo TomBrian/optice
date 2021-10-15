@@ -1463,7 +1463,7 @@ a:hover {
   text-decoration: none !important;
 }
 
-h1 {
+h1, h2 {
   font-family: 'poppins';
 }
 
