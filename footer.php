@@ -38,7 +38,7 @@
                 <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/web-design">Web design</a> </li>
                 <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/web-development">Web development</a> </li>
                 <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/search-engine-optimization">SEO</a> </li>
-                <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/content-writing">content marketing</a> </li>
+                <li class="my-2"> <a href="<?php bloginfo( 'url' )?>/services/content-marketing">content marketing</a> </li>
                 </ul>
             </div>
             <div class="sm-col">
@@ -65,6 +65,28 @@
     </small><br>
 <small>Built with ♥ in Kenya by Optisites</small>
 </div>
+<button onclick="topFunction()" id="myBtn" class="top-btn shadow-md" title="Go to top"><i class="fas fa-angle-up"></i></button>
+<script>
+    //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 <?php wp_footer() ?>
 </body>
 </html> 

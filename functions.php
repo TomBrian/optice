@@ -12,7 +12,8 @@ function kanai_enqueue_resources()
     wp_enqueue_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.css');
     wp_enqueue_style('nunito', 'https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
     wp_enqueue_style('poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-    wp_enqueue_style('montserrant', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    wp_enqueue_style('montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    wp_enqueue_style('raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
     wp_enqueue_style('serif', 'https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
     wp_enqueue_style('main', get_template_directory_uri() . '/src/css/main.css');
     //    javascript

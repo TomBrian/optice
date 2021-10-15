@@ -2,7 +2,7 @@
 <div class="container">
     <div class="page-header-text my-5">
         <h1><?php the_title() ?></h1>
-        <p>
+        <p class="text-muted">
             Your websites content plays a huge part on whether it serves its purpose.
             At optisites we help create a content design system that gives your sites visitors clarity on the kinds of services or products you offer.
             This clarity is crucial in generating leads.
@@ -10,7 +10,7 @@
             We help create and fix your websites content to favor your sites performance.
         </p>
     </div>
-    <div class="container my-5">
+    <div class="container my-5 p-2">
         <h3 class="text-center">
             Optisites Helps you create content that not only generate leads but also
             works great on SEO
@@ -20,7 +20,7 @@
     <div class="clientele-hero container flex">
         <div class="text">
             <h1 class="my-3">General webpage content.</h1>
-            <p class="my-3">
+            <p class="my-3 text-muted">
                 This is the General webpage content.It serves the same purpose as a manual.
                 It describes your site's purpose and directs the visitor to Call To Actions.
                  We write valuable, Keyword rich content to help rank in SEO.We focus
@@ -38,7 +38,7 @@
         </div>
         <div class="text">
             <h1 class="my-3"> Blog Post  Content.</h1>
-            <p class="my-3">
+            <p class="my-3 text-muted">
             A blog is key in generating new leads to your services.Blog posts attract visitors from various sources.
             Running a successful blog requires quality content to not only help in attracting Clients
             but also in Search Engine Optimization.Blog posts also help create personal relations with prospective clients.
