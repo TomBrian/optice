@@ -7,12 +7,13 @@
             Good UI/UX is also key to generating leads and improving your sites accessibility. At Optisites we are User Experience enthusiasts focused on not only how good your website looks but also how well it suits the brand and user alike.
         </p>
     </div>
+    </div>
     <div class="container my-5 p-2">
         <h2 class="text-center">
             Optisites builds modern UX-driven Designs.
         </h2>
     </div>
-    <div class="container-fluid d-y-w">
+    <div class="container d-y-w">
        <strong class="my-2">Does your website.</strong>
        <ul>
            <li class="my-1"><i class="fas fa-exclamation-circle text-danger"></i><span class="text-muted mx-2">Feel outdated or not fit for the intended purpose ?  </span></li>
@@ -22,13 +23,14 @@
        </ul>
        <div class="container my-5 py-3 text-center">
        <h3 class="text-center">We can help redesign or build a new one for you</h3>
-       <a href="<?php bloginfo( 'url' )?>/contact-us">
+       <!-- <a href="<?php //bloginfo( 'url' )?>/contact-us">
        <button class="px-4 py-3 my-4 shadow-sm animate__animated animate__pulse animate__infinite btn big-button-dark">
                    Let us help
-       </button>
-       </a>
+       </button> -->
+    </div> </div>
+       <div class="design-contact container-fluid bg-light flex justify-content-center align-items-center">
+       <?php get_template_part('templates/contact', 'form') ?>
        </div>
-    </div>
     <h3 class="text-center my-3">Our design process</h3>
     <div class="container-fluid flex process-cards">
         <div class="process-card">
@@ -94,5 +96,4 @@
             </p>
         </div>
     </div>
-</div>
 <?php get_footer(); ?>

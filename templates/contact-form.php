@@ -1,4 +1,4 @@
-<div class="form mx-4 my-4 shadow-sm">
+<div class="form mx-4 my-4 bg-white shadow-lg">
   <form id="protected" class="services-form" method="POST">
     <h3 class="my-3 text-center">Tell us about your project</h3>
     <div class="input-wrapper my-3 flex">

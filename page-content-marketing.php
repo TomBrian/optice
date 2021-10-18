@@ -23,8 +23,8 @@
             <p class="my-3 text-muted">
                 This is the General webpage content.It serves the same purpose as a manual.
                 It describes your site's purpose and directs the visitor to Call To Actions.
-                 We write valuable, Keyword rich content to help rank in SEO.We focus
-                on the content consistency and relevance to ensure that the content serves 
+                We write valuable, Keyword rich content to help rank in SEO.We focus
+                on the content consistency and relevance to ensure that the content serves
                 its purpose as well as helping in SEO and improving the User Experience.
             </p>
         </div>
@@ -37,18 +37,22 @@
             <img src="<?php echo get_template_directory_uri() ?>/src/images/blog-c.jpg ?>" alt="Blog Content">
         </div>
         <div class="text">
-            <h1 class="my-3"> Blog Post  Content.</h1>
+            <h1 class="my-3"> Blog Post Content.</h1>
             <p class="my-3 text-muted">
-            A blog is key in generating new leads to your services.Blog posts attract visitors from various sources.
-            Running a successful blog requires quality content to not only help in attracting Clients
-            but also in Search Engine Optimization.Blog posts also help create personal relations with prospective clients.
-            At Optisites we help create quality blog content for your site. This is done after thorough research on the field of interest.
+                A blog is key in generating new leads to your services.Blog posts attract visitors from various sources.
+                Running a successful blog requires quality content to not only help in attracting Clients
+                but also in Search Engine Optimization.Blog posts also help create personal relations with prospective clients.
+                At Optisites we help create quality blog content for your site. This is done after thorough research on the field of interest.
             </p>
         </div>
     </div>
 </div>
 <div class="jumbotron  jumbotron-em text-center">
     <h4>Do you need valuable website content?</h4>
-    <h3 class="animate__animated animate__infinite">call us on 0798388488</h3>
+    <a href="<?php echo bloginfo('url') ?>/contact-us">
+        <button class="px-4 py-3 my-1 animate__animated animate__pulse animate__infinite btn big-button-dark">
+            Request a free quote
+        </button>
+</a>
 </div>
 <?php get_footer(); ?>

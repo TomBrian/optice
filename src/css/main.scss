@@ -80,7 +80,7 @@ body {
     display: none;
   }
   .navbar-collapse {
-    text-transform: capitalize;
+    text-transform:capitalize;
     font-family: 'nunito sans';
     .close{
       display: none;
@@ -243,88 +243,91 @@ body {
 .contact-wrapper {
   padding: 20px;
 }
+.form{
+  min-width: 320px;
+  max-width: 450px;
+  padding: 30px;
+  h3 {
+    color: $buttons-color1;
+  }
+  form {
+    width: 100%;
+    .input-wrapper {
+      width: 100% !important;
+      display: flex;
+      background-color: white;
+      justify-content: space-between;
+      align-items: center; 
+      border: solid 0.3px rgba(128, 128, 128, 0.26);
+      .form-control {
+        border-radius: 0%;
+        width: 100%;
+        border: none;
+        &:focus {
+          outline: none !important;
+          border: none;
+          box-shadow: 3rem 2rem 1rem transparent;
+        }
+      }
+    
+      .icon {
+        opacity: 0.5;
+        font-size: 18px;
+        padding: 2px;
+        color: $theme-color1;
+        display: none;
+      }
+    }
+    .allow-focus {
+      width: 100% !important;
+      .dropdown-toggle {
+        width: 100%;
+        .contact-dropdown-text{
+          width: 100%;
+          overflow-x: hidden;
+          text-align: start;
+        }
+        &::after {
+          display: none !important;
+        }
+      }
+      .dropdown-menu {
+        width: 100% !important;
+        padding: 20px;
+        color: $theme-color1;
+        .input-check {
+          label {
+            width: 100%;
+            input {
+              background-color: $buttons-color1 !important;
+              color: white !important;
+              border: solid 1px $theme-color1;
+              border-radius: 0px;
+            }
+          }
+        }
+      }
+    }
+    .submit {
+      margin-top: 37px;
+      padding: 10px;
+      background-color: $buttons-color1;
+      font-weight: bold;
+      color: white;
+      width: 80%;
+      &::after {
+        content: "";
+      }
+    }
+  }
+}
 .contact {
   justify-content: center;
   flex-wrap: wrap;
   .form {
     flex-grow: 1;
-    min-width: 320px;
-    max-width: 450px;
     // border-radius: 37px;
     // background-color: $buttons-color1;
-    padding: 30px;
-    h3 {
-      color: $buttons-color1;
-    }
-    form {
-      width: 100%;
-      .input-wrapper {
-        width: 100% !important;
-        display: flex;
-        background-color: white;
-        justify-content: space-between;
-        align-items: center; 
-        border: solid 0.3px rgba(128, 128, 128, 0.26);
-        .form-control {
-          border-radius: 0%;
-          width: 100%;
-          border: none;
-          &:focus {
-            outline: none !important;
-            border: none;
-            box-shadow: 3rem 2rem 1rem transparent;
-          }
-        }
-      
-        .icon {
-          opacity: 0.5;
-          font-size: 18px;
-          padding: 2px;
-          color: $theme-color1;
-          display: none;
-        }
-      }
-      .allow-focus {
-        width: 100% !important;
-        .dropdown-toggle {
-          width: 100%;
-          .contact-dropdown-text{
-            width: 100%;
-            overflow-x: hidden;
-          }
-          &::after {
-            display: none !important;
-          }
-        }
-        .dropdown-menu {
-          width: 100% !important;
-          padding: 20px;
-          color: $theme-color1;
-          .input-check {
-            label {
-              width: 100%;
-              input {
-                background-color: $buttons-color1 !important;
-                color: white !important;
-                border: solid 1px $theme-color1;
-                border-radius: 0px;
-              }
-            }
-          }
-        }
-      }
-      .submit {
-        margin-top: 37px;
-        padding: 10px;
-        background-color: $buttons-color1;
-        font-weight: bold;
-        color: white;
-        width: 80%;
-        &::after {
-          content: "";
-        }
-      }
-    }
   }
   .text {
     width: 50%;
@@ -912,8 +915,8 @@ color: white;
   }
 }
 .clientele-hero{
-  padding-top:30px;
-  padding-bottom:30px;
+  padding-top:0px;
+  padding-bottom:0px;
   h1{
     color: $buttons-color1;
   }
@@ -1207,7 +1210,7 @@ p {
 .big-button-dark{
   background-color: $buttons-color1;
   color: white;
-  width: 200px !important;
+ min-width: 200px !important;
   font-weight: bold;
   font-size: 18px;
 }

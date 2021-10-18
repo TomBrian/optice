@@ -302,32 +302,21 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 20px;
 }
 
-.contact {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.contact .form {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.form {
   min-width: 320px;
   max-width: 450px;
   padding: 30px;
 }
 
-.contact .form h3 {
+.form h3 {
   color: #57a5d5;
 }
 
-.contact .form form {
+.form form {
   width: 100%;
 }
 
-.contact .form form .input-wrapper {
+.form form .input-wrapper {
   width: 100% !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,20 +331,20 @@ body::-webkit-scrollbar-thumb:hover {
   border: solid 0.3px rgba(128, 128, 128, 0.26);
 }
 
-.contact .form form .input-wrapper .form-control {
+.form form .input-wrapper .form-control {
   border-radius: 0%;
   width: 100%;
   border: none;
 }
 
-.contact .form form .input-wrapper .form-control:focus {
+.form form .input-wrapper .form-control:focus {
   outline: none !important;
   border: none;
   -webkit-box-shadow: 3rem 2rem 1rem transparent;
           box-shadow: 3rem 2rem 1rem transparent;
 }
 
-.contact .form form .input-wrapper .icon {
+.form form .input-wrapper .icon {
   opacity: 0.5;
   font-size: 18px;
   padding: 2px;
@@ -363,41 +352,42 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
-.contact .form form .allow-focus {
+.form form .allow-focus {
   width: 100% !important;
 }
 
-.contact .form form .allow-focus .dropdown-toggle {
+.form form .allow-focus .dropdown-toggle {
   width: 100%;
 }
 
-.contact .form form .allow-focus .dropdown-toggle .contact-dropdown-text {
+.form form .allow-focus .dropdown-toggle .contact-dropdown-text {
   width: 100%;
   overflow-x: hidden;
+  text-align: start;
 }
 
-.contact .form form .allow-focus .dropdown-toggle::after {
+.form form .allow-focus .dropdown-toggle::after {
   display: none !important;
 }
 
-.contact .form form .allow-focus .dropdown-menu {
+.form form .allow-focus .dropdown-menu {
   width: 100% !important;
   padding: 20px;
   color: #47244e;
 }
 
-.contact .form form .allow-focus .dropdown-menu .input-check label {
+.form form .allow-focus .dropdown-menu .input-check label {
   width: 100%;
 }
 
-.contact .form form .allow-focus .dropdown-menu .input-check label input {
+.form form .allow-focus .dropdown-menu .input-check label input {
   background-color: #57a5d5 !important;
   color: white !important;
   border: solid 1px #47244e;
   border-radius: 0px;
 }
 
-.contact .form form .submit {
+.form form .submit {
   margin-top: 37px;
   padding: 10px;
   background-color: #57a5d5;
@@ -406,8 +396,22 @@ body::-webkit-scrollbar-thumb:hover {
   width: 80%;
 }
 
-.contact .form form .submit::after {
+.form form .submit::after {
   content: "";
+}
+
+.contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .contact .text {
@@ -1164,8 +1168,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .clientele-hero {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .clientele-hero h1 {
@@ -1481,7 +1485,7 @@ p {
 .big-button-dark {
   background-color: #57a5d5;
   color: white;
-  width: 200px !important;
+  min-width: 200px !important;
   font-weight: bold;
   font-size: 18px;
 }

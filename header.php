@@ -16,22 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <?php wp_head()?>
-<title><?php if(is_front_page()){ 
-    $excerpt =  get_the_excerpt();
-    if ($excerpt != '') {
-       echo bloginfo('title') ?> | <?php echo $excerpt; 
-    } else {
-       echo bloginfo('title') ?> | <?php echo bloginfo( 'description' );
-    }
-}
-else{
-   if ($excerpt != '') {
-      echo get_the_title() ?> | <?php echo $excerpt;
-   } else {
-      echo get_the_title() ?> | <?php echo bloginfo( 'description' );
-   }
-}
-?></title>
+<title><?php the_title()?></title>
 </head>
 <body <?php body_class()?>>
 <?php if ( ! is_front_page()) {
