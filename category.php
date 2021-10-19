@@ -8,7 +8,7 @@
         </h1>
         <hr>
         <div class="container cats">
-        <a href="<?php bloginfo('url')?>/blog"><div class="badge p-3 all-caps badge-light m-2">All</div></a>
+        <a href="<?php bloginfo('url')?>/blog"><div class="badge p-3 all-caps badge-light">All</div></a>
             <?php
             $categories = get_categories();
             $selected_cat =  $wp_query->query['category_name'];
