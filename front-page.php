@@ -37,16 +37,16 @@
                 We work with wordpress PHP-APIs giving us the flexibility we need to tailor your website according to all your needs.
             </p>
             <div class="buttons flex my-4 justify-content-center">
-            <a href="<?php echo bloginfo('url') ?>/contact-us">
-                <button class="btn btn-lg mx-2 btn-primary main">
-                    Get a quote
-                </button>
-            </a>
-            <a href="<?php echo bloginfo('url') ?>/about">
-                <button class="btn btn-lg mx-2 btn-outline-primary notmain">
-                    About us
-                </button>
-            </a>
+                <a href="<?php echo bloginfo('url') ?>/contact-us">
+                    <button class="btn btn-lg mx-2 btn-primary main">
+                        Get a quote
+                    </button>
+                </a>
+                <a href="<?php echo bloginfo('url') ?>/about">
+                    <button class="btn btn-lg mx-2 btn-outline-primary notmain">
+                        About us
+                    </button>
+                </a>
             </div>
         </div>
         <div class="cards services container-fluid flex">
@@ -66,7 +66,7 @@
                 <hr>
                 <strong class="em my-1">Popular Features</strong>
                 <ul class="list">
-                    <li>Full SEO audit</li>
+                    <li>Site speed optimization</li>
                     <li>Keyword research</li>
                     <li>Link building</li>
                 </ul>
@@ -168,13 +168,17 @@
             We use project management platforms and prototypes to show our progress through out our development roadmap
         </p>
         <a href="<?php echo bloginfo('url') ?>/blog">
-        <button class="btn btn-primary">Learn more</button>
+            <button class="btn btn-primary">Learn more</button>
         </a>
     </div>
 </div>
 <div class="jumbotron  jumbotron-em text-center">
-    <h4>We are one call away</h4>
-    <h3 class="animate__animated animate__infinite">call us on 0798388488</h3>
+    <h4> Need help implementing your marketing strategy? Let us help.</h4>
+    <a href="<?php echo bloginfo('url') ?>/contact-us">
+        <button class="px-4 py-3 my-1 animate__animated animate__pulse animate__infinite btn big-button-dark">
+            Tell us about your project
+        </button>
+    </a>
 </div>
 <h3 class="text-center my-4">
     From our <a href="<?php echo bloginfo('url') ?>/blog"><span class="em">blog</span></a>

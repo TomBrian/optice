@@ -16,7 +16,7 @@
             works great on SEO
         </h3>
     </div>
-    <h5 class="text-center my-4">Types of content</h5>
+    <h5 class="text-center nunito my-4">Types of content</h5>
     <div class="clientele-hero container flex">
         <div class="text">
             <h1 class="my-3">General webpage content.</h1>

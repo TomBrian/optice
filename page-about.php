@@ -66,12 +66,4 @@
     </div>
   </div>
 </div>
-<div class="jumbotron jumbotron-em services-w-b text-center">
-  <div class="text">
-    <h3>Services without borders</h3>
-    <p>Our talents are accessible to anyone anywhere. We are available for virtual meetings on patforms like Google Meet or any other platform the client chooses.
-      Physical meetings are only possible to those around central Kenya.
-  </div>
-  </p>
-</div>
 <?php get_footer() ?>

@@ -62,17 +62,21 @@
     </div>
     <div class="text">
         <h1 class="my-3">Education.</h1>
-        <p class="my-3">We are a team of dedicated freelancers focused on <b>helping businesses build a strong digital presence</b>.
-            We offer a variety of services ranging from web development,web design,content creation and Search Engine Optimization.
-            We are not only focused on helping businesses and individuals reach a wider audience but also create great experiences by User Experience driven development and design.</p>
+        <p class="my-3">
+            Good marketing,design and development is crucial for education brands.
+            At optisites we create,optimize and market education websites helping these brands generate leads and improve profitability.
+            We also help education brands build trust with their clients through quality and professional design.  
+        </p>
     </div>
 </div>
 <div class="clientele-hero container flex" id="healthcare">
     <div class="text">
         <h1 class="my-3">Healthcare.</h1>
-        <p class="my-3">We are a team of dedicated freelancers focused on <b>helping businesses build a strong digital presence</b>.
-            We offer a variety of services ranging from web development,web design,content creation and Search Engine Optimization.
-            We are not only focused on helping businesses and individuals reach a wider audience but also create great experiences by User Experience driven development and design.</p>
+        <p class="my-3">
+          Healthcare is a delicate business. In order to sell your healthcare solutions, You need to build trust with your prospective client.
+          We help you build this trust by building world class,top User Experience healthcare websites and digital marketing strategies that will
+           guarantee new leads.
+        </p>
     </div>
     <div class="image">
         <img src="<?php echo get_template_directory_uri() ?>/src/images/health.jpg ?>" alt="healthcare">
@@ -84,17 +88,21 @@
     </div>
     <div class="text">
         <h1 class="my-3">Fashion and Beauty.</h1>
-        <p class="my-3">We are a team of dedicated freelancers focused on <b>helping businesses build a strong digital presence</b>.
-            We offer a variety of services ranging from web development,web design,content creation and Search Engine Optimization.
-            We are not only focused on helping businesses and individuals reach a wider audience but also create great experiences by User Experience driven development and design.</p>
+        <p class="my-3">
+            Fashion and beauty brands need a special kind of development, marketing and User Experience.
+            At Optisites we build websites that match your aesthetic. We guarantee clean and beautiful
+             user interfaces that will help Fashion brands generate new leads from most visitors. We also help fashion and beauty companies build a presence 
+             through our digital marketing strategies.
+        </p>
     </div>
 </div>
 <div class="clientele-hero container flex" id="banking">
     <div class="text">
         <h1 class="my-3">Banking.</h1>
-        <p class="my-3">We are a team of dedicated freelancers focused on <b>helping businesses build a strong digital presence</b>.
-            We offer a variety of services ranging from web development,web design,content creation and Search Engine Optimization.
-            We are not only focused on helping businesses and individuals reach a wider audience but also create great experiences by User Experience driven development and design.</p>
+        <p class="my-3">
+            At Optisites, we understand that banking is one of the most delicate business sectors.We help build customer trust and help banking brands stand out
+            from their growing number of competitors. All these services come with an effective digital marketing strategy that help these brands build a strong presence. 
+        </p>
     </div>
     <div class="image">
         <img src="<?php echo get_template_directory_uri() ?>/src/images/banking.jpg ?>" alt="Banking">
@@ -106,9 +114,10 @@
     </div>
     <div class="text">
         <h1 class="my-3">Real Estate.</h1>
-        <p class="my-3">We are a team of dedicated freelancers focused on <b>helping businesses build a strong digital presence</b>.
-            We offer a variety of services ranging from web development,web design,content creation and Search Engine Optimization.
-            We are not only focused on helping businesses and individuals reach a wider audience but also create great experiences by User Experience driven development and design.</p>
+        <p class="my-3">
+         Competition in the real estate business is booming. The number of real estate websites has increased rapidly in the past few years too.
+         Standing out is crucial for real estate agents. Our development and marketing strategies have increased    
+        </p> 
     </div>
 </div>
 <?php the_content() ?>
