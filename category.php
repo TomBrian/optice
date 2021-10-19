@@ -14,9 +14,9 @@
             $selected_cat =  $wp_query->query['category_name'];
             foreach ($categories as $category) {
                 if (strval($category->slug) == strval($selected_cat)) {
-                    echo '<a href="' . get_category_link($category->term_id) . '"><div class="badge p-3 all-caps badge-primary m-2">' . $category->name . '</div></a>';
+                    echo '<a href="' . get_category_link($category->term_id) . '"><div class="badge p-3 all-caps badge-primary">' . $category->name . '</div></a>';
                 } else {
-                    echo '<a href="' . get_category_link($category->term_id) . '"><div class="badge p-3 all-caps badge-light m-2">' . $category->name . '</div></a>';
+                    echo '<a href="' . get_category_link($category->term_id) . '"><div class="badge p-3 all-caps badge-light">' . $category->name . '</div></a>';
                 }
             } ?>
         </div>
