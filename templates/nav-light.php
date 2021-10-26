@@ -9,7 +9,7 @@
     </button>
     <?php wp_nav_menu(array(
         'theme_location'  => 'primary',
-        'depth'           => 5, // 1 = no dropdowns, 2 = with dropdowns.
+        'depth'           => 5,
         'container'       => 'div',
         'container_class' => 'collapse navbar-collapse',
         'container_id'    => 'bs-example-navbar-collapse-1',
@@ -18,6 +18,6 @@
         'walker'          => new WP_Bootstrap_Navwalker()
     )); ?>
   <button class="nav-cta p-1 d-none d-md-block d-lg-block d-xl-block">
-      <a href="#" class="nav-cta-link nav-link">Call us</a>
-  </button>
+      <a href="tel:0768148398" class="nav-cta-link nav-link">Call us</a>
+</button>
 </nav>

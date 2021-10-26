@@ -18,6 +18,6 @@
         'walker'          => new WP_Bootstrap_Navwalker()
     )); ?>
   <button class="nav-cta p-1 d-none d-md-block d-lg-block d-xl-block">
-      <a href="#" class="nav-cta-link nav-link">Call us</a>
+      <a href="tel:0768148398" class="nav-cta-link nav-link">Call us</a>
   </button>
 </nav>

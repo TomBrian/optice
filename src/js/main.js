@@ -97,4 +97,3 @@ jQuery(($)=>{
          $('.allow-focus').css({'border-bottom':'solid 2px red'})      }
     });
 });
-

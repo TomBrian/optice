@@ -54,7 +54,7 @@
                 <?php get_template_part('templates/blog', 'card') ?>
         <?php
             endwhile;
-        endif; ?>
+        endif;?>
     </div>
 </div>
 <?php get_footer() ?>
