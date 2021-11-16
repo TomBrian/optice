@@ -864,7 +864,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .blog-post img:first-child() {
-  min-width: 100%;
+  min-width: 80% !important;
+  margin: auto;
 }
 
 .single-page-content-wrapper .blog-post h3 {

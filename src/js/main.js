@@ -1,7 +1,7 @@
 jQuery(($)=>{
   // select all inputs in comment form
-  $('.comment').addClass('my-3')
-  $('.comment-form').addClass('shadow-sm p-5')
+  $('.comment').addClass('my-5')
+  $('.comment-form').addClass('shadow-sm container p-3')
   $('.comment-form input:submit').addClass('shadow-sm text-white btn-info')
   $('.comment-form input,textarea').css({'border-radius':'none','padding':'8px','border':'solid 0.3px rgba(128, 128, 128, 0.26)'})
   $('.comment-form p').each((i,el)=>{

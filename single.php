@@ -110,7 +110,6 @@
         </div>
         <div class="comment-section">
             <?php comments_template( )?>
-            <?php comment_form()?>
         </div>
         <div class="lg-none sidebar">
             <?php get_template_part('templates/single', 'sidebar') ?>
