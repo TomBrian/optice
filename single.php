@@ -108,7 +108,7 @@
                 </p>
             </div>
         </div>
-        <div class="comment-section p-3">
+        <div class="comment-section">
             <?php comments_template( )?>
             <?php comment_form()?>
         </div>
