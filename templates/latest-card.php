@@ -12,7 +12,7 @@
        <hr>
        <small class="text-muted font-weight-bold author">By <?php the_author() ?></small>
         <div class="excerpt my-3">
-            <?php the_excerpt() ?>
+            <?php echo the_excerpt(); ?>
         </div>
            <div class="categories all-caps text-muted my-2 flex">
 <?php the_category( '','multiple' )

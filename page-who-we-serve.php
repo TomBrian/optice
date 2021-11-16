@@ -10,7 +10,7 @@
 </div>
 <div class="clientele-hero container flex">
     <div class="image" id="manufacturing">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/manufacturing.jpg ?>" alt="Manufacturing">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/manufacturing.jpg ?>" alt="Manufacturing">
     </div>
     <div class="text">
         <h1 class="my-3">Manufacturing.</h1>
@@ -28,12 +28,12 @@
         </p>
     </div>
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/law.jpg ?>" alt="Law firms">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/law.jpg ?>" alt="Law firms">
     </div>
 </div>
 <div class="clientele-hero container flex" id="e-commerce">
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/e-commerce.jpg ?>" alt="E-commerce">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/e-commerce.jpg ?>" alt="E-commerce">
     </div>
     <div class="text">
         <h1 class="my-3">E- commerce.</h1>
@@ -53,12 +53,12 @@
         </p>
     </div>
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/personal.jpg ?>" alt="Personal brands">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/personal.jpg ?>" alt="Personal brands">
     </div>
 </div>
 <div class="clientele-hero container flex" id="education">
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/education.jpg ?>" alt="Education">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/education.jpg ?>" alt="Education">
     </div>
     <div class="text">
         <h1 class="my-3">Education.</h1>
@@ -79,12 +79,12 @@
         </p>
     </div>
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/health.jpg ?>" alt="healthcare">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/health.jpg ?>" alt="healthcare">
     </div>
 </div>
 <div class="clientele-hero container flex" id="fashion-and-beauty">
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/beauty.jpg ?>" alt="Beauty">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/beauty.jpg ?>" alt="Beauty">
     </div>
     <div class="text">
         <h1 class="my-3">Fashion and Beauty.</h1>
@@ -105,12 +105,12 @@
         </p>
     </div>
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/banking.jpg ?>" alt="Banking">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/banking.jpg ?>" alt="Banking">
     </div>
 </div>
 <div class="clientele-hero container flex" id="real-estate">
     <div class="image">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/real-estate.jpg ?>" alt="Real Estate">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/real-estate.jpg ?>" alt="Real Estate">
     </div>
     <div class="text">
         <h1 class="my-3">Real Estate.</h1>

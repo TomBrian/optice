@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div class="container-fluid p-4 single-header">
+<div class="container-fluid p-4 container single-header">
     <div class="left">
         <div class="categories flex">
             <?php the_category() ?>
@@ -107,6 +107,10 @@
                     ?>
                 </p>
             </div>
+        </div>
+        <div class="comment-section p-3">
+            <?php comments_template( )?>
+            <?php comment_form()?>
         </div>
         <div class="lg-none sidebar">
             <?php get_template_part('templates/single', 'sidebar') ?>

@@ -20,16 +20,16 @@
                 </p>
                 <div class="socials align-items-center justify-content-left flex">
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/fiverr.svg" width="90" height="90" class="mx-3" alt="fiverr">
+                        <img src="<?php echo get_theme_file_uri() ?>/src/images/fiverr.svg" width="90" height="90" class="mx-3" alt="fiverr">
                     </a>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/freelancer.svg" width="171" height="90" class="mx-3" alt="freelancer">
+                        <img src="<?php echo get_theme_file_uri() ?>/src/images/freelancer.svg" width="171" height="90" class="mx-3" alt="freelancer">
                     </a>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/upwork.svg" width="90" height="90" class="mx-3" alt="upwork">
+                        <img src="<?php echo get_theme_file_uri() ?>/src/images/upwork.svg" width="90" height="90" class="mx-3" alt="upwork">
                     </a>
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri() ?>/src/images/linked.svg" width="40" height="40" class="mx-3" alt="linked in">
+                        <img src="<?php echo get_theme_file_uri() ?>/src/images/linked.svg" width="40" height="40" class="mx-3" alt="linked in">
                     </a>
                 </div>
             </div>

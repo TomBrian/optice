@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md bg-trans p-3">
     <div>
         <a class="navbar-brand" href="#">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/logo-light.svg" width="150" height="50" alt="brand">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/logo-light.svg" width="150" height="50" alt="brand">
         </a>
     </div>
     <button class="menu-opener">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/menu-light.svg" width="30" height="30" alt="">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/menu-light.svg" width="30" height="30" alt="">
     </button>
     <?php wp_nav_menu(array(
         'theme_location'  => 'primary',

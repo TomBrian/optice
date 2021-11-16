@@ -10,6 +10,7 @@ html {
 body {
   width: 100vw !important;
   overflow-x: hidden;
+  background-color: white !important;
   /* width */
   /* Track */
   /* Handle */
@@ -243,7 +244,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero .hero-content .hero-text {
-  color: white;
+  color: white !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,6 +259,10 @@ body::-webkit-scrollbar-thumb:hover {
       -ms-flex-align: start;
           align-items: start;
   text-transform: capitalize;
+}
+
+.hero .hero-content .hero-text h1 {
+  color: white !important;
 }
 
 .hero .hero-content .hero-text h1 .em {
@@ -545,9 +550,9 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .after-hero .cards .card .title {
@@ -858,7 +863,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bold;
 }
 
-.single-page-content-wrapper .blog-post img {
+.single-page-content-wrapper .blog-post img:first-child() {
   min-width: 100%;
 }
 
@@ -1537,22 +1542,22 @@ p {
 }
 
 .top-btn {
-  background-color: white;
-  color: #57a5d5;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 50px;
-  font-size: 30px;
-  right: 50px;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: white !important;
+  color: #57a5d5 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  position: fixed !important;
+  bottom: 50px !important;
+  font-size: 30px !important;
+  right: 50px !important;
+  display: none !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .grecaptcha-badge {

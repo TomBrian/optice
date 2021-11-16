@@ -9,7 +9,7 @@
 <div class="container-fluid site-footer px-3">
     <div class="container flex footer-links">
         <div class="socials">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/logo-light.svg" width="150" class="my-4" height="50px" alt="logo">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/logo-light.svg" width="150" class="my-4" height="50px" alt="logo">
             <p>
                 Optisites is a full service web design and digital solutions agency based in Nairobi Kenya focused on building a strong digital prescence for our clients.
             </p>

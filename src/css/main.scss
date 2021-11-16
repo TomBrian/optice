@@ -14,6 +14,7 @@ html {
 body {
   width: 100vw !important;
   overflow-x: hidden;
+  background-color: white !important;
   // color: $text-color;
   /* width */
   &::-webkit-scrollbar {
@@ -200,13 +201,14 @@ body {
     align-items: center;
     justify-content: left;
     .hero-text {
-      color: white;
+      color: white !important;
       display: flex;
       flex-direction: column;
       justify-content: left;
       align-items: start;
       text-transform: capitalize;
       h1 {
+          color: white !important;
         .em {
           color: $em-color;
         }
@@ -416,7 +418,7 @@ body {
       border-radius: 0%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       .title {
         margin-left: 20px;
         margin-top: 20px;
@@ -448,6 +450,7 @@ body {
       .list {
         font-size: 14px;
         font-family: 'montserrat';
+       
         li {
           &::before {
             margin-right: 10px;
@@ -656,7 +659,7 @@ h1{
       color: $buttons-color1;
       font-weight: bold;
     }
-    img{
+    img:first-child(){
       min-width: 100%;
     }
     h3{
@@ -1243,18 +1246,18 @@ p {
       font-family: 'nunito sans' !important;
     }
     .top-btn{
-      background-color: white;
-      color: $buttons-color1;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      position: fixed;
-      bottom: 50px;
-      font-size: 30px;
-      right: 50px;
-      display: none;
-      justify-content: center;
-      align-items: center;
+      background-color: white !important;
+      color: $buttons-color1 !important;
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 50% !important;
+      position: fixed !important;
+      bottom: 50px !important;
+      font-size: 30px !important;
+      right: 50px !important;
+      display: none !important;
+      justify-content: center !important;
+      align-items: center !important;
     }
     // hide recaptcha badge
     .grecaptcha-badge { 

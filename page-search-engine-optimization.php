@@ -16,7 +16,7 @@
     <h5 class="text-center nunito my-4">Our SEO services</h5>
     <div class="clientele-hero container flex">
         <div class="image">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/keywords.jpg ?>" alt="Keyword research at Optisites">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/keywords.jpg ?>" alt="Keyword research at Optisites">
         </div>
         <div class="text">
             <h1 class="my-3">Keyword research and building.</h1>
@@ -39,12 +39,12 @@
             </p>
         </div>
         <div class="image">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/tracking.png ?>" alt="Search engine performance tracking.">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/tracking.png ?>" alt="Search engine performance tracking.">
         </div>
     </div>
     <div class="clientele-hero container flex">
         <div class="image">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/sanitization.png ?>" alt="Code sanitization.">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/sanitization.png ?>" alt="Code sanitization.">
         </div>
         <div class="text">
             <h1 class="my-3">Code sanitization.</h1>
@@ -65,7 +65,7 @@
             </p>
         </div>
         <div class="image">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/speed.png ?>" alt="Speend testing and optimization.">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/speed.png ?>" alt="Speend testing and optimization.">
         </div>
     </div>
 </div>

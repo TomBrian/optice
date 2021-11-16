@@ -24,12 +24,12 @@
                 </p>
             </div>
             <div class="image" id="blog-c">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/wordpress.jpg ?>" alt="wordpress development">
+                <img src="<?php echo get_theme_file_uri() ?>/src/images/wordpress.jpg ?>" alt="wordpress development">
             </div>
         </div>
         <div class="clientele-hero container flex">
             <div class="image" id="blog-c">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/e-commerce.jpg ?>" alt="e-commerce">
+                <img src="<?php echo get_theme_file_uri() ?>/src/images/e-commerce.jpg ?>" alt="e-commerce">
             </div>
             <div class="text">
                 <h1 class="my-3">E-commerce development.</h1>
@@ -50,12 +50,12 @@
                 </p>
             </div>
             <div class="image" id="blog-c">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/blog-c.jpg ?>" alt="Blog Content">
+                <img src="<?php echo get_theme_file_uri() ?>/src/images/blog-c.jpg ?>" alt="Blog Content">
             </div>
         </div>
         <div class="clientele-hero container flex">
             <div class="image" id="blog-c">
-                <img src="<?php echo get_template_directory_uri() ?>/src/images/webdev.jpg ?>" alt="Web development">
+                <img src="<?php echo get_theme_file_uri() ?>/src/images/webdev.jpg ?>" alt="Web development">
             </div>
             <div class="text">
                 <h1 class="my-3">Web application development.</h1>

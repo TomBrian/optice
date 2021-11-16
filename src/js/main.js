@@ -1,4 +1,16 @@
 jQuery(($)=>{
+  // select all inputs in comment form
+  $('.comment').addClass('my-3')
+  $('.comment-form').addClass('shadow-sm p-5')
+  $('.comment-form input:submit').addClass('shadow-sm text-white btn-info')
+  $('.comment-form input,textarea').css({'border-radius':'none','padding':'8px','border':'solid 0.3px rgba(128, 128, 128, 0.26)'})
+  $('.comment-form p').each((i,el)=>{
+   $('.'+el.classList[0]+':not(.comment-form-cookies-consent) label').hide()
+  const text = $('.'+el.classList[0]+':not(.comment-form-cookies-consent) label').text();
+    $('.'+el.classList[0]+':not(.comment-form-cookies-consent) input').attr('placeholder',text)
+    $('.'+el.classList[0]+':not(.comment-form-cookies-consent) textarea').val(text+'*');
+    $('.'+el.classList[0]+':not(.comment-form-cookies-consent) input,textarea').addClass('w-full')
+  })
     $('nav .nav-link').addClass('text-center');
     $('nav .dropdown-menu').addClass('shadow-md');
     $('nav .dropdown-menu .dropdown').addClass('dropdown-submenu');

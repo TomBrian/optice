@@ -1,11 +1,11 @@
 <nav class="navbar sticky-top bg-white shadow-sm navbar-expand-md p-2">
     <div>
         <a class="navbar-brand" href="<?php echo bloginfo('url') ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/logo-dark.svg" width="150" height="50" alt="brand">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/logo-dark.svg" width="150" height="50" alt="brand">
         </a>
     </div>
     <button class="menu-opener">
-        <img src="<?php echo get_template_directory_uri() ?>/src/images/menu-dark.svg" width="30" height="30" alt="">
+        <img src="<?php echo get_theme_file_uri() ?>/src/images/menu-dark.svg" width="30" height="30" alt="">
     </button>
     <?php wp_nav_menu(array(
         'theme_location'  => 'primary',
@@ -21,3 +21,8 @@
       <a href="tel:076816" class="nav-cta-link nav-link">Call us</a>
 </button>
 </nav>
+<style>
+    .ast-menu-toggle{
+        display:none !important;
+    }
+</style>

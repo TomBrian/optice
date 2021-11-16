@@ -3,7 +3,7 @@
     <?php optice_get_light_navbar(); ?>
 </div>
 <div class="hero-wrap">
-    <div class="parallax-window hero" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/src/images/hero.jpg">
+    <div class="parallax-window hero" data-parallax="scroll" data-image-src="<?php echo get_theme_file_uri() ?>/src/images/hero.jpg">
         <!-- navbar dark version -->
         <?php include(dirname(__FILE__) . "/templates/nav-trans.php"); ?>
         <div class="hero-content">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="hero-waves">
-            <img src="<?php echo get_template_directory_uri() ?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt="">
+            <img src="<?php echo get_theme_file_uri() ?>/src/images/hero-waves.svg" class="d-none d-md-block d-lg-block d-xl-block" class="img" alt="">
         </div>
     </div>
 </div>
@@ -70,11 +70,9 @@
                     <li>Keyword research</li>
                     <li>Link building</li>
                 </ul>
-                <div class="button my-2">
                     <a href="<?php echo bloginfo('url') ?>/services/search-engine-optimization">
                         <button class="btn btn-primary main"><b>View Service</b></button>
                     </a>
-                </div>
             </div>
             <div class="card p-3 m-2 bg-white shadow-sm">
                 <div class="title text-center">
@@ -96,11 +94,9 @@
                     <li>landing page design</li>
                     <li>form design</li>
                 </ul>
-                <div class="button my-2">
                     <a href="<?php echo bloginfo('url') ?>/services/web-design">
                         <button class="btn btn-primary main"><b>View Service</b></button>
                     </a>
-                </div>
             </div>
             <div class="card p-3 m-2 bg-white shadow-sm">
                 <div class="title text-center">
@@ -121,9 +117,7 @@
                     <li>Laravel web app development</li>
                 </ul>
                 <a href="<?php echo bloginfo('url') ?>/services/web-development">
-                    <div class="button my-2">
                         <button class="btn btn-primary main"><b>View Service</b></button>
-                    </div>
                 </a>
             </div>
             <div class="card p-3 m-2 bg-white shadow-sm">
@@ -159,7 +153,7 @@
     </h3>
 </div>
 <div class="process my-4 container flex">
-    <div class="image" style="background-image:url('<?php echo get_template_directory_uri() ?>/src/images/process.jpg');">
+    <div class="image" style="background-image:url('<?php echo get_theme_file_uri() ?>/src/images/process.jpg');">
     </div>
     <div class="text">
         <h3>We work with you. Not just for you</h3>
@@ -201,5 +195,5 @@
         endwhile;
     endif; ?>
 </div>
-<script src="<?php echo get_template_directory_uri() ?>/src/js/front-page.js"></script>
+<script src="<?php echo get_theme_file_uri() ?>/src/js/front-page.js"></script>
 <?php get_footer() ?>
