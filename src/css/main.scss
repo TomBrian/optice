@@ -660,7 +660,9 @@ h1{
       font-weight: bold;
     }
     img:first-child(){
-      min-width: 80% !important;
+      min-width: 100% !important;
+      object-fit: cover;
+      object-position: 0%;
       margin: auto;
     }
     h3{

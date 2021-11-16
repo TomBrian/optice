@@ -864,7 +864,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .blog-post img:first-child() {
-  min-width: 80% !important;
+  min-width: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0%;
+     object-position: 0%;
   margin: auto;
 }
 
