@@ -6,7 +6,7 @@
     <div class="parallax-window hero" data-parallax="scroll" data-image-src="<?php echo get_theme_file_uri() ?>/src/images/hero.jpg">
         <!-- navbar dark version -->
         <?php include(dirname(__FILE__) . "/templates/nav-trans.php"); ?>
-        <div class="hero-content">
+        <div class="hero-content container-fluid">
             <div class="hero-text text-left">
                 <h1 class="my-1">
                     A <span class="em">full service</span> Web development and digital marketing agency that helps you grow revenue.

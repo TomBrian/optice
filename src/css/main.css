@@ -227,7 +227,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero .hero-content {
-  width: 100%;
+  width: 100% !important;
   min-height: 550px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -864,7 +864,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .single-page-content-wrapper .blog-post img:first-child() {
-  width: 100% !important;
+  min-width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0%;

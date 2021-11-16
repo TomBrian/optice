@@ -63,7 +63,7 @@
         </div>
     </div>
     <div class="container p-3 blog-post">
-        <img src="<?php echo the_post_thumbnail_url() ?>" class="img-responsive" alt="<?php echo the_title() ?>">
+        <img class="my-4" src="<?php echo the_post_thumbnail_url() ?>" alt="<?php echo the_title() ?>">
         <?php the_content() ?>
         <h3>About the author</h3>
         <div class="author-card shadow-sm p-4">
